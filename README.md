@@ -8,6 +8,8 @@ It is best practice to not include the python virtual environment within the rep
     * You can also use the package manager uv, which can be downloaded [here](https://docs.astral.sh/uv/getting-started/installation/)
 2. Use the requirements.txt file in the repo to download all of the necessary dependencies
 3. You should now be able to run the code. If you need to install a new library, be sure to update the requirements.txt file as well.
+    * Don't forget to activate the environment if you are running anything from the command line.
+    * If you are using VSCode, you may need to update which python interpreter it is using for the dependency detection to work correctly.
 
 ## Additional Notes
 * The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.
