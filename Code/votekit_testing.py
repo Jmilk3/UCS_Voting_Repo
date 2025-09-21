@@ -1,4 +1,6 @@
 import votekit as vk
 import pathlib
+import pandas as pd
 
-vk.Ballot({"Test 1"}, {"Test 2"}, {"Test 3"})
+with open(pathlib.Path("../Election_Data_Sheets/results_pct_20220517.txt").resolve()) as file:
+    frame = pd.read_csv(file, sep="\t")
