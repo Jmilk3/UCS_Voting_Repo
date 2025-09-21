@@ -4,15 +4,22 @@ import votekit.elections as el
 import time
 from bloc import Bloc
 
+# This code is meant to simulate a straightforward ballot generation and election testing cycle
+# It times the code, to give us an idea of how long the programs might take to run.
+# On my device, the timing I usually got was about 0.19 seconds
+# I'd suggest doing a larger number of trials than 1 (To reduce the risk of random variance messing with our results)
+# Even still, running 100 tests would still take less than a minute
+# TODO: Test if increasing the number of candidates or generated ballots changes the time significantly
+
 # Start timing the runtime of the program
 start = time.monotonic_ns()
 
 ## Create parameters for ballot generation
 # Since all of the blocs will only have 1 candidate, I can create a single set of pref intervals for all of them
 pref_intervals = {
-"Bloc 1": vk.PreferenceInterval({"Candidate One": 1.0}),
-"Bloc 2": vk.PreferenceInterval({"Candidate Two": 1.0}),
-"Bloc 3": vk.PreferenceInterval({"Candidate Three": 1.0})
+"Bloc One": vk.PreferenceInterval({"Candidate One": 1.0}),
+"Bloc Two": vk.PreferenceInterval({"Candidate Two": 1.0}),
+"Bloc Three": vk.PreferenceInterval({"Candidate Three": 1.0})
 }
 
 
@@ -48,5 +55,5 @@ ballots = generator.generate_profile(30000)
 # run a RCV election with the fake ballots
 result = el.IRV(ballots)
 
-stop = time.monotonic_ns
+stop = time.monotonic_ns()
 print(f"Time taken (ns): {stop-start}")
