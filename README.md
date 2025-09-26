@@ -16,3 +16,4 @@ It is best practice to not include the python virtual environment within the rep
 
 ## Additional Notes
 * The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.
+* The Bradley-Terry MCMC generator breaks if a bloc will only vote for a single candidate. This shouldn't be an issue in any real tests.

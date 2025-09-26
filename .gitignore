@@ -208,3 +208,6 @@ __marimo__/
 
 # venv environment
 .venv/
+
+# vscode folder
+.vscode/

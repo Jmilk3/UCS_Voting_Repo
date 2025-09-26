@@ -88,11 +88,11 @@ bloc7 = Bloc(name="Bloc 7", size=2000,
                          "Bloc 5":0.0, "Bloc 6":0.0, "Bloc 7":0.7, "Bloc 8":0.0},
               preference=pref_intervals)
 
-# Cult
+# Cult (VoteKit won't let me say that they only vote for 1 candidate)
 bloc8 = Bloc(name="Bloc 8", size=800,
               candidates=["8"],
               cohesion={"Bloc 1":0.0, "Bloc 2":0.0, "Bloc 3":0.0, "Bloc 4":0.0,
-                         "Bloc 5":0.0, "Bloc 6":0.0, "Bloc 7":0.0, "Bloc 8":1.0},
+                         "Bloc 5":0.0, "Bloc 6":0.01, "Bloc 7":0.0, "Bloc 8":.99},
               preference=pref_intervals)
 
 # condense values into arguments for generator
