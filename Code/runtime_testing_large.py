@@ -9,6 +9,11 @@ from bloc import Bloc
 # I will be selecting random numbers for everything
 # I will be using 8 blocs and 23 candidates for these tests
 
+## Results
+# When running with 53k ballots, generation took several minutes, then my program crashed
+# I am decreasing the number of ballots to 10k
+# 
+
 # My reference for cohesion params
 # 1 is moderate left
 # 2 is moderate right
@@ -107,7 +112,7 @@ generator = name_BradleyTerry(
 )
 
 # Make a set of ballots using MCMC method
-ballots = generator.generate_profile_MCMC(52300) # ballot for each person in blocs
+ballots = generator.generate_profile_MCMC(10000)
 
 # run IRV election with these ballots
 result = IRV(ballots)
