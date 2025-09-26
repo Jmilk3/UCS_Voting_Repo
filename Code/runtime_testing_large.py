@@ -42,7 +42,7 @@ pref_intervals = {
 # Largest bloc, members tend to wander a bit
 bloc1 = Bloc(name="Bloc 1", size=15000,
               candidates=["1","9","10","11","12"],
-              cohesion={"Bloc 1":0.55, "Bloc 2":0.05, "Bloc 3":0.15, "Bloc 4":0.05,
+              cohesion={"Bloc 1":0.65, "Bloc 2":0.05, "Bloc 3":0.15, "Bloc 4":0.05,
                          "Bloc 5":0.05, "Bloc 6":0.0, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
