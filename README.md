@@ -11,5 +11,8 @@ It is best practice to not include the python virtual environment within the rep
     * Don't forget to activate the environment if you are running anything from the command line.
     * If you are using VSCode, you may need to update which python interpreter it is using for the dependency detection to work correctly.
 
+## Design Notes
+* I don't see any built in methods that create ballots with real world data then fill in rankings with a ballot generator. If we want to force each sample set to use the real world vote results as top choices, we might need to create our own method of generating a preference profile.
+
 ## Additional Notes
 * The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.
