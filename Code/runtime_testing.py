@@ -1,7 +1,7 @@
-import votekit as vk
-import votekit.ballot_generator as bg
-import votekit.elections as el
-import time
+from votekit import PreferenceInterval
+from votekit.ballot_generator import name_BradleyTerry
+from votekit.elections import IRV
+from time import monotonic_ns
 from bloc import Bloc
 
 # This code is meant to simulate a straightforward ballot generation and election testing cycle
@@ -12,14 +12,14 @@ from bloc import Bloc
 # TODO: Test if increasing the number of candidates or generated ballots changes the time significantly
 
 # Start timing the runtime of the program
-start = time.monotonic_ns()
+start = monotonic_ns()
 
 ## Create parameters for ballot generation
 # Since all of the blocs will only have 1 candidate, I can create a single set of pref intervals for all of them
 pref_intervals = {
-"Bloc One": vk.PreferenceInterval({"Candidate One": 1.0}),
-"Bloc Two": vk.PreferenceInterval({"Candidate Two": 1.0}),
-"Bloc Three": vk.PreferenceInterval({"Candidate Three": 1.0})
+"Bloc One": PreferenceInterval({"Candidate One": 1.0}),
+"Bloc Two": PreferenceInterval({"Candidate Two": 1.0}),
+"Bloc Three": PreferenceInterval({"Candidate Three": 1.0})
 }
 
 
@@ -42,7 +42,7 @@ bloc3 = Bloc("Bloc Three", 5000, ["Candidate Three"],
 candidates, proportions, cohesion, params = Bloc.outputVars([bloc1, bloc2, bloc3])
 
 # Create the generator
-generator = bg.name_BradleyTerry(
+generator = name_BradleyTerry(
     slate_to_candidates = candidates,
     bloc_voter_prop = proportions,
     pref_intervals_by_bloc = params,
@@ -53,7 +53,7 @@ generator = bg.name_BradleyTerry(
 ballots = generator.generate_profile(30000)
 
 # run a RCV election with the fake ballots
-result = el.IRV(ballots)
+result =IRV(ballots)
 
-stop = time.monotonic_ns()
+stop = monotonic_ns()
 print(f"Time taken (ns): {stop-start}")
