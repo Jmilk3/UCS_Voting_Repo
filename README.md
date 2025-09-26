@@ -13,6 +13,7 @@ It is best practice to not include the python virtual environment within the rep
 
 ## Design Notes
 * I don't see any built in methods that create ballots with real world data then fill in rankings with a ballot generator. If we want to force each sample set to use the real world vote results as top choices, we might need to create our own method of generating a preference profile.
+* The ballot generators can generate ballots with ties. We'll need to decide how to resolve these ties to actually run elections on them.
 
 ## Additional Notes
 * The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.

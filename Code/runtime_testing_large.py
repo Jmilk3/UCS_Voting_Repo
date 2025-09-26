@@ -3,6 +3,7 @@ from votekit.ballot_generator import name_BradleyTerry
 from votekit.elections import IRV
 from time import monotonic_ns
 from bloc import Bloc
+from votekit.cleaning import clean_ranked_profile
 
 # This code is meant to examine the runtime of a BT ballot generator using Marcov Chain Monte Carlo
 # This setting is required when running an election with more than 12 candidates
@@ -114,15 +115,12 @@ generator = name_BradleyTerry(
 # Make a set of ballots using MCMC method
 ballots = generator.generate_profile_MCMC(10000)
 
+# resolve ties by removing tied entries (not a good method, but the best I've got at 1 AM)
+clean_ranked_profile(ballots, lambda rankings : tuple(i for i in rankings if len(i) <= 1))
+
 # run IRV election with these ballots
 result = IRV(ballots)
 
 # print time taken
 stop = monotonic_ns()
 print(f"Time taken (ns): {stop-start}")
-
-# print ballots and election results
-print()
-print(ballots)
-print()
-print(result)
