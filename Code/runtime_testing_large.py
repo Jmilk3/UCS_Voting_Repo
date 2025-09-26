@@ -42,49 +42,57 @@ pref_intervals = {
 # Largest bloc, members tend to wander a bit
 bloc1 = Bloc(name="Bloc 1", size=15000,
               candidates=["1","9","10","11","12"],
-              cohesion={0.55, 0.05, 0.15, 0.05, 0.05, 0.0, 0.05, 0.0},
+              cohesion={"Bloc 1":0.55, "Bloc 2":0.05, "Bloc 3":0.15, "Bloc 4":0.05,
+                         "Bloc 5":0.05, "Bloc 6":0.0, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # Next largest bloc, somewhat strong party ties
 bloc2 = Bloc(name="Bloc 2", size=12000,
               candidates=["2","13","14","15","16"],
-              cohesion={0.1, 0.65, 0.0, 0.1, 0.0, 0.1, 0.05, 0.0},
+              cohesion={"Bloc 1":0.1, "Bloc 2":0.65, "Bloc 3":0.0, "Bloc 4":0.1,
+                         "Bloc 5":0.0, "Bloc 6":0.1, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # mid size party, strong party ties
 bloc3 = Bloc(name="Bloc 3", size=8500,
               candidates=["3","17","18"],
-              cohesion={0.05, 0.0, 0.8, 0.1, 0.0, 0.0, 0.05, 0.0},
+              cohesion={"Bloc 1":0.05, "Bloc 2":0.0, "Bloc 3":0.8, "Bloc 4":0.1,
+                         "Bloc 5":0.0, "Bloc 6":0.0, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # mid size party, strong party ties
 bloc4 = Bloc(name="Bloc 4", size=8000,
               candidates=["4","19","20"],
-              cohesion={0.0, 0.05, 0.1, 0.8, 0.0, 0.0, 0.05, 0.0},
+              cohesion={"Bloc 1":0.0, "Bloc 2":0.05, "Bloc 3":0.1, "Bloc 4":0.8,
+                         "Bloc 5":0.0, "Bloc 6":0.0, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # Small party, very strong ties
 bloc5 = Bloc(name="Bloc 5", size=3000,
               candidates=["5","21"],
-              cohesion={0.0, 0.0, 0.05, 0.0, 0.9, 0.0, 0.05, 0.0},
+              cohesion={"Bloc 1":0.0, "Bloc 2":0.0, "Bloc 3":0.05, "Bloc 4":0.0,
+                         "Bloc 5":0.9, "Bloc 6":0.0, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # Small party, very strong ties
 bloc6 = Bloc(name="Bloc 6", size=3000,
               candidates=["6","22"],
-              cohesion={0.0, 0.0, 0.0, 0.05, 0.0, 0.9, 0.05, 0.0},
+              cohesion={"Bloc 1":0.0, "Bloc 2":0.0, "Bloc 3":0.0, "Bloc 4":0.05,
+                         "Bloc 5":0.0, "Bloc 6":0.9, "Bloc 7":0.05, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # Small party, somewhat strong ties
 bloc7 = Bloc(name="Bloc 7", size=2000,
               candidates=["7","23"],
-              cohesion={0.1, 0.1, 0.05, 0.05, 0.0, 0.0, 0.7, 0.0},
+              cohesion={"Bloc 1":0.1, "Bloc 2":0.1, "Bloc 3":0.05, "Bloc 4":0.05,
+                         "Bloc 5":0.0, "Bloc 6":0.0, "Bloc 7":0.7, "Bloc 8":0.0},
               preference=pref_intervals)
 
 # Cult
 bloc8 = Bloc(name="Bloc 8", size=800,
               candidates=["8"],
-              cohesion={0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0},
+              cohesion={"Bloc 1":0.0, "Bloc 2":0.0, "Bloc 3":0.0, "Bloc 4":0.0,
+                         "Bloc 5":0.0, "Bloc 6":0.0, "Bloc 7":0.0, "Bloc 8":1.0},
               preference=pref_intervals)
 
 # condense values into arguments for generator
