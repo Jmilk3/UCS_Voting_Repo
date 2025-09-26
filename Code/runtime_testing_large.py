@@ -116,10 +116,10 @@ generator = name_BradleyTerry(
 ballots = generator.generate_profile_MCMC(10000)
 
 # resolve ties by removing tied entries (not a good method, but the best I've got at 1 AM)
-clean_ranked_profile(ballots, lambda rankings : tuple(i for i in rankings if len(i) <= 1))
+cleanBallots = clean_ranked_profile(ballots, lambda rankings : tuple(i if len(i) <= 1 else frozenset() for i in rankings))
 
 # run IRV election with these ballots
-result = IRV(ballots)
+result = IRV(cleanBallots)
 
 # print time taken
 stop = monotonic_ns()
