@@ -3,7 +3,7 @@ from votekit.ballot_generator import name_BradleyTerry
 from votekit.elections import IRV
 from time import monotonic_ns
 from bloc import Bloc
-from votekit.cleaning import clean_ranked_profile
+from votekit.cleaning import clean_ranked_profile, condense_ranked_profile
 
 # This code is meant to examine the runtime of a BT ballot generator using Marcov Chain Monte Carlo
 # This setting is required when running an election with more than 12 candidates
@@ -13,7 +13,9 @@ from votekit.cleaning import clean_ranked_profile
 ## Results
 # When running with 53k ballots, generation took several minutes, then my program crashed
 # I am decreasing the number of ballots to 10k
-# 
+# With 10k ballots and the cleaning steps, it took roughly 42 seconds per run on my device.
+# This does limit the total number of trials we can do in a reasonable amount of time, but
+# we should be able to do enough for our purposes pretty easily.
 
 # My reference for cohesion params
 # 1 is moderate left
@@ -117,9 +119,10 @@ ballots = generator.generate_profile_MCMC(10000)
 
 # resolve ties by removing tied entries (not a good method, but the best I've got at 1 AM)
 cleanBallots = clean_ranked_profile(ballots, lambda rankings : tuple(i if len(i) <= 1 else frozenset() for i in rankings))
+cleanerBallots = condense_ranked_profile(cleanBallots)
 
 # run IRV election with these ballots
-result = IRV(cleanBallots)
+result = IRV(cleanerBallots)
 
 # print time taken
 stop = monotonic_ns()
