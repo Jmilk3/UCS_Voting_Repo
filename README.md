@@ -19,3 +19,4 @@ It is best practice to not include the python virtual environment within the rep
 * The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.
 * The Bradley-Terry MCMC generator breaks if a bloc will only vote for a single candidate. This shouldn't be an issue in any real tests.
 * I found a bug in VoteKit's STV election method. In line 93 of stv.py, the code uses an incorrect numpy array method. However, this line is only used when printing a value error, so it shouldn't cause any issues (I'll still look into flagging it for a library update.)
+* We will probably want to include candidates who were eliminated in the primaries in the election, since with IRV and STV these candidates could still run in the actual election. If we are dividing blocs by party affiliation, we might be able to use the primary results to determine prefrence intervals within a bloc.
