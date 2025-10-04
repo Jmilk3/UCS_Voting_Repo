@@ -18,8 +18,8 @@ for path in pathlist:
 
         # Filter data for mecklenburg, randolph, and johnston counties
         mecklenburg_data = data.query("County == 'MECKLENBURG' and `Contest Type` == 'C'")
-        randolph_data = data.query("County == RANDOLPH and `Contest Type` == 'C'")
-        johnston_data = data.query("County == JOHNSTON and `Contest Type` == 'C'")
+        randolph_data = data.query("County == 'RANDOLPH' and `Contest Type` == 'C'")
+        johnston_data = data.query("County == 'JOHNSTON' and `Contest Type` == 'C'")
 
         # Get a list of unique contest names for each county
         mecklenburg_contests = mecklenburg_data["Contest Name"].unique()
@@ -27,17 +27,17 @@ for path in pathlist:
         johnston_contests = johnston_data["Contest Name"].unique()
 
         # Output the list of contests to their respective files under a date header 
-        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Mecklenburg_List").resolve(),
+        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Mecklenburg_List.txt").resolve(),
                    "a", encoding="utf-8-sig") as file:
             file.write(f"{date}\n")
             file.write("\n".join(mecklenburg_contests) + "\n\n")
 
-        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Randolph_List").resolve(),
+        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Randolph_List.txt").resolve(),
                    "a", encoding="utf-8-sig") as file:
             file.write(f"{date}\n")
             file.write("\n".join(randolph_contests) + "\n\n")
 
-        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Johnston_List").resolve(),
+        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Johnston_List.txt").resolve(),
                    "a", encoding="utf-8-sig") as file:
             file.write(f"{date}\n")
             file.write("\n".join(johnston_contests) + "\n\n")
