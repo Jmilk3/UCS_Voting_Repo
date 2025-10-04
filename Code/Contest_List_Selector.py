@@ -26,6 +26,11 @@ for path in pathlist:
         randolph_contests = randolph_data["Contest Name"].unique()
         johnston_contests = johnston_data["Contest Name"].unique()
 
+        # Filter for specific cities in these contests
+        mecklenburg_contests = filter(lambda x:"CHARLOTTE" in x, mecklenburg_contests)
+        randolph_contests = filter(lambda x:"ASHEBORO" in x, randolph_contests)
+        johnston_contests = filter(lambda x:"SMITHFIELD" in x, johnston_contests)
+
         # Output the list of contests to their respective files under a date header 
         with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Mecklenburg_List.txt").resolve(),
                    "a", encoding="utf-8-sig") as file:
