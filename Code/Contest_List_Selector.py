@@ -61,21 +61,21 @@ for path in pathlist:
 
         # Filter for specific cities in these contests
         cabarrus_contests = filter(lambda x:"CONCORD" in x, cabarrus_contests)
-        durham_contests = filter(lambda x:"DURHAM" in x, durham_contests)
+        durham_contests = filter(lambda x:"CITY OF DURHAM" in x, durham_contests)
         forsyth_contests = filter(lambda x:"WINSTON-SALEM" in x, forsyth_contests)
 
-        # Output the list of contests to their respective files under a date header 
-        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Cabarrus_List.txt").resolve(),
-                   "a", encoding="utf-8-sig") as file:
-            file.write(f"{date}\n")
-            file.write("\n".join(cabarrus_contests) + "\n\n")
+        # # Output the list of contests to their respective files under a date header 
+        # with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Cabarrus_List.txt").resolve(),
+        #            "a", encoding="utf-8-sig") as file:
+        #     file.write(f"{date}\n")
+        #     file.write("\n".join(cabarrus_contests) + "\n\n")
 
         with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Durham_List.txt").resolve(),
                    "a", encoding="utf-8-sig") as file:
             file.write(f"{date}\n")
             file.write("\n".join(durham_contests) + "\n\n")
 
-        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Forsyth_List.txt").resolve(),
-                   "a", encoding="utf-8-sig") as file:
-            file.write(f"{date}\n")
-            file.write("\n".join(forsyth_contests) + "\n\n")
+        # with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Forsyth_List.txt").resolve(),
+        #            "a", encoding="utf-8-sig") as file:
+        #     file.write(f"{date}\n")
+        #     file.write("\n".join(forsyth_contests) + "\n\n")
