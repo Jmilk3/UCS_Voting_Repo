@@ -16,7 +16,7 @@ for path in pathlist:
         # Save the date of this file's elections
         date = data.head(1)["Election Date"][0] # just gets date from top entry, date is constant in each file
 
-        # Filter data for mecklenburg, randolph, and johnston counties
+        """ # Filter data for mecklenburg, randolph, and johnston counties
         mecklenburg_data = data.query("County == 'MECKLENBURG' and `Contest Type` == 'C'")
         randolph_data = data.query("County == 'RANDOLPH' and `Contest Type` == 'C'")
         johnston_data = data.query("County == 'JOHNSTON' and `Contest Type` == 'C'")
@@ -46,8 +46,36 @@ for path in pathlist:
                    "a", encoding="utf-8-sig") as file:
             file.write(f"{date}\n")
             file.write("\n".join(johnston_contests) + "\n\n")
+ """
 
+        # Add the other cities in consideration
+        # CABARRUS (Concord), DURHAM (Durham), FORSYTH (Winston-Salem)
+        cabarrus_data = data.query("County == 'CABARRUS' and `Contest Type` == 'C'")
+        durham_data = data.query("County == 'DURHAM' and `Contest Type` == 'C'")
+        forsyth_data = data.query("County == 'FORSYTH' and `Contest Type` == 'C'")
 
-        
+        # Get a list of unique contest names for each county
+        cabarrus_contests = cabarrus_data["Contest Name"].unique()
+        durham_contests = durham_data["Contest Name"].unique()
+        forsyth_contests = forsyth_data["Contest Name"].unique()
 
+        # Filter for specific cities in these contests
+        cabarrus_contests = filter(lambda x:"CONCORD" in x, cabarrus_contests)
+        durham_contests = filter(lambda x:"DURHAM" in x, durham_contests)
+        forsyth_contests = filter(lambda x:"WINSTON-SALEM" in x, forsyth_contests)
 
+        # Output the list of contests to their respective files under a date header 
+        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Cabarrus_List.txt").resolve(),
+                   "a", encoding="utf-8-sig") as file:
+            file.write(f"{date}\n")
+            file.write("\n".join(cabarrus_contests) + "\n\n")
+
+        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Durham_List.txt").resolve(),
+                   "a", encoding="utf-8-sig") as file:
+            file.write(f"{date}\n")
+            file.write("\n".join(durham_contests) + "\n\n")
+
+        with open(Path(__file__ + "/../../Election_Data_Sheets/Contest_Lists/Forsyth_List.txt").resolve(),
+                   "a", encoding="utf-8-sig") as file:
+            file.write(f"{date}\n")
+            file.write("\n".join(forsyth_contests) + "\n\n")
