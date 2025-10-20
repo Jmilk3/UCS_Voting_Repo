@@ -12,7 +12,7 @@ A repository that stores the programs used to examine and analyze how election r
 * The MGGG code is poorly organized and clearly not ready for direct usage. It would primarly serve as a reference.
     * Fortunately, votekit handles a lot of the more complex work for us, so we can just follow their descriptions to set up tests.
 * GerryChain is a python library that provides tools for random district generation, which may be useful for examining city council elections
-    * If we want to use this library, we'll need to switch to python 3.11. It isn't supported on newer versions and the issues are deeply embedded in the code. It would be too difficult to adapt it to python 3.13 in the time we have.
+    * If we want to use this library, we'll need to switch to python 3.11 or 3.12. It isn't supported on newer versions and the issues are deeply embedded in the code. It would be too difficult to adapt it to python 3.13 in the time we have.
 * If we decide to try generating new districts, we may find the census data by Zip Code useful when constructing the initial graph of the area.
 * From the paper, it seems like we won't be using the election results directly, but instead looking for info that helps us come up with values for voter participation and the like. Similarly, we won't be using candidates directly. If we follow this path, we'll basically create a baseline result and then compare that to variant results.
 * It looks like we will want to use plurality elections as well as our actual elections, since doing so and comparing the results to the actual results can help establish how accurate our models are.
@@ -20,7 +20,7 @@ A repository that stores the programs used to examine and analyze how election r
 
 ## New Setup Notes (10/19/25)
 It is best practice to not include the python virtual environment within the repo, so here are the setup instructions instead.
-1. Create a virtual environment inside of the repo's top level folder using python 3.11 (I'm using 3.11.13, but any 3.11 version should work)
+1. Create a virtual environment inside of the repo's top level folder using python 3.12 (I'm using 3.12.11, but any 3.12 version should work)
     * You can do this following the guide [here](docs.python.org/3/library/venv.html)
     * You can also use the package manager uv, which can be downloaded [here](https://docs.astral.sh/uv/getting-started/installation/)
 2. Use the requirements.txt file in the repo to download all of the necessary dependencies
