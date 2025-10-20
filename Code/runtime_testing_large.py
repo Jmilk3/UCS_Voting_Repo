@@ -1,9 +1,8 @@
 from votekit import PreferenceInterval
-from votekit.ballot_generator import name_BradleyTerry
+from votekit.ballot_generator import BlocSlateConfig, name_bt_profile_generator_using_mcmc
 from votekit.elections import IRV
 from time import monotonic_ns
 from bloc import Bloc
-from votekit.cleaning import clean_ranked_profile, condense_ranked_profile
 
 # This code is meant to examine the runtime of a BT ballot generator using Marcov Chain Monte Carlo
 # This setting is required when running an election with more than 12 candidates
@@ -106,23 +105,18 @@ bloc8 = Bloc(name="Bloc 8", size=800,
 # condense values into arguments for generator
 candidates, proportions, cohesion, params = Bloc.outputVars([bloc1, bloc2, bloc3, bloc4, bloc5, bloc6, bloc7, bloc8])
 
-# Create the generator
-generator = name_BradleyTerry(
-    slate_to_candidates = candidates,
-    bloc_voter_prop = proportions,
-    pref_intervals_by_bloc = params,
-    cohesion_parameters = cohesion,
-)
+# Create the generator paramater object
+slate = BlocSlateConfig(n_voters=10000,
+                         slate_to_candidates = candidates,
+                         bloc_proportions=proportions,
+                         preference_mapping=params,
+                         cohesion_mapping=cohesion)
 
-# Make a set of ballots using MCMC method
-ballots = generator.generate_profile_MCMC(10000)
-
-# resolve ties by removing tied entries (not a good method, but the best I've got at 1 AM)
-cleanBallots = clean_ranked_profile(ballots, lambda rankings : tuple(i if len(i) <= 1 else frozenset() for i in rankings))
-cleanerBallots = condense_ranked_profile(cleanBallots)
+# Run the generator to get the ballots
+ballots = name_bt_profile_generator_using_mcmc(slate)
 
 # run IRV election with these ballots
-result = IRV(cleanerBallots)
+result = IRV(ballots)
 
 # print time taken
 stop = monotonic_ns()
