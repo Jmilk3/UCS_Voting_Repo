@@ -24,17 +24,23 @@ minorityBloc = Bloc(name="minorityBloc",
                                 "minorityBloc": PreferenceInterval({"C":0.7})})
 
 ## Call the ballot generators for this election. I created some helper functions in ballot_generators.py
-ballots = generateAll(Bloc.outputVars([majorityBloc, minorityBloc]))
+ballots = generateAll(Bloc.outputVars([majorityBloc, minorityBloc], 15000))
 
 ## Call the elections and print the results
-print("Plackett-Luce results:\n")
-print(IRV(ballots[0]))
-print(Plurality(ballots[0]))
+print("Plackett-Luce results:")
+print("IRV:")
+print(IRV(ballots[0]),"\n")
+print("Plurality:")
+print(Plurality(ballots[0]),"\n")
 
-print("Bradley-Terry results:\n")
-print(IRV(ballots[1]))
-print(Plurality(ballots[1]))
+print("Bradley-Terry results:")
+print("IRV:")
+print(IRV(ballots[1]),"\n")
+print("Plurality:")
+print(Plurality(ballots[1]),"\n")
 
-print("Cambridge Sampler results:\n")
-print(IRV(ballots[2]))
+print("Cambridge Sampler results:")
+print("IRV:")
+print(IRV(ballots[2]),"\n")
+print("Plurality:")
 print(Plurality(ballots[2]))
