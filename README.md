@@ -16,7 +16,6 @@ A repository that stores the programs used to examine and analyze how election r
 * If we decide to try generating new districts, we may find the census data by Zip Code useful when constructing the initial graph of the area.
 * From the paper, it seems like we won't be using the election results directly, but instead looking for info that helps us come up with values for voter participation and the like. Similarly, we won't be using candidates directly. If we follow this path, we'll basically create a baseline result and then compare that to variant results.
 * It looks like we will want to use plurality elections as well as our actual elections, since doing so and comparing the results to the actual results can help establish how accurate our models are.
-* I am going to go check if any of our current code breaks with this version change.
 
 ## New Setup Notes (10/19/25)
 It is best practice to not include the python virtual environment within the repo, so here are the setup instructions instead.
@@ -27,3 +26,13 @@ It is best practice to not include the python virtual environment within the rep
 3. You should now be able to run the code. If you need to install a new library, be sure to update the requirements.txt file as well.
     * Don't forget to activate the environment if you are running anything from the command line.
     * If you are using VSCode, you may need to update which python interpreter it is using for the dependency detection to work correctly.
+
+## GerryChain viability: Can we subdivide our regions so that we have districts to shuffle?
+* It's possible. Our cities have census data for city council election districts, so we could try to use those.
+    * However, since these are the smallest subdivisions that I could find for Smithfield and Asheboro, we can't do anything here. We can't create a graph with enough nodes to be interesting with the 4 districts that these towns have.
+    * Charlotte has quite a few more districts in it, but I am unsure if that will be enough to shuffle them in an interesting way. This one does require further investigation.
+* It's not looking good, actually.
+    * The smallest subdivisions with demographics data looks like zip code area, which means we have like 20ish nodes for Charlotte. I don't think that the district shuffling thing is possible for areas this small.
+    * We might have to just look at overall town/city demographics
+* If we decide that there is no point in trying this, then I can just get rid of gerrychain.
+    * This would once again allow us to use python 3.13. This is why I haven't merged to main yet.
