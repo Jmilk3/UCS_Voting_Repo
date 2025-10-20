@@ -38,17 +38,10 @@ bloc3 = Bloc("Bloc Three", 5000, ["Candidate Three"],
              pref_intervals)
 
 # Get the values that from_params wants
-candidates, proportions, cohesion, params = Bloc.outputVars([bloc1, bloc2, bloc3])
-
-# Create the generator paramater object
-slate = BlocSlateConfig(n_voters=30000,
-                         slate_to_candidates = candidates,
-                         bloc_proportions=proportions,
-                         preference_mapping=params,
-                         cohesion_mapping=cohesion)
+electionParams = Bloc.outputVars([bloc1, bloc2, bloc3], 30000)
 
 # Run the generator to get the ballots
-ballots = name_bt_profile_generator(slate)
+ballots = name_bt_profile_generator(electionParams)
 
 # run a RCV election with the fake ballots
 result = IRV(ballots)
