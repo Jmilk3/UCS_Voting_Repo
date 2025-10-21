@@ -1,5 +1,5 @@
 # Defines a Bloc class for storing data about different groups of voters
-
+from votekit.ballot_generator import BlocSlateConfig
 class Bloc:
     """
 A class which stores the data needed for a bloc when using votekit ballot generation.
@@ -48,10 +48,11 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         return self.__preference
 
     @staticmethod
-    def outputVars(blocs):
+    def outputVars(blocs, numVoters):
         """
-        A function which returns the expected inputs for votekit's from_params method.
+        A function which returns a BlocSlateConfig object for the given blocs
         blocs (list<Bloc>): A list of bloc objects from which to pull and format the data.
+        numVoters (int): The number of voters that the config option should have. 
         """
         # define dicts to store various bloc values
         candidate_slates = {} # Stores lists of candidates from each bloc
@@ -72,6 +73,10 @@ A class which stores the data needed for a bloc when using votekit ballot genera
             voter_props[bloc_name] = voter_counts[bloc_name] / total_votes
 
         # Return the various values
-        return candidate_slates, voter_props, cohesion_params, preference_params
+        return BlocSlateConfig(n_voters=numVoters,
+                                slate_to_candidates=candidate_slates,
+                                bloc_proportions=voter_props,
+                                preference_mapping=preference_params,
+                                cohesion_mapping=cohesion_params)
         
     

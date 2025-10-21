@@ -1,5 +1,5 @@
 from votekit import PreferenceInterval
-from votekit.ballot_generator import name_BradleyTerry
+from votekit.ballot_generator import BlocSlateConfig, name_bt_profile_generator
 from votekit.elections import IRV
 from time import monotonic_ns
 from bloc import Bloc
@@ -9,7 +9,6 @@ from bloc import Bloc
 # On my device, the timing I usually got was about 0.19 seconds
 # I'd suggest doing a larger number of trials than 1 (To reduce the risk of random variance messing with our results)
 # Even still, running 100 tests would still take less than a minute
-# TODO: Test if increasing the number of candidates or generated ballots changes the time significantly
 
 # Start timing the runtime of the program
 start = monotonic_ns()
@@ -39,21 +38,13 @@ bloc3 = Bloc("Bloc Three", 5000, ["Candidate Three"],
              pref_intervals)
 
 # Get the values that from_params wants
-candidates, proportions, cohesion, params = Bloc.outputVars([bloc1, bloc2, bloc3])
+electionParams = Bloc.outputVars([bloc1, bloc2, bloc3], 30000)
 
-# Create the generator
-generator = name_BradleyTerry(
-    slate_to_candidates = candidates,
-    bloc_voter_prop = proportions,
-    pref_intervals_by_bloc = params,
-    cohesion_parameters = cohesion,
-)
-
-# Make 30k ballots (equal to people in blocs)
-ballots = generator.generate_profile(30000)
+# Run the generator to get the ballots
+ballots = name_bt_profile_generator(electionParams)
 
 # run a RCV election with the fake ballots
-result =IRV(ballots)
+result = IRV(ballots)
 
 stop = monotonic_ns()
 print(f"Time taken (ns): {stop-start}")
