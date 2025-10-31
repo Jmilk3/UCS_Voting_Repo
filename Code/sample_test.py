@@ -10,21 +10,21 @@ from votekit.elections import IRV, Plurality
 # For this example, I will create 2 blocs; A majority and a minority
 # This feels like an oversimplification, but it's what the MA study did.
 majorityBloc = Bloc(name="majorityBloc",
-                     size=12000,
+                     size=0.8,
                      candidates={"A","B"},
                      cohesion={"majorityBloc":0.8, "minorityBloc":0.2},
                      preference={"majorityBloc": PreferenceInterval({"A":0.7, "B":0.5}),
                                 "minorityBloc": PreferenceInterval({"C":0.5})})
 
 minorityBloc = Bloc(name="minorityBloc",
-                    size=3000,
+                    size=0.2,
                     candidates={"C"},
                     cohesion={"minorityBloc":0.9, "majorityBloc":0.1},
                     preference={"majorityBloc": PreferenceInterval({"A":0.1, "B":0.5}),
                                 "minorityBloc": PreferenceInterval({"C":0.7})})
 
 ## Call the ballot generators for this election. I created some helper functions in ballot_generators.py
-ballots = generateAll(Bloc.outputVars([majorityBloc, minorityBloc], 15000))
+ballots = generateAll(Bloc.outputVars([majorityBloc, minorityBloc], 5000))
 
 ## Call the elections and print the results
 print("Plackett-Luce results:")

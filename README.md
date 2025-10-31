@@ -1,7 +1,7 @@
 # UCS_Voting_Repo
 A repository that stores the programs used to examine and analyze how election results might change with different methods of Proportional Representation. This is part of the UCS voting project, meant to help inform people about Proportional Representation, examining different methods and how they might influence the outcome of elections.
 
-## New Setup Notes (10/19/25)
+## Setup Notes (10/19/25)
 It is best practice to not include the python virtual environment within the repo, so here are the setup instructions instead.
 1. Create a virtual environment inside of the repo's top level folder using python 3.13 (I'm using 3.13.7, but any 3.13 version should work)
     * You can do this following the guide [here](docs.python.org/3/library/venv.html)
@@ -11,28 +11,11 @@ It is best practice to not include the python virtual environment within the rep
     * Don't forget to activate the environment if you are running anything from the command line.
     * If you are using VSCode, you may need to update which python interpreter it is using for the dependency detection to work correctly.
 
-## GerryChain viability: Can we subdivide our regions so that we have districts to shuffle?
-* It's possible. Our cities have census data for city council election districts, so we could try to use those.
-    * However, since these are the smallest subdivisions that I could find for Smithfield and Asheboro, we can't do anything here. We can't create a graph with enough nodes to be interesting with the 4 districts that these towns have.
-    * Charlotte has quite a few more districts in it, but I am unsure if that will be enough to shuffle them in an interesting way. This one does require further investigation.
-* It's not looking good, actually.
-    * The smallest subdivisions with demographics data looks like zip code area, which means we have like 20ish nodes for Charlotte. I don't think that the district shuffling thing is possible for areas this small.
-    * We might have to just look at overall town/city demographics
-* If we decide that there is no point in trying this, then I can just get rid of gerrychain.
-    * This would once again allow us to use python 3.13. This is why I haven't merged to main yet.
+## Notes on running tests
+* To run tests, run test_runner.py
+* To define tests, create a new Test object in the test runner file and add it to the test list
+    * A Test object has a test name and the two blocs for that test. 
 
-## Design Notes
-* I don't see any built in methods that create ballots with real world data then fill in rankings with a ballot generator. If we want to force each sample set to use the real world vote results as top choices, we might need to create our own method of generating a preference profile.
-* The ballot generators can generate ballots with ties. We'll need to decide how to resolve these ties to actually run elections on them.
 
 ## Additional Notes
 * The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.
-
-## 10/19/25: Notes on GerryChain and Recombination, for use similar to the MGGG study in Massachusetts 
-* The MGGG code is poorly organized and clearly not ready for direct usage. It would primarly serve as a reference.
-    * Fortunately, votekit handles a lot of the more complex work for us, so we can just follow their descriptions to set up tests.
-* GerryChain is a python library that provides tools for random district generation, which may be useful for examining city council elections
-    * If we want to use this library, we'll need to switch to python 3.11 or 3.12. It isn't supported on newer versions and the issues are deeply embedded in the code. It would be too difficult to adapt it to python 3.13 in the time we have.
-* If we decide to try generating new districts, we may find the census data by Zip Code useful when constructing the initial graph of the area.
-* From the paper, it seems like we won't be using the election results directly, but instead looking for info that helps us come up with values for voter participation and the like. Similarly, we won't be using candidates directly. If we follow this path, we'll basically create a baseline result and then compare that to variant results.
-* It looks like we will want to use plurality elections as well as our actual elections, since doing so and comparing the results to the actual results can help establish how accurate our models are.
