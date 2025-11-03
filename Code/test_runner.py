@@ -1,7 +1,7 @@
 # Primary test runner file with CLI interface
 # Classes that store testing data in a consistent format
 from bloc import Bloc 
-from test import Test
+from test_params import TestParams
 
 # VoteKit data classes and elections
 from votekit.elections import IRV, Plurality, STV
@@ -16,10 +16,32 @@ from pathlib import Path
 import tabulate
 
 # For now, test definitions can go here
-# If we want to seperate them out, we can place the tests in a different file then import them
+# We should probably put them in a seperate file, then import them
+# TODO: Remove these debug tests before using the program
+
+# Make up some blocs
+debug_bloc_1 = Bloc(name="Majority Bloc",
+                     size=0.8,
+                     candidates={"A","B","C"},
+                     cohesion={"majorityBloc":0.7, "minorityBloc":0.3},
+                     preference={"majorityBloc": PreferenceInterval({"A":1, "B":1, "C":1}),
+                                "minorityBloc": PreferenceInterval({"D":1, "E":1})})
+
+debug_bloc_2 = Bloc(name="Minority Bloc",
+                    size=0.2,
+                    candidates={"D","E"},
+                    cohesion={"minorityBloc":0.9, "majorityBloc":0.1},
+                    preference={"majorityBloc": PreferenceInterval({"A":1, "B":1, "C":1}),
+                                "minorityBloc": PreferenceInterval({"D":1, "E":1})})
+
+# Create several near-identical tests for debugging
+debug_test_1 = TestParams("debug_test_1", debug_bloc_1, debug_bloc_2, 2, 1000)
+debug_test_2 = TestParams("debug_test_2", debug_bloc_1, debug_bloc_2, 2, 1000)
+debug_test_3 = TestParams("debug_test_3", debug_bloc_1, debug_bloc_2, 2, 1000)
+
 
 # This is the list of tests that the test runner can see. Be sure to add any new tests here
-test_list = []
+test_list = [debug_test_1, debug_test_2, debug_test_3]
 
 def main(args):
     """
