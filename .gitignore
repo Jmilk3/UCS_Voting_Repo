@@ -211,3 +211,6 @@ __marimo__/
 
 # vscode folder
 .vscode/
+
+# Environmental Regression folder
+env_reg/
