@@ -1,0 +1,165 @@
+# Primary test runner file with CLI interface
+# Classes that store testing data in a consistent format
+from bloc import Bloc 
+from test_params import TestParams
+
+# VoteKit data classes and elections
+from votekit.elections import IRV, Plurality, STV
+from votekit import PreferenceInterval
+
+# Function that runs PL, BT, and Cambridge ballot generators
+from ballot_generators import generateAll
+
+# IO libraries
+import argparse
+from pathlib import Path
+import tabulate
+
+# For now, test definitions can go here
+# We should probably put them in a seperate file, then import them
+# TODO: Remove these debug tests before using the program
+
+# Make up some blocs
+debug_bloc_1 = Bloc(name="Majority Bloc",
+                     size=0.8,
+                     candidates={"A","B","C"},
+                     cohesion={"majorityBloc":0.7, "minorityBloc":0.3},
+                     preference={"majorityBloc": PreferenceInterval({"A":1, "B":1, "C":1}),
+                                "minorityBloc": PreferenceInterval({"D":1, "E":1})})
+
+debug_bloc_2 = Bloc(name="Minority Bloc",
+                    size=0.2,
+                    candidates={"D","E"},
+                    cohesion={"minorityBloc":0.9, "majorityBloc":0.1},
+                    preference={"majorityBloc": PreferenceInterval({"A":1, "B":1, "C":1}),
+                                "minorityBloc": PreferenceInterval({"D":1, "E":1})})
+
+# Create several near-identical tests for debugging
+debug_test_1 = TestParams("debug_test_1", debug_bloc_1, debug_bloc_2, 2, 1000)
+debug_test_2 = TestParams("debug_test_2", debug_bloc_1, debug_bloc_2, 2, 1000)
+debug_test_3 = TestParams("debug_test_3", debug_bloc_1, debug_bloc_2, 2, 1000)
+
+
+# This is the list of tests that the test runner can see. Be sure to add any new tests here
+test_list = [debug_test_1, debug_test_2, debug_test_3]
+
+def main(args):
+    """
+    Main test running function. Handles flag parsing and main interaction loop.
+    """
+    output_path = Path(__file__ + f"/../../Results").resolve() # Path to Results folder
+
+    # Handle run all tests flag
+    if (args.a):
+        print(f"Running {len(test_list)} tests:")
+        for test in test_list:
+            runTest(test, output_path, args.filename, args.n)
+            print('    ' + test.test_name + " Done!")
+    
+    # Main interaction loop
+    print(tabulate.tabulate([[test.test_name] for test in test_list], tablefmt="pretty", showindex=True)) # Print available tests
+    test_names = [test.test_name for test in test_list] # Get a list of names to resolve name inputs 
+    print("Input quit or q to exit") # inform the user of how to exit the program
+    while True:
+        # Get the user input
+        selection = input("Input the index or name of a test to run: ")
+
+        # Check if the user wants to quit
+        if (selection == "q" or selection == "quit"):
+            break
+
+        # Resolve index input
+        if selection.isnumeric():
+            index = int(selection)
+            if index < len(test_list) and index >= 0:
+                runTest(test_list[index], output_path, args.filename, args.n)
+            else:
+                print("Invalid index")
+                continue
+        # Resolve name input
+        else:
+            if selection in test_names:
+                runTest(test[test_names.index(selection)], output_path, args.filename, args.n)
+            else:
+                print("Invalid test name")
+                continue
+        
+
+    
+    
+
+def runTest(test, output_path, filename, num_tests):
+    """Helper function that runs a given test n times and prints the results to the output file"""
+    # Turn the blocs into generator inputs
+    generator_inputs = Bloc.outputVars(test.bloc1, test.bloc2, test.num_ballots)
+
+
+    # Open the output files for these tests before starting the loop
+    with open(output_path / f"{filename}_{test.test_name}_Plurality_PL.csv", "+a", encoding="utf-8-sig") as plurality_pl,\
+          open(output_path / f"{filename}_{test.test_name}_Plurality_BT.csv", "+a", encoding="utf-8-sig") as plurality_bt, \
+          open(output_path / f"{filename}_{test.test_name}_Plurality_Cam.csv", "+a", encoding="utf-8-sig") as plurality_cam, \
+          open(output_path / f"{filename}_{test.test_name}_Plurality_PL.csv", "+a", encoding="utf-8-sig") as stv_pl, \
+          open(output_path / f"{filename}_{test.test_name}_Plurality_BT.csv", "+a", encoding="utf-8-sig") as stv_bt, \
+          open(output_path / f"{filename}_{test.test_name}_Plurality_Cam.csv", "+a", encoding="utf-8-sig") as stv_cam:
+        # Create an array of file objects to make iteration easier
+        files = [plurality_pl, plurality_bt, plurality_cam, stv_pl, stv_bt, stv_cam]
+
+        # Check if the files are empty, and add a header line if they are
+        for file in files:
+            if file.tell() == 0:
+                file.write("Candidate,Winner,\n")
+
+        # Store a sorted list of candidates to ensure consistent results ordering between runs
+        candidates = generator_inputs.candidates
+        candidates.sort()
+
+        # Print a status update to terminal
+        print(f"    Now Running {test.test_name}")
+
+        # Generate ballots and run elections on them num_tests times, outputting results as we go
+        for i in range(0, num_tests):
+            ballots = generateAll(generator_inputs) # I am not currently storing every ballot, since that would take up way too much space
+            
+            # Run the elections using the 3 ballot sets
+            plurality_results = [Plurality(ballots[0], test.num_seats), Plurality(ballots[1], test.num_seats), Plurality(ballots[2], test.num_seats)]
+            stv_results = [STV(ballots[0], test.num_seats), STV(ballots[1], test.num_seats), STV(ballots[2], test.num_seats)]
+            all_results = plurality_results + stv_results
+
+            # get a list of the winners for each election
+            all_winners = []
+            for results in all_results:
+                winners = []
+
+                # Elected candidates are stored in a tuple of frozensets, so we extract them to winners
+                for cold_set in results.get_elected():
+                    for candidate in cold_set:
+                        winners.append(candidate)
+
+                # Add the winners to the list of plurality winners.
+                all_winners.append(winners)
+        
+            # Output the results for each election to its respective file
+            for j in range(6):
+                # Write a result line for each candidate
+                for candidate in candidates:
+                    files[j].write(f"{candidate},{candidate in all_winners[i]},\n")
+                
+                # Add a gap between results
+                files[j].write(",,\n")
+            
+            # Print a status update to terminal
+            print(f"      {i+1}/{num_tests} iterations completed!")
+
+
+    
+if __name__ == "__main__":
+    # Parse CLI arguments and pass them to main
+    parser = argparse.ArgumentParser(prog="test_runner",
+                                      description="Interface for running voting tests." \
+                                      " By default, lists available tests and asks user to input desired test.")
+    parser.add_argument("filename", type=str, help="The filename will be used to distinguish the output files from previous results.")
+    parser.add_argument("--number","-n", default=1, type=int, help="The number of times each test should be run. Defaults to 1.")
+    parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all tests then exit.")
+    args = parser.parse_args()
+
+    main(args)
