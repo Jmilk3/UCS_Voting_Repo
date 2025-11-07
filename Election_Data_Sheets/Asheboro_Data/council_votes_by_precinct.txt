@@ -1,0 +1,98 @@
+﻿+---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO EAST     |
+|       Total Voters:       |         1584         |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        17.0%         |
+|       Eddie Burks:        |        17.9%         |
+|       Harry Okeke:        |         8.8%         |
+|   Jane Hughes Redding:    |        17.6%         |
+|       Joey Trogdon:       |        20.0%         |
+|        OVER VOTE:         |         0.4%         |
+|        UNDER VOTE:        |        18.1%         |
+| Write-In (Miscellaneous): |         0.2%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO NORTH    |
+|       Total Voters:       |         718          |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        17.7%         |
+|       Eddie Burks:        |        24.4%         |
+|       Harry Okeke:        |         7.0%         |
+|   Jane Hughes Redding:    |        17.4%         |
+|       Joey Trogdon:       |        19.8%         |
+|        OVER VOTE:         |         0.0%         |
+|        UNDER VOTE:        |        13.0%         |
+| Write-In (Miscellaneous): |         0.8%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO SOUTH    |
+|       Total Voters:       |         1101         |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        19.6%         |
+|       Eddie Burks:        |        20.6%         |
+|       Harry Okeke:        |         6.0%         |
+|   Jane Hughes Redding:    |        18.0%         |
+|       Joey Trogdon:       |        21.3%         |
+|        OVER VOTE:         |         0.0%         |
+|        UNDER VOTE:        |        14.4%         |
+| Write-In (Miscellaneous): |         0.1%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO WEST     |
+|       Total Voters:       |         1669         |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        19.3%         |
+|       Eddie Burks:        |        18.5%         |
+|       Harry Okeke:        |         6.9%         |
+|   Jane Hughes Redding:    |        16.8%         |
+|       Joey Trogdon:       |        20.2%         |
+|        OVER VOTE:         |         0.4%         |
+|        UNDER VOTE:        |        17.6%         |
+| Write-In (Miscellaneous): |         0.4%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |        GRANT         |
+|       Total Voters:       |          75          |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        17.3%         |
+|       Eddie Burks:        |        25.3%         |
+|       Harry Okeke:        |         1.3%         |
+|   Jane Hughes Redding:    |        17.3%         |
+|       Joey Trogdon:       |        22.7%         |
+|        OVER VOTE:         |         0.0%         |
+|        UNDER VOTE:        |        16.0%         |
+| Write-In (Miscellaneous): |         0.0%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |      RANDLEMAN       |
+|       Total Voters:       |          90          |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        15.6%         |
+|       Eddie Burks:        |        23.3%         |
+|       Harry Okeke:        |         6.7%         |
+|   Jane Hughes Redding:    |        22.2%         |
+|       Joey Trogdon:       |        14.4%         |
+|        OVER VOTE:         |         0.0%         |
+|        UNDER VOTE:        |        14.4%         |
+| Write-In (Miscellaneous): |         3.3%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |     UNION GROVE      |
+|       Total Voters:       |          78          |
+|         Candidate         | Percentage of voters |
+|      Charles Swiers:      |        24.4%         |
+|       Eddie Burks:        |        25.6%         |
+|       Harry Okeke:        |         6.4%         |
+|   Jane Hughes Redding:    |        15.4%         |
+|       Joey Trogdon:       |        25.6%         |
+|        OVER VOTE:         |         0.0%         |
+|        UNDER VOTE:        |         2.6%         |
+| Write-In (Miscellaneous): |         0.0%         |
++---------------------------+----------------------+
+

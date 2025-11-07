@@ -1,0 +1,98 @@
+﻿+---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO EAST     |
+|       Total Voters:       |         1746         |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        17.2%         |
+|      Gwen Williams:       |        18.1%         |
+|     Melissa Calloway:     |        18.7%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        17.8%         |
+|       Todd Dulaney:       |        11.8%         |
+|        UNDER VOTE:        |        16.2%         |
+| Write-In (Miscellaneous): |         0.2%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO NORTH    |
+|       Total Voters:       |         546          |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        23.1%         |
+|      Gwen Williams:       |        12.6%         |
+|     Melissa Calloway:     |        24.7%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        19.8%         |
+|       Todd Dulaney:       |         8.2%         |
+|        UNDER VOTE:        |        11.5%         |
+| Write-In (Miscellaneous): |         0.0%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO SOUTH    |
+|       Total Voters:       |         1627         |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        21.6%         |
+|      Gwen Williams:       |        12.3%         |
+|     Melissa Calloway:     |        23.2%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        21.5%         |
+|       Todd Dulaney:       |         7.9%         |
+|        UNDER VOTE:        |        13.2%         |
+| Write-In (Miscellaneous): |         0.2%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |    ASHEBORO WEST     |
+|       Total Voters:       |         2210         |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        17.6%         |
+|      Gwen Williams:       |        15.8%         |
+|     Melissa Calloway:     |        19.3%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        19.9%         |
+|       Todd Dulaney:       |        11.8%         |
+|        UNDER VOTE:        |        15.2%         |
+| Write-In (Miscellaneous): |         0.4%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |      BACK CREEK      |
+|       Total Voters:       |          51          |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        25.5%         |
+|      Gwen Williams:       |        11.8%         |
+|     Melissa Calloway:     |        23.5%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        29.4%         |
+|       Todd Dulaney:       |         3.9%         |
+|        UNDER VOTE:        |         5.9%         |
+| Write-In (Miscellaneous): |         0.0%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |        GRANT         |
+|       Total Voters:       |          54          |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        25.9%         |
+|      Gwen Williams:       |         5.6%         |
+|     Melissa Calloway:     |        24.1%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        25.9%         |
+|       Todd Dulaney:       |         7.4%         |
+|        UNDER VOTE:        |        11.1%         |
+| Write-In (Miscellaneous): |         0.0%         |
++---------------------------+----------------------+
+
++---------------------------+----------------------+
+|         Precinct:         |     UNION GROVE      |
+|       Total Voters:       |          78          |
+|         Candidate         | Percentage of voters |
+|       Gidget Kidd:        |        21.8%         |
+|      Gwen Williams:       |        11.5%         |
+|     Melissa Calloway:     |        24.4%         |
+|        OVER VOTE:         |         0.0%         |
+|       Ryan Patton:        |        21.8%         |
+|       Todd Dulaney:       |         6.4%         |
+|        UNDER VOTE:        |        14.1%         |
+| Write-In (Miscellaneous): |         0.0%         |
++---------------------------+----------------------+
+
