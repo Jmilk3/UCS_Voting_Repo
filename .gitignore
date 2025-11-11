@@ -213,4 +213,5 @@ __marimo__/
 .vscode/
 
 # Environmental Regression folder
-env_reg/
+env_reg/Asheboro_Data/Board_of_Education_Election
+env_reg/Asheboro_Data/Council_Election
