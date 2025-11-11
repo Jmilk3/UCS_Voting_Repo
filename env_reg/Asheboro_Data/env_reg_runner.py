@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import pymc as pm
 
 from pyei.data import Datasets
 from pyei.two_by_two import TwoByTwoEI
@@ -70,7 +69,7 @@ for candidate in edu_candidates:
     print(f"Board of EDU: {candidate} summary (Black Voters)")
     print(black_plot.summary())
     black_plot.plot(line_kws={"title": f"Board of EDU: {candidate} (Black Voters)"})
-    savefig(f"EDU_{candidate}_Black.png")
+    # savefig(f"EDU_{candidate}_Black.png")
     close()
 
 
@@ -85,7 +84,7 @@ for candidate in edu_candidates:
     print(f"Board of EDU: {candidate} summary (White Voters)")
     print(white_plot.summary())
     white_plot.plot(line_kws={"title": f"Board of EDU: {candidate} (White Voters)"})
-    savefig(f"EDU_{candidate}_White.png")
+    # savefig(f"EDU_{candidate}_White.png")
     close()
 
     ## Run ER for hispanic voters
@@ -99,7 +98,7 @@ for candidate in edu_candidates:
     print(f"Board of EDU: {candidate} summary (Hispanic Voters)")
     print(hispanic_plot.summary())
     hispanic_plot.plot(line_kws={"title": f"Board of EDU: {candidate} (Hispanic Voters)"})
-    savefig(f"EDU_{candidate}_Hispanic.png")
+    # savefig(f"EDU_{candidate}_Hispanic.png")
     close()
 
 
@@ -162,7 +161,7 @@ for candidate in council_candidates:
     print(f"City Council: {candidate} summary (Black Voters)")
     print(black_plot.summary())
     black_plot.plot(line_kws={"title": f"City Council: {candidate} (Black Voters)"})
-    savefig(f"Council_{candidate}_Black.png")
+    # savefig(f"Council_{candidate}_Black.png")
     close()
 
     ## Run ER for white voters
@@ -176,7 +175,7 @@ for candidate in council_candidates:
     print(f"City Council: {candidate} summary (White Voters)")
     print(white_plot.summary())
     white_plot.plot(line_kws={"title": f"City Council: {candidate} (White Voters)"})
-    savefig(f"Council_{candidate}_White.png")
+    # savefig(f"Council_{candidate}_White.png")
     close()
 
     ## Run ER for hispanic voters
@@ -190,7 +189,7 @@ for candidate in council_candidates:
     print(f"City Council: {candidate} summary (Hispanic Voters)")
     print(hispanic_plot.summary())
     hispanic_plot.plot(line_kws={"title": f"City Council: {candidate} (Hispanic Voters)"})
-    savefig(f"Council_{candidate}_Hispanic.png")
+    # savefig(f"Council_{candidate}_Hispanic.png")
     close()
 
 
