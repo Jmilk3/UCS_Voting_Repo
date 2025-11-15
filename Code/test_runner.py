@@ -50,11 +50,12 @@ def main(args):
     output_path = Path(__file__ + f"/../../Results").resolve() # Path to Results folder
 
     # Handle run all tests flag
-    if (args.a):
+    if (args.all):
         print(f"Running {len(test_list)} tests:")
         for test in test_list:
-            runTest(test, output_path, args.filename, args.n)
+            runTest(test, output_path, args.filename, args.number)
             print('    ' + test.test_name + " Done!")
+        return
     
     # Main interaction loop
     print(tabulate.tabulate([[test.test_name] for test in test_list], tablefmt="pretty", showindex=True)) # Print available tests
@@ -72,14 +73,14 @@ def main(args):
         if selection.isnumeric():
             index = int(selection)
             if index < len(test_list) and index >= 0:
-                runTest(test_list[index], output_path, args.filename, args.n)
+                runTest(test_list[index], output_path, args.filename, args.number)
             else:
                 print("Invalid index")
                 continue
         # Resolve name input
         else:
             if selection in test_names:
-                runTest(test[test_names.index(selection)], output_path, args.filename, args.n)
+                runTest(test[test_names.index(selection)], output_path, args.filename, args.number)
             else:
                 print("Invalid test name")
                 continue
@@ -97,9 +98,9 @@ def runTest(test, output_path, filename, num_tests):
     with open(output_path / f"{filename}_{test.test_name}_Plurality_PL.csv", "+a", encoding="utf-8-sig") as plurality_pl,\
           open(output_path / f"{filename}_{test.test_name}_Plurality_BT.csv", "+a", encoding="utf-8-sig") as plurality_bt, \
           open(output_path / f"{filename}_{test.test_name}_Plurality_Cam.csv", "+a", encoding="utf-8-sig") as plurality_cam, \
-          open(output_path / f"{filename}_{test.test_name}_Plurality_PL.csv", "+a", encoding="utf-8-sig") as stv_pl, \
-          open(output_path / f"{filename}_{test.test_name}_Plurality_BT.csv", "+a", encoding="utf-8-sig") as stv_bt, \
-          open(output_path / f"{filename}_{test.test_name}_Plurality_Cam.csv", "+a", encoding="utf-8-sig") as stv_cam:
+          open(output_path / f"{filename}_{test.test_name}_STV_PL.csv", "+a", encoding="utf-8-sig") as stv_pl, \
+          open(output_path / f"{filename}_{test.test_name}_STV_BT.csv", "+a", encoding="utf-8-sig") as stv_bt, \
+          open(output_path / f"{filename}_{test.test_name}_STV_Cam.csv", "+a", encoding="utf-8-sig") as stv_cam:
         # Create an array of file objects to make iteration easier
         files = [plurality_pl, plurality_bt, plurality_cam, stv_pl, stv_bt, stv_cam]
 
@@ -165,5 +166,6 @@ if __name__ == "__main__":
     parser.add_argument("--number","-n", default=1, type=int, help="The number of times each test should be run. Defaults to 1.")
     parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all tests then exit.")
     args = parser.parse_args()
+    print(args)
 
     main(args)
