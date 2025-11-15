@@ -23,16 +23,16 @@ import tabulate
 debug_bloc_1 = Bloc(name="Majority Bloc",
                      size=0.8,
                      candidates={"A","B","C"},
-                     cohesion={"majorityBloc":0.7, "minorityBloc":0.3},
-                     preference={"majorityBloc": PreferenceInterval({"A":1, "B":1, "C":1}),
-                                "minorityBloc": PreferenceInterval({"D":1, "E":1})})
+                     cohesion={"Majority Bloc":0.7, "Minority Bloc":0.3},
+                     preference={"Majority Bloc": 0.5,
+                                "Minority Bloc": 2})
 
 debug_bloc_2 = Bloc(name="Minority Bloc",
                     size=0.2,
                     candidates={"D","E"},
-                    cohesion={"minorityBloc":0.9, "majorityBloc":0.1},
-                    preference={"majorityBloc": PreferenceInterval({"A":1, "B":1, "C":1}),
-                                "minorityBloc": PreferenceInterval({"D":1, "E":1})})
+                    cohesion={"Minority Bloc":0.9, "Majority Bloc":0.1},
+                    preference={"Majority Bloc": 0.5,
+                                "Minority Bloc": 2})
 
 # Create several near-identical tests for debugging
 debug_test_1 = TestParams("debug_test_1", debug_bloc_1, debug_bloc_2, 2, 1000)
@@ -91,8 +91,7 @@ def main(args):
 def runTest(test, output_path, filename, num_tests):
     """Helper function that runs a given test n times and prints the results to the output file"""
     # Turn the blocs into generator inputs
-    generator_inputs = Bloc.outputVars(test.bloc1, test.bloc2, test.num_ballots)
-
+    generator_inputs = Bloc.outputVars([test.bloc1, test.bloc2], test.num_ballots)
 
     # Open the output files for these tests before starting the loop
     with open(output_path / f"{filename}_{test.test_name}_Plurality_PL.csv", "+a", encoding="utf-8-sig") as plurality_pl,\
@@ -118,6 +117,7 @@ def runTest(test, output_path, filename, num_tests):
 
         # Generate ballots and run elections on them num_tests times, outputting results as we go
         for i in range(0, num_tests):
+            # Generate ballots
             ballots = generateAll(generator_inputs) # I am not currently storing every ballot, since that would take up way too much space
             
             # Run the elections using the 3 ballot sets
@@ -149,6 +149,10 @@ def runTest(test, output_path, filename, num_tests):
             
             # Print a status update to terminal
             print(f"      {i+1}/{num_tests} iterations completed!")
+
+            # Get a new preference profile for the next iteration
+            # NOTE: I love the name of this function
+            generator_inputs.resample_preference_intervals_from_dirichlet_alphas()
 
 
     

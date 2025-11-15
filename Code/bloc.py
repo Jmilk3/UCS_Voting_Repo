@@ -1,5 +1,7 @@
 # Defines a Bloc class for storing data about different groups of voters
 from votekit.ballot_generator import BlocSlateConfig
+from votekit import PreferenceInterval
+
 class Bloc:
     """
 A class which stores the data needed for a bloc when using votekit ballot generation.
@@ -18,8 +20,7 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         candidates (list<str>): A list with the names of candidates that are part of the bloc.
         cohesion (dict<str, float>): A dictionary where keys are bloc names and values are a
           corresponding cohesion value for that block. These values must sum to 1.
-        preference (dict<str, float>): a dict where keys are bloc names and values are preference
-          interval objects for thoes blocs
+        preference (dict<str, float>): a dict where keys are bloc names and values are Dirichlet alphas
         """
         self.__name = name
         self.__size = size
@@ -66,11 +67,12 @@ A class which stores the data needed for a bloc when using votekit ballot genera
             cohesion_params[bloc.name()] = bloc.cohesion()
             preference_params[bloc.name()] = bloc.preference()
 
-        # Return the various values
-        return BlocSlateConfig(n_voters=numVoters,
+        # Set dirichlet alphas then return the various values
+        output = BlocSlateConfig(n_voters=numVoters,
                                 slate_to_candidates=candidate_slates,
                                 bloc_proportions=voter_props,
-                                preference_mapping=preference_params,
                                 cohesion_mapping=cohesion_params)
+        output.set_dirichlet_alphas(preference_params)
+        return output
         
     
