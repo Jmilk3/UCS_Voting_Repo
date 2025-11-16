@@ -46,6 +46,7 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         return self.__cohesion
     
     def preference(self):
+        """Access function for Dirichlet alphas"""
         return self.__preference
 
     @staticmethod
