@@ -1,0 +1,7 @@
+Black voters (BoE): 0.08338515110060937
+White voters (BoE): 0.7698669319736351
+Hispanic voters (BOE): 0.06721800771048377
+
+Black voters (Council): 0.0864183348171975
+White voters (Council): 0.7645251155978058
+Hispanic voters (Council): 0.06869812458715069
