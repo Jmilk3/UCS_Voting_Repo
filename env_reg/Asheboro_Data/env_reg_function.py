@@ -56,6 +56,9 @@ def env_reg(election_file, registration_file, election_name="election", group_na
     voter_percent = np.array(list(map(lambda precinct, total_votes: 
         sum(voter_data[voter_data[REG_PRECINCT_COLUMN] == precinct][ELECTION_VOTE_COLUMN].values)/total_votes,
         precincts, total_reg_votes))) 
+    
+    # Calculate and print the ratio of voters in demographic to total voters
+    print(sum(voter_percent))
 
     # Run environmental reg for each candidate 
     for candidate in candidates:
