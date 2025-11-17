@@ -15,9 +15,8 @@ from pathlib import Path
 import tabulate
 
 # For now, test definitions can go here
-# We should probably put them in a seperate file, then import them
-# TODO: Remove these debug tests before using the program
 
+"""
 # Make up some blocs
 debug_bloc_1 = Bloc(name="Majority Bloc",
                      size=0.8,
@@ -37,10 +36,10 @@ debug_bloc_2 = Bloc(name="Minority Bloc",
 debug_test_1 = TestParams("debug_test_1", debug_bloc_1, debug_bloc_2, 2, 1000)
 debug_test_2 = TestParams("debug_test_2", debug_bloc_1, debug_bloc_2, 2, 1000)
 debug_test_3 = TestParams("debug_test_3", debug_bloc_1, debug_bloc_2, 2, 1000)
-
+"""
 
 # This is the list of tests that the test runner can see. Be sure to add any new tests here
-test_list = [debug_test_1, debug_test_2, debug_test_3]
+test_list = []
 
 def main(args):
     """
