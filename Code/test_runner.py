@@ -4,8 +4,7 @@ from bloc import Bloc
 from test_params import TestParams
 
 # VoteKit data classes and elections
-from votekit.elections import IRV, Plurality, STV
-from votekit import PreferenceInterval
+from votekit.elections import Plurality, STV
 
 # Function that runs PL, BT, and Cambridge ballot generators
 from ballot_generators import generateAll
@@ -80,7 +79,7 @@ def main(args):
         # Resolve name input
         else:
             if selection in test_names:
-                runTest(test[test_names.index(selection)], output_path, args.filename, args.number)
+                runTest(test_list[test_names.index(selection)], output_path, args.filename, args.number)
             else:
                 print("Invalid test name")
                 continue
@@ -95,19 +94,16 @@ def runTest(test, output_path, filename, num_tests):
     generator_inputs = Bloc.outputVars([test.bloc1, test.bloc2], test.num_ballots)
 
     # Open the output files for these tests before starting the loop
-    with open(output_path / f"{filename}_{test.test_name}_Plurality_PL.csv", "+a", encoding="utf-8-sig") as plurality_pl,\
-          open(output_path / f"{filename}_{test.test_name}_Plurality_BT.csv", "+a", encoding="utf-8-sig") as plurality_bt, \
-          open(output_path / f"{filename}_{test.test_name}_Plurality_Cam.csv", "+a", encoding="utf-8-sig") as plurality_cam, \
-          open(output_path / f"{filename}_{test.test_name}_STV_PL.csv", "+a", encoding="utf-8-sig") as stv_pl, \
-          open(output_path / f"{filename}_{test.test_name}_STV_BT.csv", "+a", encoding="utf-8-sig") as stv_bt, \
-          open(output_path / f"{filename}_{test.test_name}_STV_Cam.csv", "+a", encoding="utf-8-sig") as stv_cam:
+    with open(output_path / f"{filename}_{test.test_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
+          open(output_path / f"{filename}_{test.test_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
+          open(output_path / f"{filename}_{test.test_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
         # Create an array of file objects to make iteration easier
-        files = [plurality_pl, plurality_bt, plurality_cam, stv_pl, stv_bt, stv_cam]
+        files = [pl_file, bt_file, cam_file]
 
         # Check if the files are empty, and add a header line if they are
         for file in files:
             if file.tell() == 0:
-                file.write("Candidate,Winner,\n")
+                file.write("Candidate,Plurality Result,STV Result,Difference\n")
 
         # Store a sorted list of candidates to ensure consistent results ordering between runs
         candidates = generator_inputs.candidates
@@ -124,29 +120,34 @@ def runTest(test, output_path, filename, num_tests):
             # Run the elections using the 3 ballot sets
             plurality_results = [Plurality(ballots[0], test.num_seats), Plurality(ballots[1], test.num_seats), Plurality(ballots[2], test.num_seats)]
             stv_results = [STV(ballots[0], test.num_seats), STV(ballots[1], test.num_seats), STV(ballots[2], test.num_seats)]
-            all_results = plurality_results + stv_results
 
-            # get a list of the winners for each election
-            all_winners = []
-            for results in all_results:
-                winners = []
+            # Output results for each set of ballots
+            for j in range(3):
+                plurality_winners = []
+                stv_winners = []
 
-                # Elected candidates are stored in a tuple of frozensets, so we extract them to winners
-                for cold_set in results.get_elected():
+                # Elected candidates are stored in a tuple of frozensets, so we extract them all into a list
+                for cold_set in plurality_results[j].get_elected():
                     for candidate in cold_set:
-                        winners.append(candidate)
+                        plurality_winners.append(candidate)
 
-                # Add the winners to the list of plurality winners.
-                all_winners.append(winners)
-        
-            # Output the results for each election to its respective file
-            for j in range(6):
+                # Same thing as above but for STV results
+                for cold_set in stv_results[j].get_elected():
+                    for candidate in cold_set:
+                        stv_winners.append(candidate)
+
                 # Write a result line for each candidate
                 for candidate in candidates:
-                    files[j].write(f"{candidate},{candidate in all_winners[i]},\n")
-                
-                # Add a gap between results
-                files[j].write(",,\n")
+                    # Get results from each election, check if they are the same
+                    plurality_win = candidate in plurality_winners
+                    stv_win = candidate in stv_winners
+                    difference = plurality_win != stv_win
+
+                    # Write the results to the output file
+                    files[j].write(f"{candidate},{plurality_win},{stv_win},{difference}\n")
+
+                # Add a gap between results for each iteration
+                files[j].write(",,,\n")             
             
             # Print a status update to terminal
             print(f"      {i+1}/{num_tests} iterations completed!")

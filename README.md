@@ -15,6 +15,12 @@ It is best practice to not include the python virtual environment within the rep
 * To run tests, run test_runner.py
 * To define tests, create a new Test object in the test runner file and add it to the test list
     * A Test object has a test name and the two blocs for that test. 
+* Test results are output to three different files, one for each ballot generator
+    * The columns are Candidate, Plurality Result, STV Result, Difference
+        * Candidate has the name of the candidate
+        * Plurality Result and STV Result are True if the candidate won and False otherwise
+        * Difference is True if the Plurality Result and STV Result are different.
+        * Each iteration of the test is seperated from the next by an empty line
 
 
 ## Additional Notes
