@@ -1,9 +1,5 @@
 import pandas as pd
 import numpy as np
-
-from pyei.data import Datasets
-from pyei.two_by_two import TwoByTwoEI
-from pyei.goodmans_er import GoodmansER
 from pyei.goodmans_er import GoodmansERBayes
 
 from matplotlib.pyplot import savefig, close
@@ -35,17 +31,35 @@ black_voter_percent = np.array(list(map(lambda precinct, total_votes: # get numb
     sum(black_voter_data[black_voter_data["precinct_name"] == precinct]["total_voters"].values)/total_votes,
       edu_precincts, total_reg_votes))) 
 
+# Calculate percent of voters who are black
+black_voter_ratio = sum(list(map(lambda precinct: 
+        sum(black_voter_data[black_voter_data["precinct_name"] == precinct]["total_voters"].values),
+        edu_precincts)))/sum(total_reg_votes)
+print(f"Black Pop Ratio (edu): {black_voter_ratio}")
+
 # Calculate percentage of white voters by precinct
 white_voter_data = reg_data[reg_data["race_code"] == "W"]
 white_voter_percent = np.array(list(map(lambda precinct, total_votes: # get number of black voters then divide by total voters in precinct
     sum(white_voter_data[white_voter_data["precinct_name"] == precinct]["total_voters"].values)/total_votes,
       edu_precincts, total_reg_votes)))
 
+# Calculate percent of voters who are white
+white_voter_ratio = sum(list(map(lambda precinct: 
+        sum(white_voter_data[white_voter_data["precinct_name"] == precinct]["total_voters"].values),
+        edu_precincts)))/sum(total_reg_votes)
+print(f"White Pop Ratio (edu): {white_voter_ratio}")
+
 # Calculate percentage of hispanic voters by precinct
 hispanic_voter_data = reg_data[reg_data["ethnic_code"] == "HL"]
 hispanic_voter_percent = np.array(list(map(lambda precinct, total_votes: # get number of black voters then divide by total voters in precinct
     sum(hispanic_voter_data[hispanic_voter_data["precinct_name"] == precinct]["total_voters"].values)/total_votes,
       edu_precincts, total_reg_votes))) 
+
+# Calculate percent of voters who are hispanic
+hispanic_voter_ratio = sum(list(map(lambda precinct: 
+        sum(hispanic_voter_data[hispanic_voter_data["precinct_name"] == precinct]["total_voters"].values),
+        edu_precincts)))/sum(total_reg_votes)
+print(f"Hispanic Pop Ratio (edu): {hispanic_voter_ratio}")
 
 # Run environmental reg for each candidate 
 for candidate in edu_candidates:
@@ -59,7 +73,7 @@ for candidate in edu_candidates:
                                edu_precincts)))
     
     ## Run ER for black voters
-    black_plot = GoodmansER()
+    black_plot = GoodmansERBayes()
     black_plot.fit(black_voter_percent,
                     candidate_votes,
                     demographic_group_name="black_voters",
@@ -74,7 +88,7 @@ for candidate in edu_candidates:
 
 
     ## Run ER for white voters
-    white_plot = GoodmansER()
+    white_plot = GoodmansERBayes()
     white_plot.fit(white_voter_percent,
                     candidate_votes,
                     demographic_group_name="white_voters",
@@ -88,7 +102,7 @@ for candidate in edu_candidates:
     close()
 
     ## Run ER for hispanic voters
-    hispanic_plot = GoodmansER()
+    hispanic_plot = GoodmansERBayes()
     hispanic_plot.fit(hispanic_voter_percent,
                     candidate_votes,
                     demographic_group_name="hispanic_voters",
@@ -125,7 +139,13 @@ total_reg_votes = np.array(list(map(lambda precinct:
 black_voter_data = reg_data[reg_data["race_code"] == "B"]
 black_voter_percent = np.array(list(map(lambda precinct, total_votes: # get number of black voters then divide by total voters in precinct
     sum(black_voter_data[black_voter_data["precinct_name"] == precinct]["total_voters"].values)/total_votes,
-      council_precincts, total_reg_votes))) 
+      council_precincts, total_reg_votes)))
+
+# Calculate percent of voters who are black
+black_voter_ratio = sum(list(map(lambda precinct: 
+        sum(black_voter_data[black_voter_data["precinct_name"] == precinct]["total_voters"].values),
+        council_precincts)))/sum(total_reg_votes)
+print(f"Black Pop Ratio (council): {black_voter_ratio}")
 
 # Calculate percentage of white voters by precinct
 white_voter_data = reg_data[reg_data["race_code"] == "W"]
@@ -133,11 +153,23 @@ white_voter_percent = np.array(list(map(lambda precinct, total_votes: # get numb
     sum(white_voter_data[white_voter_data["precinct_name"] == precinct]["total_voters"].values)/total_votes,
       council_precincts, total_reg_votes)))
 
+# Calculate percent of voters who are white
+white_voter_ratio = sum(list(map(lambda precinct: 
+        sum(white_voter_data[white_voter_data["precinct_name"] == precinct]["total_voters"].values),
+        council_precincts)))/sum(total_reg_votes)
+print(f"White Pop Ratio (council): {white_voter_ratio}")
+
 # Calculate percentage of hispanic voters by precinct
 hispanic_voter_data = reg_data[reg_data["ethnic_code"] == "HL"]
 hispanic_voter_percent = np.array(list(map(lambda precinct, total_votes: # get number of black voters then divide by total voters in precinct
     sum(hispanic_voter_data[hispanic_voter_data["precinct_name"] == precinct]["total_voters"].values)/total_votes,
       council_precincts, total_reg_votes)))
+
+# Calculate percent of voters who are white
+hispanic_voter_ratio = sum(list(map(lambda precinct: 
+        sum(hispanic_voter_data[hispanic_voter_data["precinct_name"] == precinct]["total_voters"].values),
+        council_precincts)))/sum(total_reg_votes)
+print(f"Hispanic Pop Ratio (council): {hispanic_voter_ratio}")
 
 # Run environmental reg for each candidate 
 for candidate in council_candidates:
@@ -151,7 +183,7 @@ for candidate in council_candidates:
                                council_precincts)))
     
     ## Run ER for black voters
-    black_plot = GoodmansER()
+    black_plot = GoodmansERBayes()
     black_plot.fit(black_voter_percent,
                     candidate_votes,
                     demographic_group_name="black_voters",
@@ -161,11 +193,11 @@ for candidate in council_candidates:
     print(f"City Council: {candidate} summary (Black Voters)")
     print(black_plot.summary())
     black_plot.plot(line_kws={"title": f"City Council: {candidate} (Black Voters)"})
-    # savefig(f"Council_{candidate}_Black.png")
+    savefig(f"Council_{candidate}_Black.png")
     close()
 
     ## Run ER for white voters
-    white_plot = GoodmansER()
+    white_plot = GoodmansERBayes()
     white_plot.fit(white_voter_percent,
                     candidate_votes,
                     demographic_group_name="white_voters",
@@ -175,11 +207,11 @@ for candidate in council_candidates:
     print(f"City Council: {candidate} summary (White Voters)")
     print(white_plot.summary())
     white_plot.plot(line_kws={"title": f"City Council: {candidate} (White Voters)"})
-    # savefig(f"Council_{candidate}_White.png")
+    savefig(f"Council_{candidate}_White.png")
     close()
 
     ## Run ER for hispanic voters
-    hispanic_plot = GoodmansER()
+    hispanic_plot = GoodmansERBayes()
     hispanic_plot.fit(hispanic_voter_percent,
                     candidate_votes,
                     demographic_group_name="hispanic_voters",
@@ -189,7 +221,7 @@ for candidate in council_candidates:
     print(f"City Council: {candidate} summary (Hispanic Voters)")
     print(hispanic_plot.summary())
     hispanic_plot.plot(line_kws={"title": f"City Council: {candidate} (Hispanic Voters)"})
-    # savefig(f"Council_{candidate}_Hispanic.png")
+    savefig(f"Council_{candidate}_Hispanic.png")
     close()
 
 

@@ -9,7 +9,7 @@ TODO indictes places where you may need to change the code for it to work with d
 from pandas import read_csv
 from numpy import array
 
-from pyei.goodmans_er import GoodmansER
+from pyei.goodmans_er import GoodmansERBayes
 
 from matplotlib.pyplot import savefig, close
 
@@ -61,7 +61,7 @@ def env_reg(election_file, registration_file, election_name="election", group_na
     voter_ratio = sum(list(map(lambda precinct: 
         sum(voter_data[voter_data[REG_PRECINCT_COLUMN] == precinct][REG_VOTE_COLUMN].values),
         precincts)))/sum(total_reg_votes)
-    print(voter_ratio)
+    print(f"Demographic Size Ratio: {voter_ratio}")
 
     # Run environmental reg for each candidate 
     for candidate in candidates:
@@ -75,7 +75,7 @@ def env_reg(election_file, registration_file, election_name="election", group_na
             precincts)))
         
         # Run ER for target demographic
-        ER_plot = GoodmansER()
+        ER_plot = GoodmansERBayes()
         ER_plot.fit(voter_percent,
                         candidate_votes,
                         demographic_group_name=group_name, 
@@ -90,7 +90,7 @@ def env_reg(election_file, registration_file, election_name="election", group_na
         ER_plot.plot(line_kws={"title": f"{election_name}: {candidate} ({group_name})"})
 
         # TODO: Uncomment this and customize the file name to store graphs
-        # savefig(f"{election_name}_{candidate}_{group_name}.png")
+        savefig(f"{election_name}_{candidate}_{group_name}.png")
         close() # TODO: Remove this if you want the graph to stay open
 
 def get_voter_ratio(election_file, registration_file):
