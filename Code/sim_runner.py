@@ -1,7 +1,7 @@
-# Primary test runner file with CLI interface
-# Classes that store testing data in a consistent format
+# Primary simulation runner file with CLI interface
+# Classes that store simulation data in a consistent format
 from bloc import Bloc 
-from test_params import TestParams
+from sim_params import SimParams
 
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
@@ -14,7 +14,7 @@ import argparse
 from pathlib import Path
 import tabulate
 
-# For now, test definitions can go here
+# For now, sim definitions can go here
 
 
 # Make up some blocs
@@ -32,70 +32,87 @@ debug_bloc_2 = Bloc(name="Minority Bloc",
                     preference={"Majority Bloc": 0.5,
                                 "Minority Bloc": 2})
 
-# Create several near-identical tests for debugging
-debug_test_1 = TestParams("debug_test_1", debug_bloc_1, debug_bloc_2, 2, 1000)
-debug_test_2 = TestParams("debug_test_2", debug_bloc_1, debug_bloc_2, 2, 1000)
-debug_test_3 = TestParams("debug_test_3", debug_bloc_1, debug_bloc_2, 2, 1000)
+# Create several near-identical sims for debugging
+debug_sim_1 = SimParams("debug_sim_1", debug_bloc_1, debug_bloc_2, 2, 1000)
+debug_sim_2 = SimParams("debug_sim_2", debug_bloc_1, debug_bloc_2, 2, 1000)
+debug_sim_3 = SimParams("debug_sim_3", debug_bloc_1, debug_bloc_2, 2, 1000)
 
 
-# This is the list of tests that the test runner can see. Be sure to add any new tests here
-test_list = [debug_test_1]
+# This is the list of sims that the sim runner can see. Be sure to add any new sims here
+sim_list = [debug_sim_1]
 
 def main(args):
     """
-    Main test running function. Handles flag parsing and main interaction loop.
+    Main sim running function. Handles flag parsing and main interaction loop.
     """
     output_path = Path(__file__ + f"/../../Results").resolve() # Path to Results folder
 
-    # Handle run all tests flag
+    # Handle run all sims flag
     if (args.all):
-        print(f"Running {len(test_list)} tests:")
-        for test in test_list:
-            runTest(test, output_path, args.filename, args.number)
-            print('    ' + test.test_name + " Done!")
+        print(f"Running {len(sim_list)} sims:")
+        for sim in sim_list:
+            runSim(sim, output_path, args.filename, args.number)
+            print('    ' + sim.sim_name + " Done!")
         return
     
     # Main interaction loop
-    print(tabulate.tabulate([[test.test_name] for test in test_list], tablefmt="pretty", showindex=True)) # Print available tests
-    test_names = [test.test_name for test in test_list] # Get a list of names to resolve name inputs 
+    print(tabulate.tabulate([[sim.sim_name] for sim in sim_list], tablefmt="pretty", showindex=True)) # Print available sims
+    sim_names = [sim.sim_name for sim in sim_list] # Get a list of names to resolve name inputs 
     print("Input quit or q to exit") # inform the user of how to exit the program
+    print("Input setn n to change the number of iterations to the number n")
+    print("Input getn to see the current value of n")
     while True:
         # Get the user input
-        selection = input("Input the index or name of a test to run: ")
+        selection = input("Input the index or name of a simulation to run: ")
 
         # Check if the user wants to quit
-        if (selection == "q" or selection == "quit"):
+        if selection == "q" or selection == "quit":
             break
+
+        # Check if user is changing n
+        if selection.split() and selection.split()[0] == "setn" and len(selection) > 1:
+            if selection.split()[1].isnumeric():
+                args.number = int(selection.split()[1])
+                print(f"Number of Iterations is now {args.number}")
+                continue
+            else:
+                print("Invalid value for n")
+                continue    
+
+        # Show n on request
+        if selection == "getn":
+            print(args.number)
+            continue
 
         # Resolve index input
         if selection.isnumeric():
             index = int(selection)
-            if index < len(test_list) and index >= 0:
-                runTest(test_list[index], output_path, args.filename, args.number)
+            if index < len(sim_list) and index >= 0:
+                runSim(sim_list[index], output_path, args.filename, args.number)
             else:
                 print("Invalid index")
                 continue
         # Resolve name input
         else:
-            if selection in test_names:
-                runTest(test_list[test_names.index(selection)], output_path, args.filename, args.number)
+            if selection in sim_names:
+                runSim(sim_list[sim_names.index(selection)], output_path, args.filename, args.number)
             else:
-                print("Invalid test name")
+                print("Invalid simulation name")
                 continue
         
 
     
     
 
-def runTest(test, output_path, filename, num_tests):
-    """Helper function that runs a given test n times and prints the results to the output file"""
+def runSim(sim, output_path, filename, num_sims):
+    """Helper function that runs a given sim n times and prints the results to the output file"""
     # Turn the blocs into generator inputs
-    generator_inputs = Bloc.outputVars([test.bloc1, test.bloc2], test.num_ballots)
+    generator_inputs = Bloc.outputVars([sim.bloc1, sim.bloc2], sim.num_ballots)
 
-    # Open the output files for these tests before starting the loop
-    with open(output_path / f"{filename}_{test.test_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
-          open(output_path / f"{filename}_{test.test_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
-          open(output_path / f"{filename}_{test.test_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
+    # Open the output files for these sims before starting the loop
+    with open(output_path / f"{filename}_{sim.sim_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
+          open(output_path / f"{filename}_{sim.sim_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
+          open(output_path / f"{filename}_{sim.sim_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
         # Create an array of file objects to make iteration easier
         files = [pl_file, bt_file, cam_file]
 
@@ -109,16 +126,16 @@ def runTest(test, output_path, filename, num_tests):
         candidates.sort()
 
         # Print a status update to terminal
-        print(f"    Now Running {test.test_name}")
+        print(f"    Now Running {sim.sim_name}")
 
-        # Generate ballots and run elections on them num_tests times, outputting results as we go
-        for i in range(0, num_tests):
+        # Generate ballots and run elections on them num_sims times, outputting results as we go
+        for i in range(0, num_sims):
             # Generate ballots
             ballots = generateAll(generator_inputs) # I am not currently storing every ballot, since that would take up way too much space
             
             # Run the elections using the 3 ballot sets
-            plurality_results = [Plurality(ballots[0], test.num_seats, "borda"), Plurality(ballots[1], test.num_seats, "borda"), Plurality(ballots[2], test.num_seats, "borda")]
-            stv_results = [STV(ballots[0], test.num_seats, tiebreak="borda"), STV(ballots[1], test.num_seats, tiebreak="borda"), STV(ballots[2], test.num_seats, tiebreak="borda")]
+            plurality_results = [Plurality(ballots[0], sim.num_seats, "borda"), Plurality(ballots[1], sim.num_seats, "borda"), Plurality(ballots[2], sim.num_seats, "borda")]
+            stv_results = [STV(ballots[0], sim.num_seats, tiebreak="borda"), STV(ballots[1], sim.num_seats, tiebreak="borda"), STV(ballots[2], sim.num_seats, tiebreak="borda")]
 
             # Output results for each set of ballots
             for j in range(3):
@@ -149,7 +166,7 @@ def runTest(test, output_path, filename, num_tests):
                 files[j].write(",,,\n")             
             
             # Print a status update to terminal
-            print(f"      {i+1}/{num_tests} iterations completed!")
+            print(f"      {i+1}/{num_sims} iterations completed!")
 
             # Get a new preference profile for the next iteration
             # NOTE: I love the name of this function
@@ -159,12 +176,12 @@ def runTest(test, output_path, filename, num_tests):
     
 if __name__ == "__main__":
     # Parse CLI arguments and pass them to main
-    parser = argparse.ArgumentParser(prog="test_runner",
-                                      description="Interface for running voting tests." \
-                                      " By default, lists available tests and asks user to input desired test.")
+    parser = argparse.ArgumentParser(prog="sim_runner",
+                                      description="Interface for running voting simulations." \
+                                      " By default, lists available simulations and asks user to select the desired one.")
     parser.add_argument("filename", type=str, help="The filename will be used to distinguish the output files from previous results.")
-    parser.add_argument("--number","-n", default=1, type=int, help="The number of times each test should be run. Defaults to 1.")
-    parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all tests then exit.")
+    parser.add_argument("--number","-n", default=1, type=int, help="The number of times each simulation should be run. Defaults to 1.")
+    parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all simulations then exit.")
     args = parser.parse_args()
     print(args)
 

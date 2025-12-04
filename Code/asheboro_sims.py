@@ -12,7 +12,7 @@ Hispanic voters (Council): 0.06869812458715069
 There are 81 possible combinations of D alphas to use
 We should probably choose a subset
 """
-from test_params import TestParams
+from sim_params import SimParams
 from bloc import Bloc
 
 ### Board of EDU
