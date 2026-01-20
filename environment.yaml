@@ -1,0 +1,11 @@
+# environment.yaml
+
+name: .venv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - anaconda
+  - pip
+  - pip:
+    - -r requirements.txt
