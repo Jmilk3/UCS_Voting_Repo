@@ -87,7 +87,7 @@ def env_reg(election_file, registration_file, election_name="election", group_na
 
         # plot the graph
         # NOTE: Plot won't display anything if run from terminal. Use savefig to store the result as a file instead.
-        ER_plot.plot(line_kws={"title": f"{election_name}: {candidate} ({group_name})"})
+        ER_plot.plot()
 
         # TODO: Uncomment this and customize the file name to store graphs
         savefig(f"{election_name}_{candidate}_{group_name}.png")
