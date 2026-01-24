@@ -1,13 +1,13 @@
 # Primary simulation runner file with CLI interface
 # Classes that store simulation data in a consistent format
-from bloc import Bloc 
-from sim_params import SimParams
+from structures.bloc import Bloc 
+from structures.sim_params import SimParams
 
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
 
 # Function that runs PL, BT, and Cambridge ballot generators
-from ballot_generators import generateAll
+from structures.ballot_generators import generateAll
 
 # IO libraries
 import argparse
@@ -15,8 +15,12 @@ from pathlib import Path
 import tabulate
 
 # For now, sim definitions can go here
+# TODO: Update this to actually import the definitions
+from definitions.asheboro_sims import *
+from definitions.smithfield_sims import *
+from definitions.charlotte_sims import *
 
-
+# TODO: Remove these test blocs and simulations
 # Make up some blocs
 debug_bloc_1 = Bloc(name="Majority Bloc",
                      size=0.8,
@@ -37,7 +41,7 @@ debug_sim_1 = SimParams("debug_sim_1", debug_bloc_1, debug_bloc_2, 2, 1000)
 debug_sim_2 = SimParams("debug_sim_2", debug_bloc_1, debug_bloc_2, 2, 1000)
 debug_sim_3 = SimParams("debug_sim_3", debug_bloc_1, debug_bloc_2, 2, 1000)
 
-
+# TODO: Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
 sim_list = [debug_sim_1]
 
