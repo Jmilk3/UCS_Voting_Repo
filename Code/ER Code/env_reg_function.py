@@ -28,10 +28,10 @@ def env_reg(election_file, registration_file, condition_code, condition_col = "r
     reg_data = read_csv(registration_file)
 
     # TODO: Set column names for various paramaters
-    ELECTION_CANDIDATE_COLUMN = "candidate_name" # Name of the column in election_data which has candidate names
-    ELECTION_PRECINCT_COLUMN = "precinct_name" # Name of the column in election_data which has the precinct information
-    ELECTION_VOTE_COLUMN = "vote_ct" # Name of the column in election_data which has the number of votes
-    REG_PRECINCT_COLUMN = "precinct_name" # Name of the column in reg_data which has the precinct information
+    ELECTION_CANDIDATE_COLUMN = "Choice" # Name of the column in election_data which has candidate names
+    ELECTION_PRECINCT_COLUMN = "Precinct" # Name of the column in election_data which has the precinct information
+    ELECTION_VOTE_COLUMN = "Total Votes" # Name of the column in election_data which has the number of votes
+    REG_PRECINCT_COLUMN = "precinct_abbrv" # Name of the column in reg_data which has the precinct information
     REG_VOTE_COLUMN = "total_voters" # Name of the column in reg_data which has the number of votes
 
     # Get a list of precincts and candidates for the election
