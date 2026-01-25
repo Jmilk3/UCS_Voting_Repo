@@ -13,11 +13,13 @@ from pyei.goodmans_er import GoodmansERBayes
 
 from matplotlib.pyplot import savefig, close
 
-def env_reg(election_file, registration_file, election_name="election", group_name="voters"):
+def env_reg(election_file, registration_file, condition_code, condition_col = "race_code", election_name="election", group_name="voters"):
     """
     Runs env reg for the election in election_file using the data in registration_file
     election_file (str): A path to the file which has the election data
     registration_file (str): A path to the file which has the registration data
+    condition_code (str): The code to use when identifying which voters to include in the group
+    condition_col (str): The name of the column to use when finding members of the group
     election_name (str): The name of the election. Used in summary output and graph lables
     group_name (str): The name of the subgroup being investigated. Used in summary output and graph lables
     """
@@ -50,7 +52,7 @@ def env_reg(election_file, registration_file, election_name="election", group_na
 
     # Get the percentage of voters that meet the given condition in each precinct
     # TODO: Select a condition that defines your desired group
-    voter_data = reg_data[reg_data["race_code"] == "B"] # This condition gets all voters with race_code B
+    voter_data = reg_data[reg_data[condition_col] == condition_code] # This condition gets all voters with race_code B
 
     # Calculate the percentage of voters that meet your condition by precinct
     voter_percent = array(list(map(lambda precinct, total_votes: 
