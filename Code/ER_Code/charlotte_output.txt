@@ -1,0 +1,2112 @@
+Demographic Size Ratio (Black): 0.304673493946315
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.705     | 3          | 3929.84 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.738     | 7          | 1878.59 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.683     | 7          | 1268.09 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.663     | 7          | 835.91 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Annette Albright summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Annette Albright is
+        0.096
+        The posterior mean for the district-level voting preference of
+        non-Black for Annette Albright is
+        0.075
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Annette Albright is
+        [0.08940406 0.10355329]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Annette Albright is
+        [0.07137763 0.07840789]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.581     | 7          | 2687.25 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.455     | 7          | 1397.16 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.781     | 7          | 965.50 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.862     | 3          | 641.27 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Bill Fountain summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Bill Fountain is
+        0.001
+        The posterior mean for the district-level voting preference of
+        non-Black for Bill Fountain is
+        0.108
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Bill Fountain is
+        [2.96617443e-05 4.96492039e-03]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Bill Fountain is
+        [0.10259963 0.11268913]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.335     | 7          | 1329.51 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.437     | 7          | 2258.18 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.448     | 7          | 987.15 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.368     | 7          | 607.60 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Brian Kasher summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Brian Kasher is
+        0.001
+        The posterior mean for the district-level voting preference of
+        non-Black for Brian Kasher is
+        0.053
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Brian Kasher is
+        [5.24646415e-05 4.18897442e-03]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Brian Kasher is
+        [0.0517055  0.05497276]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.718     | 3          | 3116.58 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.582     | 7          | 1700.68 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.551     | 7          | 919.97 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.844     | 7          | 635.87 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Claire Covington summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Claire Covington is
+        0.020
+        The posterior mean for the district-level voting preference of
+        non-Black for Claire Covington is
+        0.093
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Claire Covington is
+        [0.01233587 0.02736172]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Claire Covington is
+        [0.0889824  0.09678387]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.773     | 3          | 3107.60 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.562     | 3          | 1532.29 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.689     | 5          | 1011.54 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.602     | 3          | 689.71 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Clara Kennedy Witherspoon summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Clara Kennedy Witherspoon is
+        0.062
+        The posterior mean for the district-level voting preference of
+        non-Black for Clara Kennedy Witherspoon is
+        0.044
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Clara Kennedy Witherspoon is
+        [0.05733124 0.0659007 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Clara Kennedy Witherspoon is
+        [0.04219898 0.04657213]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.687     | 7          | 3287.80 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.546     | 7          | 1601.10 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.798     | 7          | 947.54 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.852     | 7          | 676.69 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Juanrique Pallamente Hall summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Juanrique Pallamente Hall is
+        0.045
+        The posterior mean for the district-level voting preference of
+        non-Black for Juanrique Pallamente Hall is
+        0.016
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Juanrique Pallamente Hall is
+        [0.04211925 0.04840278]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Juanrique Pallamente Hall is
+        [0.01466805 0.01809379]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.758     | 5          | 3468.31 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.803     | 3          | 1575.10 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.869     | 7          | 1026.65 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.618     | 3          | 686.53 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Lenora Shipp summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Lenora Shipp is
+        0.201
+        The posterior mean for the district-level voting preference of
+        non-Black for Lenora Shipp is
+        0.126
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Lenora Shipp is
+        [0.19102275 0.21112315]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Lenora Shipp is
+        [0.12056    0.13106008]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.380     | 7          | 2554.31 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.485     | 7          | 1491.68 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.645     | 7          | 977.77 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.521     | 7          | 635.18 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Liz Monterrey summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Liz Monterrey is
+        0.012
+        The posterior mean for the district-level voting preference of
+        non-Black for Liz Monterrey is
+        0.165
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Liz Monterrey is
+        [0.00145058 0.02287054]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Liz Monterrey is
+        [0.15936541 0.17104933]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.587     | 3          | 2868.56 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.814     | 7          | 1583.81 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.906     | 5          | 1030.22 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.714     | 3          | 702.38 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Michael Johnson summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Michael Johnson is
+        0.065
+        The posterior mean for the district-level voting preference of
+        non-Black for Michael Johnson is
+        0.070
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Michael Johnson is
+        [0.05825117 0.07210321]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Michael Johnson is
+        [0.06641604 0.07361925]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.729     | 3          | 3360.44 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.840     | 3          | 1668.97 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.760     | 3          | 1068.69 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.794     | 3          | 727.92 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Monty Witherspoon summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Monty Witherspoon is
+        0.143
+        The posterior mean for the district-level voting preference of
+        non-Black for Monty Witherspoon is
+        0.115
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Monty Witherspoon is
+        [0.13307559 0.15379278]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Monty Witherspoon is
+        [0.10903668 0.11969803]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.702     | 3          | 2818.02 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.620     | 7          | 1563.10 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.649     | 3          | 990.69 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.679     | 7          | 679.71 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Omar Harris summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Omar Harris is
+        0.106
+        The posterior mean for the district-level voting preference of
+        non-Black for Omar Harris is
+        0.018
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Omar Harris is
+        [0.10161023 0.11118226]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Omar Harris is
+        [0.01554535 0.02051489]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.872     | 7          | 3008.14 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.797     | 3          | 1600.51 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.741     | 7          | 1048.82 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.728     | 7          | 717.94 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Peggy A. Capehart summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Peggy A. Capehart is
+        0.024
+        The posterior mean for the district-level voting preference of
+        non-Black for Peggy A. Capehart is
+        0.025
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Peggy A. Capehart is
+        [0.02097296 0.02692058]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Peggy A. Capehart is
+        [0.02346959 0.02655469]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.721     | 7          | 3276.05 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.642     | 7          | 1613.25 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.730     | 7          | 1078.00 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.613     | 3          | 691.89 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Shamaiye Haynes summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Shamaiye Haynes is
+        0.203
+        The posterior mean for the district-level voting preference of
+        non-Black for Shamaiye Haynes is
+        0.068
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Shamaiye Haynes is
+        [0.19487645 0.21171899]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Shamaiye Haynes is
+        [0.06346838 0.07228359]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.612     | 7          | 2929.96 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.760     | 1          | 1619.52 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.634     | 7          | 1023.61 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.894     | 7          | 661.25 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Tigress Sydney Acute McDaniel summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Tigress Sydney Acute McDaniel is
+        0.044
+        The posterior mean for the district-level voting preference of
+        non-Black for Tigress Sydney Acute McDaniel is
+        0.017
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Tigress Sydney Acute McDaniel is
+        [0.04032222 0.04717332]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Tigress Sydney Acute McDaniel is
+        [0.01544669 0.01902099]
+        
+Demographic Size Ratio (Asian): 0.02823717364582162
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.324     | 3          | 2009.29 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.465     | 3          | 1324.39 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.299     | 15         | 950.58 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.451     | 7          | 624.91 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Annette Albright summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Annette Albright is
+        0.129
+        The posterior mean for the district-level voting preference of
+        non-Asian for Annette Albright is
+        0.080
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Annette Albright is
+        [0.01434421 0.26198776]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Annette Albright is
+        [0.07584578 0.08397946]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.469     | 7          | 2016.03 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.432     | 7          | 1240.93 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.502     | 7          | 899.85 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.348     | 7          | 600.77 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Bill Fountain summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Bill Fountain is
+        0.133
+        The posterior mean for the district-level voting preference of
+        non-Asian for Bill Fountain is
+        0.072
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Bill Fountain is
+        [0.00488757 0.39026256]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Bill Fountain is
+        [0.06345906 0.07948783]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.346     | 3          | 1786.12 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.319     | 7          | 1168.52 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.260     | 15         | 853.84 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.388     | 7          | 584.55 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Brian Kasher summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Brian Kasher is
+        0.110
+        The posterior mean for the district-level voting preference of
+        non-Asian for Brian Kasher is
+        0.036
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Brian Kasher is
+        [0.01203081 0.22527961]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Brian Kasher is
+        [0.03207012 0.03913022]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.349     | 7          | 1784.42 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.368     | 7          | 1159.35 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.396     | 7          | 870.23 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.417     | 7          | 577.18 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Claire Covington summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Claire Covington is
+        0.116
+        The posterior mean for the district-level voting preference of
+        non-Asian for Claire Covington is
+        0.070
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Claire Covington is
+        [0.00618869 0.28965758]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Claire Covington is
+        [0.06408227 0.07462638]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.294     | 7          | 1130.81 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.252     | 15         | 1610.13 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.395     | 7          | 828.10 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.342     | 15         | 575.43 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Clara Kennedy Witherspoon summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Clara Kennedy Witherspoon is
+        0.059
+        The posterior mean for the district-level voting preference of
+        non-Asian for Clara Kennedy Witherspoon is
+        0.049
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Clara Kennedy Witherspoon is
+        [0.00427466 0.13622066]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Clara Kennedy Witherspoon is
+        [0.04667067 0.05142572]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.471     | 3          | 2141.84 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.441     | 3          | 1138.01 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.441     | 7          | 811.92 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.357     | 3          | 567.57 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Juanrique Pallamente Hall summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Juanrique Pallamente Hall is
+        0.102
+        The posterior mean for the district-level voting preference of
+        non-Asian for Juanrique Pallamente Hall is
+        0.023
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Juanrique Pallamente Hall is
+        [0.02071694 0.18741447]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Juanrique Pallamente Hall is
+        [0.02020129 0.02553487]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.470     | 3          | 1153.78 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.410     | 3          | 1715.82 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.441     | 7          | 838.96 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.258     | 7          | 563.27 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Lenora Shipp summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Lenora Shipp is
+        0.076
+        The posterior mean for the district-level voting preference of
+        non-Asian for Lenora Shipp is
+        0.150
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Lenora Shipp is
+        [0.00215396 0.23472426]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Lenora Shipp is
+        [0.14446479 0.15517997]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.703     | 15         | 2032.13 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.502     | 7          | 1250.44 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.441     | 3          | 877.74 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.481     | 7          | 594.52 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Liz Monterrey summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Liz Monterrey is
+        0.182
+        The posterior mean for the district-level voting preference of
+        non-Asian for Liz Monterrey is
+        0.117
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Liz Monterrey is
+        [0.00872938 0.49221089]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Liz Monterrey is
+        [0.10708637 0.1260145 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.392     | 3          | 1944.18 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.499     | 15         | 875.85 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.388     | 7          | 1188.28 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.496     | 15         | 600.84 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Michael Johnson summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Michael Johnson is
+        0.194
+        The posterior mean for the district-level voting preference of
+        non-Asian for Michael Johnson is
+        0.065
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Michael Johnson is
+        [0.06305215 0.32321223]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Michael Johnson is
+        [0.06117174 0.06930494]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.597     | 15         | 1166.25 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.444     | 15         | 1656.70 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.177     | 7          | 883.90 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.474     | 15         | 579.92 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Monty Witherspoon summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Monty Witherspoon is
+        0.098
+        The posterior mean for the district-level voting preference of
+        non-Asian for Monty Witherspoon is
+        0.124
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Monty Witherspoon is
+        [0.00417396 0.26944875]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Monty Witherspoon is
+        [0.1185261  0.12854621]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.604     | 7          | 1955.64 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.382     | 15         | 938.27 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.316     | 9          | 1320.74 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.376     | 15         | 586.39 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Omar Harris summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Omar Harris is
+        0.135
+        The posterior mean for the district-level voting preference of
+        non-Asian for Omar Harris is
+        0.042
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Omar Harris is
+        [0.00761057 0.31747503]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Omar Harris is
+        [0.03635356 0.04727597]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.313     | 3          | 1725.99 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.441     | 11         | 810.59 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.349     | 7          | 1079.01 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.412     | 7          | 543.97 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Peggy A. Capehart summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Peggy A. Capehart is
+        0.025
+        The posterior mean for the district-level voting preference of
+        non-Asian for Peggy A. Capehart is
+        0.025
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Peggy A. Capehart is
+        [0.00125808 0.06907937]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Peggy A. Capehart is
+        [0.02320042 0.0258434 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.382     | 7          | 1986.48 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.480     | 7          | 1261.45 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.297     | 11         | 899.65 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.506     | 7          | 593.06 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Shamaiye Haynes summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Shamaiye Haynes is
+        0.183
+        The posterior mean for the district-level voting preference of
+        non-Asian for Shamaiye Haynes is
+        0.107
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Shamaiye Haynes is
+        [0.0113626  0.44754296]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Shamaiye Haynes is
+        [0.09830012 0.11396247]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.564     | 7          | 2132.58 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.492     | 7          | 920.11 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.374     | 3          | 1284.16 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.304     | 15         | 586.47 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Tigress Sydney Acute McDaniel summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Tigress Sydney Acute McDaniel is
+        0.117
+        The posterior mean for the district-level voting preference of
+        non-Asian for Tigress Sydney Acute McDaniel is
+        0.023
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Tigress Sydney Acute McDaniel is
+        [0.03365741 0.20276946]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Tigress Sydney Acute McDaniel is
+        [0.0201156  0.02538999]
+        
+Demographic Size Ratio (White): 0.5136125512336799
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.674     | 3          | 1597.85 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.975     | 3          | 2628.45 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.878     | 3          | 1010.79 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.609     | 7          | 689.80 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Annette Albright summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Annette Albright is
+        0.072
+        The posterior mean for the district-level voting preference of
+        non-White for Annette Albright is
+        0.091
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Annette Albright is
+        [0.06789195 0.0768013 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Annette Albright is
+        [0.08621231 0.0958535 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.482     | 7          | 1689.46 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.424     | 3          | 2799.58 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.536     | 7          | 1105.96 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.499     | 7          | 703.95 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Bill Fountain summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Bill Fountain is
+        0.130
+        The posterior mean for the district-level voting preference of
+        non-White for Bill Fountain is
+        0.011
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Bill Fountain is
+        [0.12317829 0.13727541]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Bill Fountain is
+        [0.00436805 0.01868397]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.689     | 7          | 2817.84 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.808     | 7          | 1587.24 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.584     | 7          | 1014.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.706     | 3          | 676.89 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Brian Kasher summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Brian Kasher is
+        0.059
+        The posterior mean for the district-level voting preference of
+        non-White for Brian Kasher is
+        0.014
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Brian Kasher is
+        [0.05702078 0.06184019]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Brian Kasher is
+        [0.01120373 0.01636531]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.788     | 3          | 3392.73 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.950     | 7          | 1560.91 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.672     | 7          | 1057.44 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.706     | 7          | 673.44 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Claire Covington summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Claire Covington is
+        0.103
+        The posterior mean for the district-level voting preference of
+        non-White for Claire Covington is
+        0.036
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Claire Covington is
+        [0.09784881 0.10730573]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Claire Covington is
+        [0.03148004 0.04144781]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.774     | 7          | 2838.40 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.741     | 7          | 1615.74 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.715     | 7          | 1099.84 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.763     | 3          | 712.44 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Clara Kennedy Witherspoon summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Clara Kennedy Witherspoon is
+        0.042
+        The posterior mean for the district-level voting preference of
+        non-White for Clara Kennedy Witherspoon is
+        0.058
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Clara Kennedy Witherspoon is
+        [0.03935605 0.04504538]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Clara Kennedy Witherspoon is
+        [0.05448515 0.06061302]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.885     | 7          | 1622.51 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.662     | 3          | 3056.79 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.756     | 7          | 1002.09 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.690     | 3          | 684.93 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Juanrique Pallamente Hall summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Juanrique Pallamente Hall is
+        0.012
+        The posterior mean for the district-level voting preference of
+        non-White for Juanrique Pallamente Hall is
+        0.039
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Juanrique Pallamente Hall is
+        [0.01031419 0.01418794]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Juanrique Pallamente Hall is
+        [0.03703902 0.0411782 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.617     | 3          | 3265.72 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.628     | 3          | 1601.07 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.659     | 7          | 1042.42 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.813     | 3          | 685.93 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Lenora Shipp summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Lenora Shipp is
+        0.118
+        The posterior mean for the district-level voting preference of
+        non-White for Lenora Shipp is
+        0.181
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Lenora Shipp is
+        [0.11148781 0.12499565]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Lenora Shipp is
+        [0.17412257 0.1884635 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.730     | 7          | 3150.22 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.717     | 7          | 1633.13 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.632     | 3          | 1042.39 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.666     | 3          | 691.48 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Liz Monterrey summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Liz Monterrey is
+        0.183
+        The posterior mean for the district-level voting preference of
+        non-White for Liz Monterrey is
+        0.049
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Liz Monterrey is
+        [0.17469759 0.19091959]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Liz Monterrey is
+        [0.04098649 0.05779439]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.755     | 7          | 2980.29 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.716     | 7          | 1543.53 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.808     | 7          | 1013.40 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.774     | 3          | 663.11 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Michael Johnson summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Michael Johnson is
+        0.071
+        The posterior mean for the district-level voting preference of
+        non-White for Michael Johnson is
+        0.066
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Michael Johnson is
+        [0.06623552 0.07495561]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Michael Johnson is
+        [0.06186561 0.07113508]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.690     | 7          | 3157.83 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.882     | 3          | 1610.29 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.649     | 3          | 988.35 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.737     | 7          | 664.05 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Monty Witherspoon summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Monty Witherspoon is
+        0.112
+        The posterior mean for the district-level voting preference of
+        non-White for Monty Witherspoon is
+        0.135
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Monty Witherspoon is
+        [0.10563548 0.11880374]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Monty Witherspoon is
+        [0.12776569 0.1422899 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.579     | 3          | 3054.93 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.574     | 7          | 1529.65 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.604     | 3          | 997.26 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.671     | 3          | 650.38 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Omar Harris summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Omar Harris is
+        0.007
+        The posterior mean for the district-level voting preference of
+        non-White for Omar Harris is
+        0.086
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Omar Harris is
+        [0.00376202 0.00967287]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Omar Harris is
+        [0.08280129 0.08890248]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.711     | 3          | 3270.07 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.737     | 3          | 1685.54 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.709     | 7          | 1045.43 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.807     | 7          | 696.93 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Peggy A. Capehart summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Peggy A. Capehart is
+        0.025
+        The posterior mean for the district-level voting preference of
+        non-White for Peggy A. Capehart is
+        0.024
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Peggy A. Capehart is
+        [0.02292002 0.02673481]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Peggy A. Capehart is
+        [0.02231001 0.02634973]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.633     | 7          | 2986.39 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.692     | 7          | 1608.03 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.657     | 3          | 1013.41 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.602     | 3          | 704.05 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Shamaiye Haynes summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Shamaiye Haynes is
+        0.052
+        The posterior mean for the district-level voting preference of
+        non-White for Shamaiye Haynes is
+        0.170
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Shamaiye Haynes is
+        [0.04651005 0.05800212]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Shamaiye Haynes is
+        [0.16379202 0.17628894]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.698     | 7          | 3568.71 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.636     | 7          | 1583.91 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.595     | 7          | 1054.14 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.751     | 3          | 736.19 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Tigress Sydney Acute McDaniel summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Tigress Sydney Acute McDaniel is
+        0.013
+        The posterior mean for the district-level voting preference of
+        non-White for Tigress Sydney Acute McDaniel is
+        0.038
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Tigress Sydney Acute McDaniel is
+        [0.01106719 0.01525106]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Tigress Sydney Acute McDaniel is
+        [0.03618704 0.04065743]
+        
+Demographic Size Ratio (Hispanic): 0.05633604382281128
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.494     | 7          | 2736.05 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.495     | 7          | 1464.04 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.658     | 15         | 994.78 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.420     | 7          | 638.04 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Annette Albright summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Annette Albright is
+        0.170
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Annette Albright is
+        0.076
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Annette Albright is
+        [0.1034564  0.23607751]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Annette Albright is
+        [0.07147533 0.08058374]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.699     | 3          | 1622.50 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.584     | 7          | 2936.38 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.564     | 7          | 1054.57 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.682     | 3          | 648.94 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Bill Fountain summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Bill Fountain is
+        0.016
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Bill Fountain is
+        0.077
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Bill Fountain is
+        [0.00044219 0.0549015 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Bill Fountain is
+        [0.07112338 0.08337395]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.581     | 7          | 1575.82 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.640     | 3          | 2700.70 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.435     | 7          | 1053.65 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.313     | 7          | 671.94 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Brian Kasher summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Brian Kasher is
+        0.007
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Brian Kasher is
+        0.040
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Brian Kasher is
+        [0.0001714 0.026125 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Brian Kasher is
+        [0.03721439 0.04189248]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.601     | 7          | 2423.71 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.625     | 3          | 1442.69 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.695     | 3          | 965.80 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.731     | 7          | 638.76 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Claire Covington summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Claire Covington is
+        0.009
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Claire Covington is
+        0.075
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Claire Covington is
+        [0.00027685 0.03270691]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Claire Covington is
+        [0.07137325 0.07855081]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.380     | 11         | 2412.80 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.438     | 3          | 1393.19 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.532     | 3          | 993.77 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.444     | 15         | 652.39 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Clara Kennedy Witherspoon summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Clara Kennedy Witherspoon is
+        0.124
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Clara Kennedy Witherspoon is
+        0.045
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Clara Kennedy Witherspoon is
+        [0.0825332  0.16398849]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Clara Kennedy Witherspoon is
+        [0.04225919 0.04797588]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.449     | 15         | 2909.43 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.361     | 7          | 1525.23 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.491     | 15         | 1008.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.468     | 3          | 654.16 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Juanrique Pallamente Hall summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Juanrique Pallamente Hall is
+        0.172
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Juanrique Pallamente Hall is
+        0.016
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Juanrique Pallamente Hall is
+        [0.13725857 0.20583245]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Juanrique Pallamente Hall is
+        [0.01396952 0.01863866]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.360     | 7          | 2724.81 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.445     | 15         | 1462.59 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.691     | 7          | 1041.89 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.412     | 11         | 639.42 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Lenora Shipp summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Lenora Shipp is
+        0.287
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Lenora Shipp is
+        0.140
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Lenora Shipp is
+        [0.16802121 0.3976457 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Lenora Shipp is
+        [0.13244394 0.14818668]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.461     | 7          | 2869.14 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.593     | 7          | 1682.37 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.643     | 7          | 1068.70 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.385     | 7          | 675.63 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Liz Monterrey summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Liz Monterrey is
+        0.016
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Liz Monterrey is
+        0.126
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Liz Monterrey is
+        [0.000254   0.05946609]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Liz Monterrey is
+        [0.11870552 0.13266713]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.348     | 15         | 1448.10 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.346     | 7          | 2462.37 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.314     | 7          | 963.50 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.346     | 7          | 622.13 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Michael Johnson summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Michael Johnson is
+        0.091
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Michael Johnson is
+        0.067
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Michael Johnson is
+        [0.02938147 0.15296326]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Michael Johnson is
+        [0.06298293 0.0714706 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.356     | 3          | 2512.48 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.537     | 15         | 1356.36 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.345     | 15         | 994.58 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.292     | 3          | 621.83 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Monty Witherspoon summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Monty Witherspoon is
+        0.114
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Monty Witherspoon is
+        0.124
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Monty Witherspoon is
+        [0.02324701 0.21177767]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Monty Witherspoon is
+        [0.11692371 0.13010112]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.349     | 3          | 2783.76 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.386     | 3          | 1457.40 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.508     | 11         | 990.19 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.396     | 7          | 612.37 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Omar Harris summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Omar Harris is
+        0.439
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Omar Harris is
+        0.021
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Omar Harris is
+        [0.36443793 0.51330224]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Omar Harris is
+        [0.01573411 0.02641745]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.379     | 3          | 1453.59 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.459     | 15         | 2485.36 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.404     | 15         | 964.21 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.343     | 7          | 595.45 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Peggy A. Capehart summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Peggy A. Capehart is
+        0.047
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Peggy A. Capehart is
+        0.023
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Peggy A. Capehart is
+        [0.02046192 0.07388189]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Peggy A. Capehart is
+        [0.02141676 0.02512911]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.410     | 3          | 2414.77 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.548     | 3          | 1350.38 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.546     | 3          | 923.80 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.414     | 7          | 614.82 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Shamaiye Haynes summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Shamaiye Haynes is
+        0.525
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Shamaiye Haynes is
+        0.084
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Shamaiye Haynes is
+        [0.38881949 0.66313968]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Shamaiye Haynes is
+        [0.07418624 0.09307679]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.401     | 11         | 2642.20 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.475     | 7          | 1494.76 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.594     | 7          | 929.94 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.425     | 3          | 604.30 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_BoE: Tigress Sydney Acute McDaniel summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Tigress Sydney Acute McDaniel is
+        0.201
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Tigress Sydney Acute McDaniel is
+        0.015
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Tigress Sydney Acute McDaniel is
+        [0.16980914 0.2312324 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Tigress Sydney Acute McDaniel is
+        [0.01256425 0.01684948]
+        
+Demographic Size Ratio (Black): 0.3456372710884585
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.472     | 5          | 3060.57 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.848     | 7          | 1472.94 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.833     | 7          | 984.36 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.528     | 3          | 653.03 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Dimple Ajmera summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Dimple Ajmera is
+        0.248
+        The posterior mean for the district-level voting preference of
+        non-Black for Dimple Ajmera is
+        0.228
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Dimple Ajmera is
+        [0.24250015 0.2527775 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Dimple Ajmera is
+        [0.22469793 0.23055083]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.711     | 7          | 3178.01 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.771     | 7          | 1469.03 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.700     | 7          | 990.31 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.583     | 7          | 670.92 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: James (Smuggie) Mitchell, Jr. summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for James (Smuggie) Mitchell, Jr. is
+        0.257
+        The posterior mean for the district-level voting preference of
+        non-Black for James (Smuggie) Mitchell, Jr. is
+        0.212
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for James (Smuggie) Mitchell, Jr. is
+        [0.25416623 0.25963468]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for James (Smuggie) Mitchell, Jr. is
+        [0.21005555 0.21309987]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.581     | 3          | 3148.74 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.638     | 7          | 1513.59 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.817     | 3          | 1003.31 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.647     | 3          | 663.71 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: LaWana Slack-Mayfield summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for LaWana Slack-Mayfield is
+        0.263
+        The posterior mean for the district-level voting preference of
+        non-Black for LaWana Slack-Mayfield is
+        0.200
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for LaWana Slack-Mayfield is
+        [0.25924997 0.26724538]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for LaWana Slack-Mayfield is
+        [0.1974704  0.20216055]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.499     | 5          | 2779.73 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.743     | 3          | 1465.98 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.578     | 7          | 970.60 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.483     | 7          | 656.51 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Steven J. DiFiore II summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Steven J. DiFiore II is
+        0.002
+        The posterior mean for the district-level voting preference of
+        non-Black for Steven J. DiFiore II is
+        0.127
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Steven J. DiFiore II is
+        [5.13808674e-05 6.55776635e-03]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Steven J. DiFiore II is
+        [0.12098695 0.13222964]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.760     | 3          | 2816.09 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.646     | 7          | 1574.57 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.704     | 3          | 1031.49 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.744     | 3          | 676.61 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Victoria Watlington summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Victoria Watlington is
+        0.247
+        The posterior mean for the district-level voting preference of
+        non-Black for Victoria Watlington is
+        0.229
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Victoria Watlington is
+        [0.24246559 0.25230486]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Victoria Watlington is
+        [0.2261124  0.23164437]
+        
+Demographic Size Ratio (Asian): 0.029501959898315958
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.645     | 7          | 2411.79 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.367     | 3          | 1008.22 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.423     | 7          | 1365.29 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.302     | 7          | 630.18 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Dimple Ajmera summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Dimple Ajmera is
+        0.192
+        The posterior mean for the district-level voting preference of
+        non-Asian for Dimple Ajmera is
+        0.235
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Dimple Ajmera is
+        [0.08613204 0.29846859]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Dimple Ajmera is
+        [0.23202446 0.23860561]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.468     | 7          | 2314.09 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.449     | 7          | 1365.60 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.284     | 3          | 984.87 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.305     | 7          | 647.18 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: James (Smuggie) Mitchell, Jr. summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for James (Smuggie) Mitchell, Jr. is
+        0.147
+        The posterior mean for the district-level voting preference of
+        non-Asian for James (Smuggie) Mitchell, Jr. is
+        0.229
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for James (Smuggie) Mitchell, Jr. is
+        [0.03992943 0.2562809 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for James (Smuggie) Mitchell, Jr. is
+        [0.22501613 0.23205227]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.411     | 15         | 2395.19 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.318     | 3          | 1447.03 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.354     | 15         | 927.20 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.497     | 7          | 595.86 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: LaWana Slack-Mayfield summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for LaWana Slack-Mayfield is
+        0.193
+        The posterior mean for the district-level voting preference of
+        non-Asian for LaWana Slack-Mayfield is
+        0.221
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for LaWana Slack-Mayfield is
+        [0.05050458 0.34725131]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for LaWana Slack-Mayfield is
+        [0.21646424 0.22606169]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.378     | 3          | 2388.19 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.490     | 7          | 1398.47 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.503     | 7          | 1013.95 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.539     | 15         | 661.20 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Steven J. DiFiore II summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Steven J. DiFiore II is
+        0.273
+        The posterior mean for the district-level voting preference of
+        non-Asian for Steven J. DiFiore II is
+        0.079
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Steven J. DiFiore II is
+        [0.02105809 0.61913676]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Steven J. DiFiore II is
+        [0.06772032 0.08841946]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.396     | 7          | 2453.16 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.525     | 15         | 1454.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.335     | 1          | 992.13 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.457     | 7          | 635.51 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Victoria Watlington summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Victoria Watlington is
+        0.234
+        The posterior mean for the district-level voting preference of
+        non-Asian for Victoria Watlington is
+        0.235
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Victoria Watlington is
+        [0.13242743 0.33760312]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Victoria Watlington is
+        [0.23175249 0.23831996]
+        
+Demographic Size Ratio (White): 0.4654730851690758
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.785     | 3          | 3167.65 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.710     | 3          | 1604.28 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.630     | 3          | 1036.30 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.453     | 7          | 689.76 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Dimple Ajmera summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Dimple Ajmera is
+        0.226
+        The posterior mean for the district-level voting preference of
+        non-White for Dimple Ajmera is
+        0.242
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Dimple Ajmera is
+        [0.22165781 0.22925065]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Dimple Ajmera is
+        [0.23875721 0.24617175]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.655     | 3          | 2902.22 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.736     | 7          | 1540.33 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.786     | 3          | 977.36 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.717     | 3          | 660.99 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: James (Smuggie) Mitchell, Jr. summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for James (Smuggie) Mitchell, Jr. is
+        0.207
+        The posterior mean for the district-level voting preference of
+        non-White for James (Smuggie) Mitchell, Jr. is
+        0.246
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for James (Smuggie) Mitchell, Jr. is
+        [0.20444084 0.20861742]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for James (Smuggie) Mitchell, Jr. is
+        [0.2436244  0.24765979]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.824     | 7          | 1553.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.796     | 7          | 2778.46 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.639     | 7          | 1007.65 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.702     | 7          | 654.90 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: LaWana Slack-Mayfield summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for LaWana Slack-Mayfield is
+        0.192
+        The posterior mean for the district-level voting preference of
+        non-White for LaWana Slack-Mayfield is
+        0.248
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for LaWana Slack-Mayfield is
+        [0.18911953 0.19458965]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for LaWana Slack-Mayfield is
+        [0.24576349 0.25101606]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.576     | 3          | 3347.98 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.601     | 5          | 1430.62 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.537     | 3          | 964.60 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.648     | 7          | 648.62 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Steven J. DiFiore II summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Steven J. DiFiore II is
+        0.150
+        The posterior mean for the district-level voting preference of
+        non-White for Steven J. DiFiore II is
+        0.020
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Steven J. DiFiore II is
+        [0.14123088 0.15765464]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Steven J. DiFiore II is
+        [0.01237651 0.02888434]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.653     | 3          | 3109.89 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.667     | 7          | 1502.84 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.747     | 3          | 941.46 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.767     | 7          | 639.16 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Victoria Watlington summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Victoria Watlington is
+        0.227
+        The posterior mean for the district-level voting preference of
+        non-White for Victoria Watlington is
+        0.243
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Victoria Watlington is
+        [0.2229721  0.23009154]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Victoria Watlington is
+        [0.23957066 0.24646372]
+        
+Demographic Size Ratio (Hispanic): 0.05965326942005653
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.368     | 7          | 2533.96 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.554     | 11         | 1404.80 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.390     | 3          | 955.08 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.375     | 7          | 578.38 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Dimple Ajmera summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Dimple Ajmera is
+        0.269
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Dimple Ajmera is
+        0.232
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Dimple Ajmera is
+        [0.21445526 0.31762784]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Dimple Ajmera is
+        [0.22830829 0.23586507]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.413     | 7          | 2415.94 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.368     | 7          | 1426.72 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.424     | 3          | 964.06 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.402     | 7          | 621.34 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: James (Smuggie) Mitchell, Jr. summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for James (Smuggie) Mitchell, Jr. is
+        0.367
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for James (Smuggie) Mitchell, Jr. is
+        0.218
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for James (Smuggie) Mitchell, Jr. is
+        [0.32174117 0.41716091]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for James (Smuggie) Mitchell, Jr. is
+        [0.21432933 0.2211202 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.625     | 7          | 2424.95 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.397     | 7          | 980.69 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.462     | 3          | 1346.53 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.373     | 7          | 593.50 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: LaWana Slack-Mayfield summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for LaWana Slack-Mayfield is
+        0.452
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for LaWana Slack-Mayfield is
+        0.206
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for LaWana Slack-Mayfield is
+        [0.38853288 0.51443045]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for LaWana Slack-Mayfield is
+        [0.20170815 0.21093938]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.671     | 7          | 2838.15 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.533     | 7          | 1522.20 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.678     | 3          | 977.07 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.468     | 7          | 657.20 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Steven J. DiFiore II summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Steven J. DiFiore II is
+        0.020
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Steven J. DiFiore II is
+        0.088
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Steven J. DiFiore II is
+        [0.00049256 0.0748105 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Steven J. DiFiore II is
+        [0.08103011 0.09548557]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.470     | 3          | 1451.10 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.383     | 7          | 2320.28 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.332     | 1          | 931.41 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.356     | 3          | 624.27 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Council: Victoria Watlington summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Victoria Watlington is
+        0.289
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Victoria Watlington is
+        0.232
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Victoria Watlington is
+        [0.24141378 0.33914275]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Victoria Watlington is
+        [0.2281314  0.23517389]
+        
+Demographic Size Ratio (Black): 0.3523913769145377
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.518     | 5          | 2925.34 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.702     | 7          | 1600.47 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.620     | 3          | 1041.54 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.465     | 3          | 659.19 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Stephanie de Sarachaga-Bilbao summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Stephanie de Sarachaga-Bilbao is
+        0.007
+        The posterior mean for the district-level voting preference of
+        non-Black for Stephanie de Sarachaga-Bilbao is
+        0.432
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Stephanie de Sarachaga-Bilbao is
+        [0.00016144 0.02326686]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Stephanie de Sarachaga-Bilbao is
+        [0.41249206 0.45195974]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.439     | 7          | 2812.90 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.674     | 7          | 1382.96 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.547     | 7          | 934.63 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.368     | 7          | 652.43 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Vi Alexander Lyles summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Vi Alexander Lyles is
+        0.993
+        The posterior mean for the district-level voting preference of
+        non-Black for Vi Alexander Lyles is
+        0.568
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Vi Alexander Lyles is
+        [0.97756713 0.99981511]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Vi Alexander Lyles is
+        [0.54883942 0.58658622]
+        
+Demographic Size Ratio (Asian): 0.027542948523874955
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.920     | 3          | 3172.61 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.699     | 5          | 1541.07 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.777     | 3          | 1022.09 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.676     | 3          | 699.14 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Stephanie de Sarachaga-Bilbao summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Stephanie de Sarachaga-Bilbao is
+        0.733
+        The posterior mean for the district-level voting preference of
+        non-Asian for Stephanie de Sarachaga-Bilbao is
+        0.270
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Stephanie de Sarachaga-Bilbao is
+        [0.17847127 0.99110912]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Stephanie de Sarachaga-Bilbao is
+        [0.24533335 0.29585868]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.799     | 7          | 3102.56 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.582     | 3          | 1401.30 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.714     | 7          | 991.60 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.773     | 7          | 659.69 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Vi Alexander Lyles summary (Asian)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Asian for Vi Alexander Lyles is
+        0.268
+        The posterior mean for the district-level voting preference of
+        non-Asian for Vi Alexander Lyles is
+        0.730
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Asian for Vi Alexander Lyles is
+        [0.00995053 0.83932508]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Asian for Vi Alexander Lyles is
+        [0.70243411 0.75514309]
+        
+Demographic Size Ratio (White): 0.46812610136860816
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.555     | 7          | 3119.62 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.592     | 7          | 1619.67 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.734     | 3          | 1031.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.564     | 7          | 670.33 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Stephanie de Sarachaga-Bilbao summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Stephanie de Sarachaga-Bilbao is
+        0.504
+        The posterior mean for the district-level voting preference of
+        non-White for Stephanie de Sarachaga-Bilbao is
+        0.068
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Stephanie de Sarachaga-Bilbao is
+        [0.47505643 0.5333203 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Stephanie de Sarachaga-Bilbao is
+        [0.03866245 0.09649718]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.614     | 7          | 3176.12 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.629     | 3          | 1504.18 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.538     | 3          | 1037.86 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.847     | 7          | 693.15 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Vi Alexander Lyles summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Vi Alexander Lyles is
+        0.496
+        The posterior mean for the district-level voting preference of
+        non-White for Vi Alexander Lyles is
+        0.932
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Vi Alexander Lyles is
+        [0.46697165 0.52628899]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Vi Alexander Lyles is
+        [0.90371388 0.96076984]
+        
+Demographic Size Ratio (Hispanic): 0.05572245899221376
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.752     | 7          | 1545.75 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.512     | 7          | 3011.12 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.725     | 3          | 995.20 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.763     | 7          | 626.98 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Stephanie de Sarachaga-Bilbao summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Stephanie de Sarachaga-Bilbao is
+        0.098
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Stephanie de Sarachaga-Bilbao is
+        0.294
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Stephanie de Sarachaga-Bilbao is
+        [0.00226044 0.33978224]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Stephanie de Sarachaga-Bilbao is
+        [0.26694011 0.32023033]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.828     | 7          | 3157.80 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.722     | 3          | 1492.44 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.533     | 7          | 956.26 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.752     | 7          | 634.67 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Charlotte_Mayor: Vi Alexander Lyles summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Vi Alexander Lyles is
+        0.901
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Vi Alexander Lyles is
+        0.706
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Vi Alexander Lyles is
+        [0.64638844 0.99720473]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Vi Alexander Lyles is
+        [0.68113962 0.73268707]
+        

@@ -6,7 +6,6 @@ from numpy import array
 from pyei.goodmans_er import GoodmansERBayes
 
 from matplotlib.pyplot import savefig, close
-
 def env_reg(election_file, registration_file, condition_code, condition_col = "race_code", election_name="election", group_name="voters"):
     """
     Runs env reg for the election in election_file using the data in registration_file
@@ -18,8 +17,8 @@ def env_reg(election_file, registration_file, condition_code, condition_col = "r
     group_name (str): The name of the subgroup being investigated. Used in summary output and graph lables
     """
     # Read in the data
-    election_data = read_csv(election_file)
-    reg_data = read_csv(registration_file)
+    election_data = read_csv(election_file, dtype={"Precinct": str})
+    reg_data = read_csv(registration_file,  dtype={"precinct_abbrv": str})
 
     # TODO: Set column names for various paramaters
     ELECTION_CANDIDATE_COLUMN = "Choice" # Name of the column in election_data which has candidate names
@@ -38,12 +37,18 @@ def env_reg(election_file, registration_file, condition_code, condition_col = "r
         sum(election_data[election_data[ELECTION_PRECINCT_COLUMN] == precinct][ELECTION_VOTE_COLUMN].values) != 0,
         precincts))
     
+    # Remove any precincts missing from reg file
+    reg_precincts = reg_data[REG_PRECINCT_COLUMN].unique()
+    precincts = list(filter(lambda precinct:
+                            precinct in reg_precincts,
+                            precincts))
+    
     ## Run ER for election
     # Get total voters by precinct from reg data
     total_reg_votes = array(list(map(lambda precinct:
         sum(reg_data[reg_data[REG_PRECINCT_COLUMN] == precinct][REG_VOTE_COLUMN].values),
         precincts)))
-
+            
     # Get the percentage of voters that meet the given condition in each precinct
     # TODO: Select a condition that defines your desired group
     voter_data = reg_data[reg_data[condition_col] == condition_code] # This condition gets all voters with race_code B

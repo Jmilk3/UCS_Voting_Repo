@@ -1,4 +1,14 @@
 from pandas import read_csv
+from pathlib import Path
+
+# Helper function to help clean Charlotte Data
+def addLeadingZeros(value):
+    if (len(value) == 1):
+        return "00" + value
+    elif (len(value) == 2):
+        return "0" + value
+    else:
+        return value
 
 # Open 2022 elections and get charlotte mayor data
 with open("All_Elections_7-26-22.csv", "r", encoding="utf-8-sig") as file:
@@ -6,6 +16,11 @@ with open("All_Elections_7-26-22.csv", "r", encoding="utf-8-sig") as file:
 df = df[df["County"] == "MECKLENBURG"] # isolate relevant county
 df = df[df["Contest Name"] == "CITY OF CHARLOTTE MAYOR"] # isolate relevant contest
 df = df[df["Choice"].str.contains("Write-In") == False] # remove write-ins
+
+# Additional cleaning to match precinct codes to reg data
+df["Precinct"] = df["Precinct"].map(addLeadingZeros)
+df = df[df["Precinct"] != "ABSENTEE"]
+df = df[df["Precinct"] != "PROVISIONAL"]
 with open("charlotte_mayor_2022.csv", "w", encoding="utf-8-sig") as file:
     df.to_csv(file)
 
@@ -40,10 +55,42 @@ with open("asheboro_city_council.csv", "w", encoding="utf-8-sig") as file:
 
 # Charlotte City Council 2023
 out_df = charlotte_df[charlotte_df["Contest Name"] == "CITY OF CHARLOTTE CITY COUNCIL AT-LARGE"]
+out_df["Precinct"] = df["Precinct"].map(addLeadingZeros)
+out_df = df[df["Precinct"] != "ABSENTEE"]
+out_df = df[df["Precinct"] != "PROVISIONAL"]
 with open("charlotte_city_council.csv", "w", encoding="utf-8-sig") as file:
     out_df.to_csv(file)
 
 # Charlotte Board of Education 2023
 out_df = charlotte_df[charlotte_df["Contest Name"] == "CHARLOTTE-MECKLENBURG SCHOOLS BOARD OF EDUCATION AT-LARGE"]
+out_df["Precinct"] = df["Precinct"].map(addLeadingZeros)
+out_df = df[df["Precinct"] != "ABSENTEE"]
+out_df = df[df["Precinct"] != "PROVISIONAL"]
 with open("charlotte_board_of_education.csv", "w", encoding="utf-8-sig") as file:
     out_df.to_csv(file)
+
+
+
+# Additional cleaning for Charlotte: add leading zeros to election data
+with open(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), "r+", encoding="utf-8-sig") as file:
+    df = read_csv(file)
+    
+    file.seek(0)
+    df.to_csv(file)
+
+with open(Path("Charlotte ER/charlotte_city_council.csv").resolve(), "r+", encoding="utf-8-sig") as file:
+    df = read_csv(file)
+    df["Precinct"] = df["Precinct"].map(addLeadingZeros)
+    df = df[df["Precinct"] != "ABSENTEE"]
+    df = df[df["Precinct"] != "PROVISIONAL"]
+    file.seek(0)
+    df.to_csv(file)
+
+with open(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), "r+", encoding="utf-8-sig") as file:
+    df = read_csv(file)
+    df["Precinct"] = df["Precinct"].map(addLeadingZeros)
+    df = df[df["Precinct"] != "ABSENTEE"]
+    df = df[df["Precinct"] != "PROVISIONAL"]
+    file.seek(0)
+    df.to_csv(file)
+
