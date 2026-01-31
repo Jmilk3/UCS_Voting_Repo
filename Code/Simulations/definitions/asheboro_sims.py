@@ -12,8 +12,8 @@ Hispanic voters (Council): 0.06869812458715069
 There are 81 possible combinations of D alphas to use
 We should probably choose a subset
 """
-from sim_params import SimParams
-from bloc import Bloc
+from structures.sim_params import SimParams
+from structures.bloc import Bloc
 
 ### Board of EDU
 ## Black voters vs Non-black voters

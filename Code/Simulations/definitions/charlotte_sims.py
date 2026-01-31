@@ -33,8 +33,8 @@ Model: goodman_er_bayes
         non-black_voters for Stephanie is
         [0.31990464 0.37540694]
 """
-from sim_params import SimParams
-from bloc import Bloc
+from structures.sim_params import SimParams
+from structures.bloc import Bloc
 
 # Charlotte Mayor 2023
 # Candidates: Stephanie de Sarachaga-Bilbao, Vi Alexander Lyles

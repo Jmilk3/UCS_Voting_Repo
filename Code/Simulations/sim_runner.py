@@ -1,13 +1,13 @@
 # Primary simulation runner file with CLI interface
 # Classes that store simulation data in a consistent format
-from structures.bloc import Bloc 
-from structures.sim_params import SimParams
+from definitions.structures.bloc import Bloc 
+from definitions.structures.sim_params import SimParams
 
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
 
 # Function that runs PL, BT, and Cambridge ballot generators
-from structures.ballot_generators import generateAll
+from definitions.structures.ballot_generators import generateAll
 
 # IO libraries
 import argparse
@@ -81,7 +81,7 @@ def main(args):
                 continue
             else:
                 print("Invalid value for n")
-                continue    
+                continue
 
         # Show n on request
         if selection == "getn":
@@ -96,6 +96,7 @@ def main(args):
             else:
                 print("Invalid index")
                 continue
+        
         # Resolve name input
         else:
             if selection in sim_names:
