@@ -16,16 +16,16 @@ def env_reg(election_file, registration_file, condition_col = "race_code", elect
     election_name (str): The name of the election. Used in summary output and graph lables
     group_name (str): The name of the subgroup being investigated. Used in summary output and graph lables
     """
-    # Read in the data
-    election_data = read_csv(election_file, dtype={"Precinct": str})
-    reg_data = read_csv(registration_file,  dtype={"precinct_abbrv": str})
-
     # Set column names for various paramaters
     ELECTION_CANDIDATE_COLUMN = "Choice" # Name of the column in election_data which has candidate names
     ELECTION_PRECINCT_COLUMN = "Precinct" # Name of the column in election_data which has the precinct information
     ELECTION_VOTE_COLUMN = "Total Votes" # Name of the column in election_data which has the number of votes
     REG_PRECINCT_COLUMN = "prec_id" # Name of the column in reg_data which has the precinct information
     REG_VOTE_COLUMN = "total_vap" # Name of the column in reg_data which has the number of votes
+
+    # Read in the data
+    election_data = read_csv(election_file, dtype={ELECTION_PRECINCT_COLUMN: str})
+    reg_data = read_csv(registration_file,  dtype={REG_PRECINCT_COLUMN: str})
 
     # Get a list of precincts and candidates for the election
     # NOTE: This assumes that unwanted candidates, such as OVER VOTE or WRITE IN, are already removed
@@ -90,6 +90,7 @@ def env_reg(election_file, registration_file, condition_col = "race_code", elect
         close()
 
 if __name__ == "__main__":
+    """
     # Asheboro Board of EDU
     env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Asheboro_BoE", group_name="HS Degree")
@@ -114,15 +115,16 @@ if __name__ == "__main__":
             "scol_nd", election_name="Smithfield_Council", group_name="Some College")
     env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Smithfield_Council", group_name="Bachelor's Degree")
-
+    """
+    """
     # for the town of smithfield mayor
     env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Smithfield_Mayor", group_name="HS Degree")
-    env_reg(Path("Asheboro ER/smithfield_mayor.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Smithfield_Mayor", group_name="Some College")
-    env_reg(Path("Asheboro ER/smithfield_mayor.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Smithfield_Mayor", group_name="Bachelor's Degree")
-    
+    """
     # for the Charlotte board of education
     env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Charlotte_BoE", group_name="HS Degree")
@@ -146,3 +148,4 @@ if __name__ == "__main__":
             "scol_nd", election_name="Charlotte_Mayor", group_name="Some College")
     env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2022.csv").resolve(),
             "bach_deg", election_name="Charlotte_Mayor", group_name="Bachelor's Degree")
+    
