@@ -20,30 +20,9 @@ from definitions.asheboro_sims import *
 from definitions.smithfield_sims import *
 from definitions.charlotte_sims import *
 
-# TODO: Remove these test blocs and simulations
-# Make up some blocs
-debug_bloc_1 = Bloc(name="Majority Bloc",
-                     size=0.8,
-                     candidates={"A","B","C"},
-                     cohesion={"Majority Bloc":0.7, "Minority Bloc":0.3},
-                     preference={"Majority Bloc": 0.5,
-                                "Minority Bloc": 2})
-
-debug_bloc_2 = Bloc(name="Minority Bloc",
-                    size=0.2,
-                    candidates={"D","E"},
-                    cohesion={"Minority Bloc":0.9, "Majority Bloc":0.1},
-                    preference={"Majority Bloc": 0.5,
-                                "Minority Bloc": 2})
-
-# Create several near-identical sims for debugging
-debug_sim_1 = SimParams("debug_sim_1", debug_bloc_1, debug_bloc_2, 2, 1000)
-debug_sim_2 = SimParams("debug_sim_2", debug_bloc_1, debug_bloc_2, 2, 1000)
-debug_sim_3 = SimParams("debug_sim_3", debug_bloc_1, debug_bloc_2, 2, 1000)
-
 # TODO: Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = [debug_sim_1]
+sim_list = []
 
 def main(args):
     """
