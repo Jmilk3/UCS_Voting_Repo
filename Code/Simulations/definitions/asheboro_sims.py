@@ -73,6 +73,7 @@ BoE_Black_mac = SimParams("Asheboro BoE Black OC",
                                 {"Black Voters": 0.5, "Other Voters": 0.5}),
                          num_seats=3,
                          num_ballots=1000)
+BoE_Black = [BoE_Black_ac, BoE_Black_ai, BoE_Black_mic, BoE_Black_mac]
 
 ## White voters vs non-white voters
 # Total Preference (White) = 0.991
@@ -136,7 +137,9 @@ BoE_White_mac = SimParams("Asheboro BoE White OC",
                               {"White Voters": 0.5, "Other Voters": 0.5}),
                          num_seats=3,
                          num_ballots=1000)
+BoE_White = [BoE_White_ac, BoE_White_ai, BoE_White_mic, BoE_White_mac]
 
+"""
 ## Hispanic voters vs non-hispanic voters
 # Total Preference (Hispanic) = 
 # Total Preference (Other) = 
@@ -206,6 +209,8 @@ BoE_BD_mic = SimParams()
 # Other choosy, Demographic indifferent
 BoE_BD_mac = SimParams()
 
+
+# BoE_List = BoE_Black + BoE_White + BoE_Hispanic + BoE_HS + BoE_SC + BoE_BD 
 ### City Council
 ## Black voters vs Non-black voters
 # All choosy
@@ -284,3 +289,4 @@ Council_BD_mic = SimParams()
 
 # Other choosy, Demographic indifferent
 Council_BD_mac = SimParams()
+"""
