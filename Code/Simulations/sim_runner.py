@@ -16,9 +16,9 @@ import tabulate
 
 # For now, sim definitions can go here
 # TODO: Update this to actually import the definitions
-from definitions.asheboro_sims import *
-from definitions.smithfield_sims import *
-from definitions.charlotte_sims import *
+import definitions.asheboro_sims as ashe
+import definitions.smithfield_sims as smith
+import definitions.charlotte_sims as char
 
 # TODO: Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
