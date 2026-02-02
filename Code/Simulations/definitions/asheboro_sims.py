@@ -6,8 +6,8 @@ Bloc size is directly gathered from data by calculating demographic voters/total
 Candidates are considered part of a demographic bloc if they have a positive slope in the ER graph
 Cohesion is calculated by taking sum of voting preferences for candidates in bloc/sum of preferences for all candidates
 """
-from structures.sim_params import SimParams
-from structures.bloc import Bloc
+from definitions.structures.sim_params import SimParams
+from definitions.structures.bloc import Bloc
 
 ### Board of EDU
 # Candidates: "Gwen Williams" "Todd Dulaney" "Gidget Kidd" "Melissa Calloway" "Ryan Patton"

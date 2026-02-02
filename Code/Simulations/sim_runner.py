@@ -5,6 +5,9 @@ from definitions.structures.sim_params import SimParams
 
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
+from votekit.pref_profile.pref_profile import RankProfile, ProfileError
+# import csv for ballot writer function
+import csv
 
 # Function that runs PL, BT, and Cambridge ballot generators
 from definitions.structures.ballot_generators import generateAll
@@ -28,7 +31,7 @@ def main(args):
     """
     Main sim running function. Handles flag parsing and main interaction loop.
     """
-    output_path = Path(__file__ + f"/../../Results").resolve() # Path to Results folder
+    output_path = Path(__file__ + f"/../../../Results").resolve() # Path to Results folder
 
     # Handle run all sims flag
     if (args.all):
@@ -94,9 +97,9 @@ def runSim(sim, output_path, filename, num_sims):
     generator_inputs = Bloc.outputVars([sim.bloc1, sim.bloc2], sim.num_ballots)
 
     # Open the output files for these sims before starting the loop
-    with open(output_path / f"{filename}_{sim.sim_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
-          open(output_path / f"{filename}_{sim.sim_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
-          open(output_path / f"{filename}_{sim.sim_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
+    with open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
+          open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
+          open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
         # Create an array of file objects to make iteration easier
         files = [pl_file, bt_file, cam_file]
 
@@ -115,7 +118,12 @@ def runSim(sim, output_path, filename, num_sims):
         # Generate ballots and run elections on them num_sims times, outputting results as we go
         for i in range(0, num_sims):
             # Generate ballots
-            ballots = generateAll(generator_inputs) # I am not currently storing every ballot, since that would take up way too much space
+            ballots = generateAll(generator_inputs)
+
+            # Store the ballots for each iteration
+            ballot_to_csv(ballots[0], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_PL.csv", i)
+            ballot_to_csv(ballots[1], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_BT.csv", i)
+            ballot_to_csv(ballots[2], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_Cam.csv", i)
             
             # Run the elections using the 3 ballot sets
             plurality_results = [Plurality(ballots[0], sim.num_seats, "borda"), Plurality(ballots[1], sim.num_seats, "borda"), Plurality(ballots[2], sim.num_seats, "borda")]
@@ -147,7 +155,7 @@ def runSim(sim, output_path, filename, num_sims):
                     files[j].write(f"{candidate},{plurality_win},{stv_win},{difference}\n")
 
                 # Add a gap between results for each iteration
-                files[j].write(",,,\n")             
+                files[j].write(",,,\n")
             
             # Print a status update to terminal
             print(f"      {i+1}/{num_sims} iterations completed!")
@@ -156,7 +164,62 @@ def runSim(sim, output_path, filename, num_sims):
             # NOTE: I love the name of this function
             generator_inputs.resample_preference_intervals_from_dirichlet_alphas()
 
+def ballot_to_csv(ballots:RankProfile,
+        fpath: Path,
+        iteration: int,
+        include_voter_set: bool = False,
+        weight_precision: int = 2,):
+    """
+    Saves PreferenceProfile to a custom CSV format based on the built-in Votekit method.
 
+        Args:
+            fpath (Path): Path to the saved csv.
+            iteration (int): Current iteration value, used for determining if header should be included
+            include_voter_set (bool, optional): Whether or not to include the voter set of each
+                ballot. Defaults to False.
+            weight_precision (int): Number of decimals to round float weights to. Defaults to 2.
+        Raises:
+            ProfileError: Cannot write a profile with no ballots to a csv.
+            ValueError: File path must be provided.
+    """
+    if fpath == "":
+            raise ValueError("File path must be provided.")
+
+    if len(ballots.ballots) == 0:
+        raise ProfileError("Cannot write a profile with no ballots to a csv.")
+    
+    prefix_idx = 1
+    candidate_mapping = {c: c[:prefix_idx] for c in ballots.candidates}
+    while len(set(candidate_mapping.values())) < len(candidate_mapping.values()):
+        prefix_idx += 1
+        candidate_mapping = {c: c[:prefix_idx] for c in ballots.candidates}
+
+    data_col_names = ballots._RankProfile__to_rank_csv_data_column_names(
+        include_voter_set, candidate_mapping
+    )
+    ballot_rows = [
+        ballots._RankProfile__to_rank_csv_ballot_row(
+            b, include_voter_set, candidate_mapping, weight_precision
+        )
+        for b in ballots.ballots
+    ]
+
+    # Only include header if this is the first iteration for this test.
+    if iteration == 0:
+        header = ballots._RankProfile__to_rank_csv_header(candidate_mapping, include_voter_set)
+        rows = header + [data_col_names] + ballot_rows + [[""] * 10]
+    else:
+        rows = [data_col_names] + ballot_rows + [[""] * 10]
+
+    # Write result to output file
+    with open(
+        str(fpath),
+        "+a",
+        newline="",
+        encoding="utf-8",
+    ) as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(rows)
     
 if __name__ == "__main__":
     # Parse CLI arguments and pass them to main
