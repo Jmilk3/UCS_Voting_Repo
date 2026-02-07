@@ -20,7 +20,8 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         candidates (list<str>): A list with the names of candidates that are part of the bloc.
         cohesion (dict<str, float>): A dictionary where keys are bloc names and values are a
           corresponding cohesion value for that block. These values must sum to 1.
-        preference (dict<str, float>): a dict where keys are bloc names and values are Dirichlet alphas
+        preference (list[dict<str, list[float]>]): A list with 2 dictionaries with preference values.
+          The dictionaries have keys as candidate names and values as confidence ranges for possible preferences
         """
         self.__name = name
         self.__size = size

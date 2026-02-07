@@ -75,5 +75,4 @@ Council_HS = SimParams()
 Council_SC = SimParams()
 
 ## 4 year degree vs all other edu
-# All choosy
 Council_BD = SimParams()
