@@ -14,26 +14,28 @@ from definitions.structures.bloc import Bloc
 ## Black voters vs Non-black voters
 # Total preference (Black) = 1.617
 # Total preference (Other) = 0.952
-# All choosy
-BoE_Black = SimParams("Asheboro BoE Black AC",
+BoE_Black = SimParams("Asheboro BoE Black",
                          Bloc("Black Voters",
                                 0.08338515110060937,
                                 ["Gwen Williams", "Todd Dulaney"],
                                 {"Black Voters": 0.714, "Other Voters": 0.286},
-                                {"Black Voters": 0.5, "Other Voters": 0.5}),
+                                {"Black Voters": {"Gwen Williams": [], "Todd Dulaney": []},
+                                "Other Voters": {"Gidget Kidd": [], "Melissa Calloway": [], "Ryan Patton": []}},
+                                ),
                          Bloc("Other Voters",
                                 1 - 0.08338515110060937,
                                 ["Gidget Kidd", "Melissa Calloway", "Ryan Patton"],
                                 {"Black Voters": 0.152, "Other Voters": 0.848},
-                                {"Black Voters": 0.5, "Other Voters": 0.5}),
+                                {"Other Voters": {"Gidget Kidd": [], "Melissa Calloway": [], "Ryan Patton": []},
+                                "Black Voters": {"Gwen Williams": [], "Todd Dulaney": []}},
+                                ),
                          num_seats=3,
                          num_ballots=1000)
 
 ## White voters vs non-white voters
 # Total Preference (White) = 0.991
 # Total Preference (Other) = 1.059
-# All choosy
-BoE_White = SimParams("Asheboro BoE White AC",
+BoE_White = SimParams("Asheboro BoE White",
                          Bloc("White Voters",
                               0.7698669319736351,
                               ["Gidget Kidd", "Melissa Calloway", "Ryan Patton"],
@@ -50,8 +52,7 @@ BoE_White = SimParams("Asheboro BoE White AC",
 ## Hispanic voters vs non-hispanic voters
 # Total Preference (Hispanic) = 2.108
 # Total Preference (Other) = 
-# All choosy
-BoE_Hispanic = SimParams("Asheboro BoE Hispanic AC",
+BoE_Hispanic = SimParams("Asheboro BoE Hispanic",
                          Bloc("Hispanic Voters",
                               0.06721800771048377,
                               ["Gidget Kidd", "Melissa Calloway", "Gwen Williams", "Todd Dulaney"],
@@ -68,39 +69,30 @@ BoE_Hispanic = SimParams("Asheboro BoE Hispanic AC",
 ## High School Diploma vs all other edu
 # Total Preference (HS) = 
 # Total Preference (Other) = 
-# All choosy
 BoE_HS = SimParams()
 
 ## Some College vs all other edu
-# All choosy
 BoE_SC = SimParams()
 
 ## 4 year degree vs all other edu
-# All choosy
 BoE_BD = SimParams()
 
 # BoE_List = BoE_Black + BoE_White + BoE_Hispanic + BoE_HS + BoE_SC + BoE_BD 
 ### City Council
 ## Black voters vs Non-black voters
-# All choosy
 Council_Black = SimParams()
 
 ## White voters vs non-white voters
-# All choosy
 Council_White = SimParams()
 
 ## Hispanic voters vs non-hispanic voters
-# All choosy
 Council_Hispanic = SimParams()
 
 ## High School Diploma vs all other edu
-# All choosy
 Council_HS = SimParams()
 
 ## Some College vs all other edu
-# All choosy
 Council_SC = SimParams()
 
-## 4 year degree vs all other edu
-# All choosy
+## 4 year degree vs all other edusy
 Council_BD = SimParams()
