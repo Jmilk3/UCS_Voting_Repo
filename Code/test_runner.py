@@ -16,7 +16,7 @@ import tabulate
 
 # For now, test definitions can go here
 
-"""
+
 # Make up some blocs
 debug_bloc_1 = Bloc(name="Majority Bloc",
                      size=0.8,
@@ -36,10 +36,10 @@ debug_bloc_2 = Bloc(name="Minority Bloc",
 debug_test_1 = TestParams("debug_test_1", debug_bloc_1, debug_bloc_2, 2, 1000)
 debug_test_2 = TestParams("debug_test_2", debug_bloc_1, debug_bloc_2, 2, 1000)
 debug_test_3 = TestParams("debug_test_3", debug_bloc_1, debug_bloc_2, 2, 1000)
-"""
+
 
 # This is the list of tests that the test runner can see. Be sure to add any new tests here
-test_list = []
+test_list = [debug_test_1]
 
 def main(args):
     """
@@ -117,8 +117,8 @@ def runTest(test, output_path, filename, num_tests):
             ballots = generateAll(generator_inputs) # I am not currently storing every ballot, since that would take up way too much space
             
             # Run the elections using the 3 ballot sets
-            plurality_results = [Plurality(ballots[0], test.num_seats), Plurality(ballots[1], test.num_seats), Plurality(ballots[2], test.num_seats)]
-            stv_results = [STV(ballots[0], test.num_seats), STV(ballots[1], test.num_seats), STV(ballots[2], test.num_seats)]
+            plurality_results = [Plurality(ballots[0], test.num_seats, "borda"), Plurality(ballots[1], test.num_seats, "borda"), Plurality(ballots[2], test.num_seats, "borda")]
+            stv_results = [STV(ballots[0], test.num_seats, tiebreak = "borda"), STV(ballots[1], test.num_seats, tiebreak = "borda"), STV(ballots[2], test.num_seats, tiebreak = "borda")]
 
             # Output results for each set of ballots
             for j in range(3):
