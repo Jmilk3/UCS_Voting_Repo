@@ -1,0 +1,12 @@
+# environment.yaml
+
+name: UCS_Voting
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - anaconda
+  - gxx
+  - pip
+  - pip:
+    - -r requirements.txt

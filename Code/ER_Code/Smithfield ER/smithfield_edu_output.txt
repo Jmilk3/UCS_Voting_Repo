@@ -1,0 +1,606 @@
+Demographic Size Ratio (HS Degree): 0.2887571881234597
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.298     | 3          | 1969.18 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.360     | 3          | 1210.69 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.383     | 5          | 876.90 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.348     | 15         | 574.58 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Doris Louise Wallace summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Doris Louise Wallace is
+        0.413
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Doris Louise Wallace is
+        0.128
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Doris Louise Wallace is
+        [0.03028412 0.85110118]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Doris Louise Wallace is
+        [0.00341992 0.35606353]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.294     | 3          | 1254.03 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.351     | 7          | 2092.20 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.298     | 7          | 867.12 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.318     | 3          | 583.40 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Felicia C. Baxter summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Felicia C. Baxter is
+        0.243
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Felicia C. Baxter is
+        0.086
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Felicia C. Baxter is
+        [0.01314704 0.600098  ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Felicia C. Baxter is
+        [0.00392535 0.24546084]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.421     | 3          | 1344.35 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.274     | 15         | 2295.34 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.284     | 11         | 872.65 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.222     | 15         | 583.58 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: John A. Dunn summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for John A. Dunn is
+        0.268
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for John A. Dunn is
+        0.192
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for John A. Dunn is
+        [0.00981209 0.76919679]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for John A. Dunn is
+        [0.0187903  0.38832482]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.258     | 15         | 2349.23 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.282     | 11         | 1373.79 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.188     | 15         | 939.45 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.094     | 15         | 529.17 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Roger A. Wood summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Roger A. Wood is
+        0.314
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Roger A. Wood is
+        0.194
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Roger A. Wood is
+        [0.01146153 0.84300931]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Roger A. Wood is
+        [0.01520473 0.37948491]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.319     | 15         | 2216.96 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.283     | 19         | 1290.33 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.199     | 15         | 931.25 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.315     | 7          | 607.79 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Stephen Rabil summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Stephen Rabil is
+        0.245
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Stephen Rabil is
+        0.176
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Stephen Rabil is
+        [0.00659315 0.71210359]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Stephen Rabil is
+        [0.01535829 0.34311968]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.210     | 7          | 1986.78 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 2           | 0.072     | 3          | 1234.94 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.245     | 7          | 895.67 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.215     | 7          | 578.40 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Stuart Ashby Lee summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Stuart Ashby Lee is
+        0.167
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Stuart Ashby Lee is
+        0.082
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Stuart Ashby Lee is
+        [0.00737103 0.40652702]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Stuart Ashby Lee is
+        [0.00539167 0.17584461]
+        
+Demographic Size Ratio (Some College): 0.23136955756366623
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.355     | 3          | 1052.50 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.198     | 7          | 2405.56 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.322     | 11         | 1485.27 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.526     | 3          | 644.01 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Doris Louise Wallace summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Doris Louise Wallace is
+        0.394
+        The posterior mean for the district-level voting preference of
+        non-Some College for Doris Louise Wallace is
+        0.159
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Doris Louise Wallace is
+        [0.02371859 0.9226809 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Doris Louise Wallace is
+        [0.01500705 0.35793649]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.420     | 7          | 2377.15 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.421     | 7          | 1365.70 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.474     | 7          | 925.68 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.266     | 7          | 593.97 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Felicia C. Baxter summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Felicia C. Baxter is
+        0.310
+        The posterior mean for the district-level voting preference of
+        non-Some College for Felicia C. Baxter is
+        0.082
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Felicia C. Baxter is
+        [0.0161895  0.76686246]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Felicia C. Baxter is
+        [0.00335008 0.22812657]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.238     | 15         | 2443.62 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.222     | 7          | 1369.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.405     | 15         | 915.24 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.132     | 15         | 601.14 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: John A. Dunn summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for John A. Dunn is
+        0.402
+        The posterior mean for the district-level voting preference of
+        non-Some College for John A. Dunn is
+        0.163
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for John A. Dunn is
+        [0.01511755 0.91618497]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for John A. Dunn is
+        [0.0153912  0.35611586]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.365     | 7          | 2138.67 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.391     | 15         | 1289.93 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.266     | 7          | 911.84 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.250     | 7          | 590.79 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Roger A. Wood summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Roger A. Wood is
+        0.423
+        The posterior mean for the district-level voting preference of
+        non-Some College for Roger A. Wood is
+        0.172
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Roger A. Wood is
+        [0.01681279 0.9315219 ]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Roger A. Wood is
+        [0.01998243 0.35235515]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.256     | 15         | 2238.36 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.179     | 15         | 1275.09 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.338     | 7          | 888.98 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 2           | 0.388     | 15         | 599.20 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Stephen Rabil summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Stephen Rabil is
+        0.298
+        The posterior mean for the district-level voting preference of
+        non-Some College for Stephen Rabil is
+        0.167
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Stephen Rabil is
+        [0.00832086 0.86896238]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Stephen Rabil is
+        [0.01957313 0.32313793]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.191     | 23         | 2180.69 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.261     | 7          | 1261.23 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.263     | 7          | 897.34 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.225     | 7          | 556.51 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Stuart Ashby Lee summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Stuart Ashby Lee is
+        0.208
+        The posterior mean for the district-level voting preference of
+        non-Some College for Stuart Ashby Lee is
+        0.080
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Stuart Ashby Lee is
+        [0.00963697 0.56086288]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Stuart Ashby Lee is
+        [0.00530421 0.16694752]
+        
+Demographic Size Ratio (Bachelor's Degree): 0.16576692876422955
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.263     | 7          | 2718.02 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.541     | 11         | 1450.90 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.427     | 7          | 980.48 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.537     | 7          | 624.44 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Doris Louise Wallace summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Doris Louise Wallace is
+        0.349
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Doris Louise Wallace is
+        0.175
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Doris Louise Wallace is
+        [0.01714913 0.90483694]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Doris Louise Wallace is
+        [0.02454965 0.37678986]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.240     | 15         | 2443.14 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.396     | 15         | 1342.28 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.217     | 7          | 897.91 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.382     | 3          | 570.35 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Felicia C. Baxter summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Felicia C. Baxter is
+        0.271
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Felicia C. Baxter is
+        0.097
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Felicia C. Baxter is
+        [0.0107622  0.77634425]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Felicia C. Baxter is
+        [0.00765403 0.23559893]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.343     | 15         | 1442.52 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.245     | 3          | 2507.02 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.313     | 15         | 1259.77 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.286     | 7          | 737.58 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: John A. Dunn summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for John A. Dunn is
+        0.452
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for John A. Dunn is
+        0.153
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for John A. Dunn is
+        [0.03339149 0.93514172]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for John A. Dunn is
+        [0.01471767 0.32615233]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 1           | 0.256     | 7          | 2290.09 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.287     | 15         | 1382.07 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.344     | 7          | 951.39 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.469     | 7          | 619.27 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Roger A. Wood summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Roger A. Wood is
+        0.409
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Roger A. Wood is
+        0.181
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Roger A. Wood is
+        [0.0223366  0.92072601]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Roger A. Wood is
+        [0.03094497 0.34001592]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.275     | 7          | 2488.36 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.314     | 15         | 1369.40 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 2           | 0.316     | 7          | 902.56 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.381     | 7          | 599.20 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Stephen Rabil summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Stephen Rabil is
+        0.406
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Stephen Rabil is
+        0.139
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Stephen Rabil is
+        [0.02950309 0.88917328]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Stephen Rabil is
+        [0.01509741 0.29306688]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.202     | 15         | 1270.46 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.204     | 7          | 2189.24 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.422     | 23         | 905.61 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.360     | 7          | 582.42 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Council: Stuart Ashby Lee summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Stuart Ashby Lee is
+        0.197
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Stuart Ashby Lee is
+        0.089
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Stuart Ashby Lee is
+        [0.0052952  0.60642322]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Stuart Ashby Lee is
+        [0.01033167 0.17375224]
+
+Demographic Size Ratio (HS Degree): 0.2887571881234597
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.469     | 7          | 3536.97 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.475     | 7          | 1435.67 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.441     | 7          | 959.44 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.413     | 7          | 636.58 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Mayor: Andy Moore summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Andy Moore is
+        0.444
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Andy Moore is
+        0.609
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Andy Moore is
+        [0.02312342 0.96712054]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Andy Moore is
+        [0.16628708 0.95255222]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.486     | 3          | 3107.53 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.453     | 15         | 1305.59 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.572     | 7          | 896.80 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.621     | 7          | 592.48 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Mayor: Marlon Lee summary (HS Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        HS Degree for Marlon Lee is
+        0.548
+        The posterior mean for the district-level voting preference of
+        non-HS Degree for Marlon Lee is
+        0.399
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        HS Degree for Marlon Lee is
+        [0.04248843 0.98191341]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-HS Degree for Marlon Lee is
+        [0.05389895 0.84564729]
+        
+Demographic Size Ratio (Some College): 0.23136955756366623
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.470     | 3          | 3111.54 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.702     | 3          | 1529.91 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.474     | 7          | 971.55 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.546     | 7          | 633.15 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Mayor: Andy Moore summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Andy Moore is
+        0.496
+        The posterior mean for the district-level voting preference of
+        non-Some College for Andy Moore is
+        0.573
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Andy Moore is
+        [0.024313   0.97077205]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Andy Moore is
+        [0.15307385 0.92317987]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.476     | 7          | 2946.61 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.672     | 7          | 1446.15 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.499     | 7          | 901.50 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.662     | 7          | 603.25 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Mayor: Marlon Lee summary (Some College)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Some College for Marlon Lee is
+        0.493
+        The posterior mean for the district-level voting preference of
+        non-Some College for Marlon Lee is
+        0.433
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Some College for Marlon Lee is
+        [0.02026    0.97089462]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Some College for Marlon Lee is
+        [0.08925217 0.82061686]
+        
+Demographic Size Ratio (Bachelor's Degree): 0.16576692876422955
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.474     | 3          | 3231.16 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.544     | 7          | 1468.68 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.662     | 7          | 971.37 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.614     | 7          | 661.04 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Mayor: Andy Moore summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Andy Moore is
+        0.529
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Andy Moore is
+        0.555
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Andy Moore is
+        [0.04027762 0.97412658]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Andy Moore is
+        [0.1670716  0.91701326]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.325     | 7          | 3131.17 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.455     | 7          | 1508.26 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.416     | 3          | 932.67 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.574     | 7          | 608.32 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Smithfield_Mayor: Marlon Lee summary (Bachelor's Degree)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Bachelor's Degree for Marlon Lee is
+        0.463
+        The posterior mean for the district-level voting preference of
+        non-Bachelor's Degree for Marlon Lee is
+        0.446
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Bachelor's Degree for Marlon Lee is
+        [0.02901038 0.96425953]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Bachelor's Degree for Marlon Lee is
+        [0.08334086 0.8479463 ]
+        
