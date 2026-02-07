@@ -27,6 +27,11 @@ import definitions.asheboro_sims as ashe
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
 sim_list = ashe.BoE_Black + ashe.BoE_White
 
+# TODO: Create a list for each of the cities
+# ashe_list
+# smith_list
+# char_list
+
 def main(args):
     """
     Main sim running function. Handles flag parsing and main interaction loop.
@@ -229,6 +234,9 @@ if __name__ == "__main__":
     parser.add_argument("filename", type=str, help="The filename will be used to distinguish the output files from previous results.")
     parser.add_argument("--number","-n", default=1, type=int, help="The number of times each simulation should be run. Defaults to 1.")
     parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all simulations then exit.")
+
+    # TODO: Add a way to run each city list independently, for concurrency's sake
+
     args = parser.parse_args()
     print(args)
 
