@@ -20,7 +20,8 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         candidates (list<str>): A list with the names of candidates that are part of the bloc.
         cohesion (dict<str, float>): A dictionary where keys are bloc names and values are a
           corresponding cohesion value for that block. These values must sum to 1.
-        preference (dict<str, float>): a dict where keys are bloc names and values are Dirichlet alphas
+        preference (dict<string, dict<string, list>>): A dictionary mapping bloc names to dictionaries with preference values
+         eg. {Bloc 1: {A: [], B: []}, Bloc 2: {C: []}}
         """
         self.__name = name
         self.__size = size
@@ -46,8 +47,9 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         return self.__cohesion
     
     def preference(self):
-        """Access function for Dirichlet alphas"""
+        """Access function for preference params"""
         return self.__preference
+
 
     @staticmethod
     def outputVars(blocs, numVoters):
@@ -55,25 +57,21 @@ A class which stores the data needed for a bloc when using votekit ballot genera
         A function which returns a BlocSlateConfig object for the given blocs
         blocs (list<Bloc>): A list of bloc objects from which to pull and format the data.
         numVoters (int): The number of voters that the config option should have. 
+        returns a list with [numVoters, candidates, voter_proportions, preference_params (unprocessed), cohesion_params]
         """
         # define dicts to store various bloc values
         candidate_slates = {} # Stores lists of candidates from each bloc
         voter_props = {} # stores the voter proportion for each bloc
         cohesion_params = {} # Stores cohesion params from each bloc
-        preference_params = {} # stores the preference params from each bloc
+        preference_params = [] # stores the preference params from each bloc
         # Get the necessary data from each bloc and put it into a dict
         for bloc in blocs:
             candidate_slates[bloc.name()] = bloc.candidates()
             voter_props[bloc.name()] = bloc.size()
             cohesion_params[bloc.name()] = bloc.cohesion()
-            preference_params[bloc.name()] = bloc.preference()
+            preference_params.append(bloc.name())
+            preference_params.append(bloc.preference())
 
-        # Set dirichlet alphas then return the various values
-        output = BlocSlateConfig(n_voters=numVoters,
-                                slate_to_candidates=candidate_slates,
-                                bloc_proportions=voter_props,
-                                cohesion_mapping=cohesion_params)
-        output.set_dirichlet_alphas(preference_params)
-        return output
-        
+        return [numVoters, candidate_slates, voter_props, preference_params, cohesion_params]
+
     

@@ -6,6 +6,8 @@ from definitions.structures.sim_params import SimParams
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
 from votekit.pref_profile.pref_profile import RankProfile, ProfileError
+from votekit.ballot_generator import BlocSlateConfig
+from votekit.pref_interval import PreferenceInterval
 # import csv for ballot writer function
 import csv
 
@@ -17,6 +19,9 @@ import argparse
 from pathlib import Path
 import tabulate
 
+# Random for selecting within confidence interval
+from random import uniform
+
 # For now, sim definitions can go here
 # TODO: Update this to actually import the definitions
 import definitions.asheboro_sims as ashe
@@ -26,6 +31,11 @@ import definitions.asheboro_sims as ashe
 # TODO: Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
 sim_list = ashe.BoE_Black + ashe.BoE_White
+
+# TODO: Create a list for each of the cities
+# ashe_list
+# smith_list
+# char_list
 
 def main(args):
     """
@@ -94,7 +104,7 @@ def main(args):
 def runSim(sim, output_path, filename, num_sims):
     """Helper function that runs a given sim n times and prints the results to the output file"""
     # Turn the blocs into generator inputs
-    generator_inputs = Bloc.outputVars([sim.bloc1, sim.bloc2], sim.num_ballots)
+    config_inputs = Bloc.outputVars([sim.bloc1, sim.bloc2], sim.num_ballots)
 
     # Open the output files for these sims before starting the loop
     with open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
@@ -109,7 +119,7 @@ def runSim(sim, output_path, filename, num_sims):
                 file.write("Candidate,Plurality Result,STV Result,Difference\n")
 
         # Store a sorted list of candidates to ensure consistent results ordering between runs
-        candidates = generator_inputs.candidates
+        candidates = config_inputs.candidates
         candidates.sort()
 
         # Print a status update to terminal
@@ -117,8 +127,38 @@ def runSim(sim, output_path, filename, num_sims):
 
         # Generate ballots and run elections on them num_sims times, outputting results as we go
         for i in range(0, num_sims):
+            # Create a preference mapping by sampling from ranges in config_inputs
+            prefs = config_inputs[3]
+            sampled_pref_mapping = {prefs[0]: {}, prefs[2]: {}}
+
+            # loop through bloc 1 mappings and get values
+            for key in prefs[1].keys():
+                current = {} # create a dict for each bloc
+                for candidate in prefs[1][key]:
+                    # Set candidate value to random value in its given range
+                    current[candidate] = uniform(prefs[1][key][candidate][0], prefs[1][key][candidate][1])
+                # Add preference interval to mapping
+                sampled_pref_mapping[prefs[0]][key] = PreferenceInterval(current)
+            
+            # loop through bloc 2 mappings and get values
+            for key in prefs[3].keys():
+                current = {} # create a dict for each bloc
+                for candidate in prefs[3][key]:
+                    # Set candidate value to random value in its given range
+                    current[candidate] = uniform(prefs[3][key][candidate][0], prefs[3][key][candidate][1])
+                # Add preference interval to mapping
+                sampled_pref_mapping[prefs[2]][key] = PreferenceInterval(current)
+
+           # Create preference intervals for each bloc
+            # Create the blocSlateConfig for this iteration
+            generator_config = BlocSlateConfig(n_voters=config_inputs[0],
+                                               slate_to_candidates=config_inputs[1],
+                                               bloc_proportions=config_inputs[2],
+                                               preference_mapping=sampled_pref_mapping,
+                                               cohesion_mapping=config_inputs[4])
+
             # Generate ballots
-            ballots = generateAll(generator_inputs)
+            ballots = generateAll(generator_config)
 
             # Store the ballots for each iteration
             ballot_to_csv(ballots[0], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_PL.csv", i)
@@ -126,8 +166,12 @@ def runSim(sim, output_path, filename, num_sims):
             ballot_to_csv(ballots[2], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_Cam.csv", i)
             
             # Run the elections using the 3 ballot sets
-            plurality_results = [Plurality(ballots[0], sim.num_seats, "borda"), Plurality(ballots[1], sim.num_seats, "borda"), Plurality(ballots[2], sim.num_seats, "borda")]
-            stv_results = [STV(ballots[0], sim.num_seats, tiebreak="borda"), STV(ballots[1], sim.num_seats, tiebreak="borda"), STV(ballots[2], sim.num_seats, tiebreak="borda")]
+            plurality_results = [Plurality(ballots[0], sim.num_seats, "borda"),
+                                  Plurality(ballots[1], sim.num_seats, "borda"),
+                                  Plurality(ballots[2], sim.num_seats, "borda")]
+            stv_results = [STV(ballots[0], sim.num_seats, tiebreak="borda"),
+                            STV(ballots[1], sim.num_seats, tiebreak="borda"),
+                            STV(ballots[2], sim.num_seats, tiebreak="borda")]
 
             # Output results for each set of ballots
             for j in range(3):
@@ -160,9 +204,6 @@ def runSim(sim, output_path, filename, num_sims):
             # Print a status update to terminal
             print(f"      {i+1}/{num_sims} iterations completed!")
 
-            # Get a new preference profile for the next iteration
-            # NOTE: I love the name of this function
-            generator_inputs.resample_preference_intervals_from_dirichlet_alphas()
 
 def ballot_to_csv(ballots:RankProfile,
         fpath: Path,
@@ -229,6 +270,9 @@ if __name__ == "__main__":
     parser.add_argument("filename", type=str, help="The filename will be used to distinguish the output files from previous results.")
     parser.add_argument("--number","-n", default=1, type=int, help="The number of times each simulation should be run. Defaults to 1.")
     parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all simulations then exit.")
+
+    # TODO: Add a way to run each city list independently, for concurrency's sake
+
     args = parser.parse_args()
     print(args)
 

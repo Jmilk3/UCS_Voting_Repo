@@ -6,158 +6,52 @@ from structures.bloc import Bloc
 
 ### Mayor
 ## Black voters vs Non-black voters
-# All choosy
-Mayor_Black_ac = SimParams()
-
-# All indifferent
-Mayor_Black_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Mayor_Black_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Mayor_Black_mac = SimParams()
+# Black Voter Sum = 1.547
+# Other Voter Sum = 0.887
+Mayor_Black = SimParams("Smithfield Council Black",
+                        Bloc("Black Voters",
+                             0.26221453287197233,
+                             ["Doris Louise Wallace", "Felicia C. Baxter", "Stuart Ashby Lee"],
+                             {"Black Voters": 0.635, "Other Voters": 0.365},
+                             {"Black Voters": {"Doris Louise Wallace": [0.0350471  0.83714949], "Felicia C. Baxter": [0.05430359 0.54919671], "Stuart Ashby Lee": [0.02759562 0.39267972]},
+                               "Other Voters": {"John A. Dunn", "Roger A. Wood", "Stephen Rabil"}}),    
+                        Bloc("Other Voters",
+                             1 - 0.26221453287197233,
+                             ["John A. Dunn", "Roger A. Wood", "Stephen Rabil"],
+                             {"Black Voters": .248, "Other Voters": .752},
+                             {}
+                             ))
 
 ## White voters vs non-white voters
-# All choosy
-Mayor_White_ac = SimParams()
-
-# All indifferent
-Mayor_White_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Mayor_White_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Mayor_White_mac = SimParams()
+Mayor_White = SimParams()
 
 ## Hispanic voters vs non-hispanic voters
-# All choosy
-Mayor_Hispanic_ac = SimParams()
-
-# All indifferent
-Mayor_Hispanic_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Mayor_Hispanic_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Mayor_Hispanic_mac = SimParams()
+Mayor_Hispanic = SimParams()
 
 ## High School Diploma vs all other edu
-# All choosy
-Mayor_HS_ac = SimParams()
-
-# All indifferent
-Mayor_HS_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Mayor_HS_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Mayor_HS_mac = SimParams()
+Mayor_HS = SimParams()
 
 ## Some College vs all other edu
-# All choosy
-Mayor_SC_ac = SimParams()
-
-# All indifferent
-Mayor_SC_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Mayor_SC_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Mayor_SC_mac = SimParams()
+Mayor_SC = SimParams()
 
 ## 4 year degree vs all other edu
-# All choosy
-Mayor_BD_ac = SimParams()
-
-# All indifferent
-Mayor_BD_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Mayor_BD_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Mayor_BD_mac = SimParams()
+Mayor_BD = SimParams()
 
 ### Town Council
 ## Black voters vs Non-black voters
-# All choosy
-Council_Black_ac = SimParams()
-
-# All indifferent
-Council_Black_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Council_Black_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Council_Black_mac = SimParams()
+Council_Black = SimParams()
 
 ## White voters vs non-white voters
-# All choosy
-Council_White_ac = SimParams()
-
-# All indifferent
-Council_White_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Council_White_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Council_White_mac = SimParams()
+Council_White = SimParams()
 
 ## Hispanic voters vs non-hispanic voters
-# All choosy
-Council_Hispanic_ac = SimParams()
-
-# All indifferent
-Council_Hispanic_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Council_Hispanic_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Council_Hispanic_mac = SimParams()
+Council_Hispanic = SimParams()
 
 ## High School Diploma vs all other edu
-# All choosy
-Council_HS_ac = SimParams()
-
-# All indifferent
-Council_HS_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Council_HS_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Council_HS_mac = SimParams()
+Council_HS = SimParams()
 
 ## Some College vs all other edu
-# All choosy
-Council_SC_ac = SimParams()
-
-# All indifferent
-Council_SC_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Council_SC_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Council_SC_mac = SimParams()
+Council_SC = SimParams()
 
 ## 4 year degree vs all other edu
-# All choosy
-Council_BD_ac = SimParams()
-
-# All indifferent
-Council_BD_ai = SimParams()
-
-# Demographic choosy, Other indifferent
-Council_BD_mic = SimParams()
-
-# Other choosy, Demographic indifferent
-Council_BD_mac = SimParams()
+Council_BD = SimParams()
