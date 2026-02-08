@@ -53,31 +53,78 @@ BoE_White = SimParams("Asheboro BoE White",
 
 ## Hispanic voters vs non-hispanic voters
 # Total Preference (Hispanic) = 2.108
-# Total Preference (Other) = 
+# Total Preference (Other) = FILL IN
+# NEEDS COHESION
 BoE_Hispanic = SimParams("Asheboro BoE Hispanic",
                          Bloc("Hispanic Voters",
                               0.06721800771048377,
                               ["Gidget Kidd", "Melissa Calloway", "Gwen Williams", "Todd Dulaney"],
                               {"Hispanic Voters": 0.894, "Other Voters": 0.106},
-                              {"Hispanic Voters": 0.5, "Other Voters": 0.5}),
+                              {"Hispanic Voters": {"Gidget Kidd": [0.01139289 0.91053331], "Melissa Calloway": [0.0143132  0.89089179], "Gwen Williams": [0.04626673 0.98212229], "Todd Dulaney": [0.0605872  0.96751213]}, 
+                               "Other Voters": {"Ryan Patton": [0.00780188 0.88187521]}}),
                          Bloc("Other Voters",
                               1-0.06721800771048377,
                               ["Ryan Patton"],
                               {"Hispanic Voters": 0.371, "Other Voters": 0.629},
-                              {"Hispanic Voters": 0.5, "Other Voters": 0.5}),
+                              {"Other Voters": {"Ryan Patton": [0.18103949 0.30824469]}, 
+                               "Hispanic Voters": {"Gidget Kidd": [0.18838425 0.29254635], "Melissa Calloway": [0.20456451 0.29545573], "Gwen Williams": [0.03998576 0.17439706], "Todd Dulaney": [0.01600647 0.11221274]}}),
                          num_seats=3,
                          num_ballots=1000)
 
 ## High School Diploma vs all other edu
 # Total Preference (HS) = 
 # Total Preference (Other) = 
-BoE_HS = SimParams()
+#NEEDS COHESION
+BoE_HS = SimParams("Asheboro BoE High School Diploma",
+                         Bloc("HS Diploma Voters",
+                              0.3385441497503325,
+                              ["Gidget Kidd", "Melissa Calloway"],
+                              {"HS Diploma Voters": 0.00000, "Other Voters": 0.00000},
+                              {"HS Diploma Voters": {"Gidget Kidd": [0.0726379  0.69204236], "Melissa Calloway": [0.13486879 0.6643687 ]}, 
+                               "Other Voters": {"Ryan Patton": [0.01481381 0.67349809], "Gwen Williams": [0.00731166 0.45436697], "Todd Dulaney": [0.00525687 0.29982127]}}),
+                         Bloc("Other Voters",
+                              1-0.3385441497503325,
+                              ["Ryan Patton", "Gwen Williams", "Todd Dulaney"],
+                              {"HS Diploma Voters": 0.371, "Other Voters": 0.629},
+                              {"Other Voters": {"Ryan Patton": [0.04392796 0.40114991], "Gwen Williams": [0.00625728 0.24785003], "Todd Dulaney": [0.00809163 0.1669663]}, 
+                               "HS Diploma Voters": {"Gidget Kidd": [0.02616888 0.34354905], "Melissa Calloway": [0.04922923 0.3237556]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 
 ## Some College vs all other edu
-BoE_SC = SimParams()
-
+# NEEDS COHESION
+BoE_SC = SimParams("Asheboro BoE Some College",
+                         Bloc("Some College Voters",
+                              0.2388778761950167,
+                              ["Ryan Patton", "Gidget Kidd", "Gwen Williams"],
+                              {"Some College Voters": 0.00000, "Other Voters": 0.00000},
+                              {"Some College Voters": {"Ryan Patton": [0.03998989 0.97063398], "Gidget Kidd": [0.01784363 0.94347151], "Gwen Williams": [0.01489316 0.66603107]}, 
+                               "Other Voters": {"Melissa Calloway": [0.00646395 0.85665243], "Todd Dulaney": [0.00869823 0.44740058]}}),
+                         Bloc("Other Voters",
+                              1-0.2388778761950167,
+                              ["Melissa Calloway", "Todd Dulaney"],
+                              {"Some College Voters": 0.371, "Other Voters": 0.629},
+                              {"Other Voters": {"Melissa Calloway": [0.07278013 0.35000336], "Todd Dulaney": [0.00423588 0.14598128]}, 
+                               "Some College Voters": {"Ryan Patton": [0.02464772 0.33932567], "Gidget Kidd": [0.03372966 0.33761305], "Gwen Williams": [0.00531348 0.21100252]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 ## 4 year degree vs all other edu
-BoE_BD = SimParams()
+#NEEDS COHESION
+BoE_BD = SimParams("Asheboro BoE Bachelors Degree",
+                         Bloc("Bachelors Degree Voters",
+                              0.13512157177627782,
+                              ["Ryan Patton", "Todd Dulaney", "Gwen Williams"],
+                              {"Bachelors Degree Voters": 0.00000, "Other Voters": 0.00000},
+                              {"Bachelors Degree Voters": {"Ryan Patton": [0.02463028 0.92905369], "Todd Dulaney": [0.02263961 0.72490493], "Gwen Williams": [0.04156607 0.95872544]}, 
+                               "Other Voters": {"Melissa Calloway": [0.00521031 0.57579724], "Gidget Kidd": [0.00705057 0.76901157]}}),
+                         Bloc("Other Voters",
+                              1-0.13512157177627782,
+                              ["Melissa Calloway", "Gidget Kidd"],
+                              {"Bachelors Degree Voters": 0.371, "Other Voters": 0.629},
+                              {"Other Voters": {"Melissa Calloway": [0.20896676 0.31280688], "Gidget Kidd": [0.15903938 0.31146682]}, 
+                               "Bachelors Degree Voters": {"Ryan Patton": [0.13238917 0.31623319], "Todd Dulaney": [0.00363666 0.12099312], "Gwen Williams": [0.00765606 0.17638661]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 
 # BoE_List = BoE_Black + BoE_White + BoE_Hispanic + BoE_HS + BoE_SC + BoE_BD 
 ### City Council
