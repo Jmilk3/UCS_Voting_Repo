@@ -28,14 +28,16 @@ import definitions.asheboro_sims as ashe
 #import definitions.smithfield_sims as smith
 #import definitions.charlotte_sims as char
 
-# TODO: Change the sim list to include all of the sims from the definition files
-# This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = ashe.BoE_Black + ashe.BoE_White
-
 # TODO: Create a list for each of the cities
 # ashe_list
 # smith_list
 # char_list
+
+# TODO: Change the sim list to include all of the sims from the definition files
+# This is the list of sims that the sim runner can see. Be sure to add any new sims here
+sim_list = ashe.BoE_Black + ashe.BoE_White
+
+
 
 def main(args):
     """
@@ -50,6 +52,33 @@ def main(args):
             runSim(sim, output_path, args.filename, args.number)
             print('    ' + sim.sim_name + " Done!")
         return
+    
+    # Handle city input
+    # TODO: Update switch to actually run sims
+    match args.city.lower():
+        case "asheboro":
+            # run contents of ashe_list
+            # print(f"Running {len(ashe_list)} sims:")
+            # for sim in ashe_list:
+            #     runSim(sim, output_path, args.filename, args.number)
+            #     print('    ' + sim.sim_name + " Done!")
+            return
+        case "smithfield":
+            # run contents of smith_list
+            # print(f"Running {len(smith_list)} sims:")
+            # for sim in smith_list:
+            #     runSim(sim, output_path, args.filename, args.number)
+            #     print('    ' + sim.sim_name + " Done!")
+            return
+        case "charlotte":
+            # run contents of char_list
+            # print(f"Running {len(char_list)} sims:")
+            # for sim in char_list:
+            #    runSim(sim, output_path, args.filename, args.number)
+            #    print('    ' + sim.sim_name + " Done!")
+            return
+        case _:
+            pass
     
     # Main interaction loop
     print(tabulate.tabulate([[sim.sim_name] for sim in sim_list], tablefmt="pretty", showindex=True)) # Print available sims
@@ -119,8 +148,13 @@ def runSim(sim, output_path, filename, num_sims):
                 file.write("Candidate,Plurality Result,STV Result,Difference\n")
 
         # Store a sorted list of candidates to ensure consistent results ordering between runs
-        candidates = config_inputs.candidates
+        candidates = []
+        for key in config_inputs[4].keys():
+            candidates += config_inputs[1][key]
         candidates.sort()
+        
+        # Store the ballots which appear in each iteration in the order PL, BT, Cam
+        ballot_data = [{}, {}, {}]
 
         # Print a status update to terminal
         print(f"    Now Running {sim.sim_name}")
@@ -157,13 +191,25 @@ def runSim(sim, output_path, filename, num_sims):
                                                preference_mapping=sampled_pref_mapping,
                                                cohesion_mapping=config_inputs[4])
 
-            # Generate ballots
+            # Generate ballots in order PL, BT, Cam
             ballots = generateAll(generator_config)
 
-            # Store the ballots for each iteration
-            ballot_to_csv(ballots[0], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_PL.csv", i)
-            ballot_to_csv(ballots[1], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_BT.csv", i)
-            ballot_to_csv(ballots[2], output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_Cam.csv", i)
+            # Add the ballots to their respective dictionaries
+            for j in range(3):
+                # iterate through the tuple of ballots
+                for ballot in ballots[j].ballots:
+                    # Get the ranking from the ballot
+                    ranking = []
+                    for fset in ballot.ranking:
+                        ranking += list(fset)
+                    
+                    # Add ranking to dictionary if needed
+                    ranking = tuple(ranking)
+                    if ranking not in ballot_data[j]:
+                        ballot_data[j][ranking] = [0.0] * num_sims
+                    
+                    # Set ballot weight in column corresponding to current iteration
+                    ballot_data[j][ranking][i] = ballot.weight
             
             # Run the elections using the 3 ballot sets
             plurality_results = [Plurality(ballots[0], sim.num_seats, "borda"),
@@ -205,63 +251,47 @@ def runSim(sim, output_path, filename, num_sims):
             print(f"      {i+1}/{num_sims} iterations completed!")
 
 
-def ballot_to_csv(ballots:RankProfile,
-        fpath: Path,
-        iteration: int,
-        include_voter_set: bool = False,
-        weight_precision: int = 2,):
-    """
-    Saves PreferenceProfile to a custom CSV format based on the built-in Votekit method.
+    ## Write the ballots to output file
+    # Create shared header and lables
+    header = ["Candidates:"] + candidates
+    labels = [f"ranking_{i}" for i in range(1, len(candidates) + 1)] + [f"iteration_{i}" for i in range(1, num_sims + 1)]
 
-        Args:
-            fpath (Path): Path to the saved csv.
-            iteration (int): Current iteration value, used for determining if header should be included
-            include_voter_set (bool, optional): Whether or not to include the voter set of each
-                ballot. Defaults to False.
-            weight_precision (int): Number of decimals to round float weights to. Defaults to 2.
-        Raises:
-            ProfileError: Cannot write a profile with no ballots to a csv.
-            ValueError: File path must be provided.
-    """
-    if fpath == "":
-            raise ValueError("File path must be provided.")
+    # Write PL results
+    with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_PL.csv", "+a", encoding="utf-8") as file:
+        writer = csv.writer(file)
 
-    if len(ballots.ballots) == 0:
-        raise ProfileError("Cannot write a profile with no ballots to a csv.")
-    
-    prefix_idx = 1
-    candidate_mapping = {c: c[:prefix_idx] for c in ballots.candidates}
-    while len(set(candidate_mapping.values())) < len(candidate_mapping.values()):
-        prefix_idx += 1
-        candidate_mapping = {c: c[:prefix_idx] for c in ballots.candidates}
+        # Add header and lables if file is currently empty
+        if file.tell() == 0:
+            writer.writerows([header, labels])
+        
+        # Write a row for each ballot with the weights from each iteration
+        for ballot in ballot_data[0].keys():
+            writer.writerow(list(ballot) + ballot_data[0][ballot])
 
-    data_col_names = ballots._RankProfile__to_rank_csv_data_column_names(
-        include_voter_set, candidate_mapping
-    )
-    ballot_rows = [
-        ballots._RankProfile__to_rank_csv_ballot_row(
-            b, include_voter_set, candidate_mapping, weight_precision
-        )
-        for b in ballots.ballots
-    ]
+    # Write BT results
+    with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_BT.csv", "+a", encoding="utf-8") as file:
+        writer = csv.writer(file)
 
-    # Only include header if this is the first iteration for this test.
-    if iteration == 0:
-        header = ballots._RankProfile__to_rank_csv_header(candidate_mapping, include_voter_set)
-        rows = header + [data_col_names] + ballot_rows + [[""] * 10]
-    else:
-        rows = [data_col_names] + ballot_rows + [[""] * 10]
+        # Add header and lables if file is currently empty
+        if file.tell() == 0:
+            writer.writerows([header, labels])
+        
+        # Write a row for each ballot with the weights from each iteration
+        for ballot in ballot_data[1].keys():
+            writer.writerow(list(ballot) + [""] + ballot_data[1][ballot])
 
-    # Write result to output file
-    with open(
-        str(fpath),
-        "+a",
-        newline="",
-        encoding="utf-8",
-    ) as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(rows)
-    
+    # Write cambridge results
+    with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_Cam.csv", "+a", encoding="utf-8") as file:
+        writer = csv.writer(file)
+
+        # Add header and lables if file is currently empty
+        if file.tell() == 0:
+            writer.writerows([header, labels])
+        
+        # Write a row for each ballot with the weights from each iteration
+        for ballot in ballot_data[2].keys():
+            writer.writerow(list(ballot) + [""] * (len(candidates) - len(ballot)) + ballot_data[2][ballot])
+
 if __name__ == "__main__":
     # Parse CLI arguments and pass them to main
     parser = argparse.ArgumentParser(prog="sim_runner",
@@ -270,8 +300,7 @@ if __name__ == "__main__":
     parser.add_argument("filename", type=str, help="The filename will be used to distinguish the output files from previous results.")
     parser.add_argument("--number","-n", default=1, type=int, help="The number of times each simulation should be run. Defaults to 1.")
     parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all simulations then exit.")
-
-    # TODO: Add a way to run each city list independently, for concurrency's sake
+    parser.add_argument("--city", type=str, default="", help="Pass a city name to run all simulations from that city")
 
     args = parser.parse_args()
     print(args)
