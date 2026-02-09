@@ -129,16 +129,80 @@ BoE_BD = SimParams("Asheboro BoE Bachelors Degree",
 # BoE_List = BoE_Black + BoE_White + BoE_Hispanic + BoE_HS + BoE_SC + BoE_BD 
 ### City Council
 ## Black voters vs Non-black voters
-Council_Black = SimParams()
+# Total Preference (Black) = 1.377
+# Total Preference (Other) = 0.963
+Council_Black = SimParams("Asheboro Council Black",
+                         Bloc("Black Voters",
+                              0.0864183348171975,
+                              ["Harry Okeke", "Jane Hughes Redding", "Joey Trogdon"],
+                              {"Black Voters": 0.73, "Other Voters": 0.27},
+                              {"Black Voters": {"Harry Okeke": [0.05577107, 0.64408479], "Jane Hughes Redding": [0.03521222, 0.82337719], "Joey Trogdon": [0.01809975, 0.78902473]}, 
+                               "Other Voters": {"Charles Swiers": [0.01213238, 0.53042225], "Eddie Burks":[0.0046174, 0.61357316]}}),
+                         Bloc("Other Voters",
+                              1-0.0864183348171975,
+                              ["Charles Swiers", "Eddie Burks"],
+                              {"Black Voters": 0.492, "Other Voters": 0.598},
+                              {"Other Voters": {"Charles Swiers": [0.17706238, 0.25060158], "Eddie Burks": [0.21389197, 0.30652327]}, 
+                               "Black Voters": {"Harry Okeke": [0.01029616, 0.08216653], "Jane Hughes Redding": [0.133542, 0.24670457], "Joey Trogdon": [0.17101543, 0.28521844]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 
 ## White voters vs non-white voters
-Council_White = SimParams()
+# Total Preference (White) = 0.983
+# Total Preference (Other) = 1.069
+Council_White = SimParams("Asheboro Council White",
+                         Bloc("White Voters",
+                              0.7645251155978058,
+                              ["Charles Swiers", "Eddie Burks", "Joey Trogdon"],
+                              {"White Voters": 0.764, "Other Voters": 0.236},
+                              {"White Voters": {"Charles Swiers": [0.16745076, 0.28561935], "Eddie Burks": [0.16423757, 0.35141166], "Joey Trogdon": [0.12494525, 0.32068388]}, 
+                               "Other Voters": {"Harry Okeke": [0.00245648, 0.09298636], "Jane Hughes Redding": [0.08540226, 0.28570741]}}),
+                         Bloc("Other Voters",
+                              1-0.7645251155978058,
+                              ["Harry Okeke", "Jane Hughes Redding"],
+                              {"White Voters": 0.579, "Other Voters": 0.421},
+                              {"Other Voters": {"Harry Okeke": [0.03597439, 0.31988792], "Jane Hughes Redding": [0.02533838, 0.59022345]}, 
+                               "White Voters": {"Charles Swiers": [0.02767887, 0.3736132], "Eddie Burks": [0.01718188, 0.51618317], "Joey Trogdon": [0.02241388, 0.57458407]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 
 ## Hispanic voters vs non-hispanic voters
-Council_Hispanic = SimParams()
+# Total Preference (Hispanic) = 1.992
+# Total Preference (Other) = 0.926
+Council_Hispanic = SimParams("Asheboro Council Hispanic",
+                         Bloc("Hispanic Voters",
+                              0.06869812458715069,
+                              ["Harry Okeke", "Jane Hughes Redding", "Eddie Burks", "Joey Trogdon"],
+                              {"Hispanic Voters": 0.85, "Other Voters": 0.15},
+                              {"Hispanic Voters": {"Harry Okeke": [0.03257464, 0.92046228], "Jane Hughes Redding": [0.01843058, 0.94682347], "Eddie Burks": [0.02107622, 0.94965655], "Joey Trogdon": [0.02084265, 0.94249973]}, 
+                               "Other Voters": {"Charles Swiers": [0.01114578, 0.84662559]}}),
+                         Bloc("Other Voters",
+                              1-0.06869812458715069,
+                              ["Charles Swiers"],
+                              {"Hispanic Voters": 0.77, "Other Voters": 0.23},
+                              {"Other Voters": {"Charles Swiers": [0.16141744, 0.24630181]}, 
+                               "Hispanic Voters": {"Harry Okeke": [0.00489417, 0.08709355], "Jane Hughes Redding": [0.13798984, 0.24636218], "Eddie Burks": [0.19212537, 0.29727978], "Joey Trogdon": [0.17401018, 0.27722708]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 
 ## High School Diploma vs all other edu
-Council_HS = SimParams()
+# Total Preference (High School Diploma) = 1.397
+# Total Preference (Other) = 0.795
+Council_HS = SimParams("Asheboro Council High School Diploma",
+                         Bloc("HS Diploma Voters",
+                              0.34703521645175844
+                              ["Jane Hughes Redding", "Eddie Burks", "Joey Trogdon"],
+                              {"HS Diploma Voters": 0.829, "Other Voters": 0.171},
+                              {"HS Diploma Voters": {"Jane Hughes Redding": [0.02111793, 0.55761631], "Eddie Burks": [0.41916432, 0.73649781], "Joey Trogdon": [0.03265398, 0.62962327]}, 
+                               "Other Voters": {"Harry Okeke": [0.00239436, 0.20824458], "Charles Swiers": [0.01016136, 0.46854336]}}),
+                         Bloc("Other Voters",
+                              1-0.34703521645175844,
+                              ["Harry Okeke", "Charles Swiers"],
+                              {"HS Diploma Voters": 0.595, "Other Voters": 0.405},
+                              {"Other Voters": {"Harry Okeke": [0.00853178, 0.1335127], "Charles Swiers": [0.0775494, 0.33873071]}, 
+                               "HS Diploma Voters": {"Jane Hughes Redding": [0.03037961, 0.3265113], "Eddie Burks": [0.00510627, 0.17522283], "Joey Trogdon": [0.03633622, 0.36030934]}}),
+                         num_seats=3,
+                         num_ballots=1000)
 
 ## Some College vs all other edu
 Council_SC = SimParams()
