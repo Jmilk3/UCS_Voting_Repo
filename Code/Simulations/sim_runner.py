@@ -28,14 +28,16 @@ import definitions.asheboro_sims as ashe
 #import definitions.smithfield_sims as smith
 #import definitions.charlotte_sims as char
 
-# TODO: Change the sim list to include all of the sims from the definition files
-# This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = ashe.BoE_Black + ashe.BoE_White
-
 # TODO: Create a list for each of the cities
 # ashe_list
 # smith_list
 # char_list
+
+# TODO: Change the sim list to include all of the sims from the definition files
+# This is the list of sims that the sim runner can see. Be sure to add any new sims here
+sim_list = ashe.BoE_Black + ashe.BoE_White
+
+
 
 def main(args):
     """
@@ -50,6 +52,33 @@ def main(args):
             runSim(sim, output_path, args.filename, args.number)
             print('    ' + sim.sim_name + " Done!")
         return
+    
+    # Handle city input
+    # TODO: Update switch to actually run sims
+    match args.city.lower():
+        case "asheboro":
+            # run contents of ashe_list
+            # print(f"Running {len(ashe_list)} sims:")
+            # for sim in ashe_list:
+            #     runSim(sim, output_path, args.filename, args.number)
+            #     print('    ' + sim.sim_name + " Done!")
+            return
+        case "smithfield":
+            # run contents of smith_list
+            # print(f"Running {len(smith_list)} sims:")
+            # for sim in smith_list:
+            #     runSim(sim, output_path, args.filename, args.number)
+            #     print('    ' + sim.sim_name + " Done!")
+            return
+        case "charlotte":
+            # run contents of char_list
+            # print(f"Running {len(char_list)} sims:")
+            # for sim in char_list:
+            #    runSim(sim, output_path, args.filename, args.number)
+            #    print('    ' + sim.sim_name + " Done!")
+            return
+        case _:
+            pass
     
     # Main interaction loop
     print(tabulate.tabulate([[sim.sim_name] for sim in sim_list], tablefmt="pretty", showindex=True)) # Print available sims
@@ -271,8 +300,7 @@ if __name__ == "__main__":
     parser.add_argument("filename", type=str, help="The filename will be used to distinguish the output files from previous results.")
     parser.add_argument("--number","-n", default=1, type=int, help="The number of times each simulation should be run. Defaults to 1.")
     parser.add_argument("--all", "-a", action="store_true", help="If this flag is set, the program will run all simulations then exit.")
-
-    # TODO: Add a way to run each city list independently, for concurrency's sake
+    parser.add_argument("--city", type=str, default="", help="Pass a city name to run all simulations from that city")
 
     args = parser.parse_args()
     print(args)
