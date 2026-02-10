@@ -229,7 +229,7 @@ Council_SC = SimParams("Asheboro Council Some College",
 # Total Preference (Bachelors Degree) = 1.583
 # Total Preference (Other) = 0.919
 Council_BD = SimParams("Asheboro Council Bachelors Degree",
-                         Bloc("Some College Voters",
+                         Bloc("Bachelors Degree Voters",
                               0.12958609389470685,
                               ["Jane Hughes Redding", "Harry Okeke", "Charles Swiers", "Joey Trogdon"],
                               {"Bachelors Degree Voters": 0.919, "Other Voters": 0.081},
