@@ -71,20 +71,50 @@ Council_Hispanic = SimParams("Smithfield Council Hispanic",
 
 
 ### Mayor
+# HS Degree Sum = 0.444 + 0.548 = 0.992
+# Non HS Degree = 0.609 + 0.399 = 1.008
+
+
+
+
 
 ## High School Diploma vs all other edu
 Mayor_HS = SimParams("Smithfield Mayor HS Degree",
                     Bloc("HS Degree",
                     0.2887571881234597,
-                    ["Doris Louise Wallace", "Felicia C. Baxter", "John A. Dunn","Stephen Rabil"],
-                    {"HS Degree Voters": }
-
-                    )
-
-)
+                    ["Marlon Lee": 0.55242],
+                    {"HS Degree Voters": {"Marlon Lee":[0.04248843 0.98191341]}},
+                    "Other Voters":{"Andy Moore"}),
+                    Bloc("Other Voters",
+                    1-0.2887571881234597,
+                    ["Andy Moore"],
+                    {"Other Voters": 0.60417},
+                    {"Other Voters":{"Andy Moore":[0.16628708 0.95255222]}},
+                    {"HS Degree Voters": {"Marlon Lee"}}
+                    ))
 
 ## Some College vs all other edu
-Mayor_SC = SimParams()
+
+# Some College Degree = 0.496 + 0.493 = 0.989
+#
+
+
+
+
+
+Mayor_SC = SimParams("Smithfield Mayor HS Degree",
+                     Bloc("Some College",
+                     0.23136955756366623,
+                     ["Marlon Lee": 0.49848],
+                     {"Some College Voters": {"Marlon Lee":[0.02026 0.97089462]}},
+                     "Other Voters":{"Andy Moore"}),
+                     Bloc("Other Voters",
+                     1-0.23136955756366623,
+                     {""}
+                     
+                     
+                     )
+)
 
 ## 4 year degree vs all other edu
 Mayor_BD = SimParams()
