@@ -13,14 +13,14 @@ Council_Black = SimParams("Smithfield Council Black",
                              0.26221453287197233,
                              ["Doris Louise Wallace", "Felicia C. Baxter", "Stuart Ashby Lee"],
                              {"Black Voters": 0.635, "Other Voters": 0.365},
-                             {"Black Voters": {"Doris Louise Wallace": [0.0350471  0.83714949], "Felicia C. Baxter": [0.05430359 0.54919671], "Stuart Ashby Lee": [0.02759562 0.39267972]},
+                             {"Black Voters": {"Doris Louise Wallace": [0.0350471, 0.83714949], "Felicia C. Baxter": [0.05430359, 0.54919671], "Stuart Ashby Lee": [0.02759562, 0.39267972]},
                                "Other Voters": {"John A. Dunn", "Roger A. Wood", "Stephen Rabil"}}),    
                         Bloc("Other Voters",
                              1 - 0.26221453287197233,
                              ["John A. Dunn", "Roger A. Wood", "Stephen Rabil"],
                              {"Black Voters": .248, "Other Voters": .752},
-                             {"Other Voters": {"John A. Dunn":[0.00762412 0.72076492],"Roger A. Wood":[0.048972   0.39803155],"Stephen Rabil":[0.04642385 0.33779826]}},
-                             "Black Voters":{"Doris Louise Wallace", "Felicia C. Baxter", "Stuart Ashby Lee"}
+                             {"Other Voters": {"John A. Dunn":[0.00762412, 0.72076492],"Roger A. Wood":[0.048972, 0.39803155],"Stephen Rabil":[0.04642385, 0.33779826]},
+                             "Black Voters": {"Doris Louise Wallace": [], "Felicia C. Baxter": [], "Stuart Ashby Lee": []}}
                              ))
 
 ## White voters vs non-white voters
@@ -36,14 +36,14 @@ Council_White = SimParams("Smithfield Council White",
                                0.5539792387543253,
                                ["John A. Dunn", "Roger A. Wood","Stephen Rabil"],
                                {"White Voters": 0.763 , "Other Voters": 0.237},
-                               {"White Voters": {"John A. Dunn": [0.04282843 0.48461719], "Roger A. Wood": [0.06602954 0.48600886],"Stephen Rabil":[0.08385126 0.41970593]},
+                               {"White Voters": {"John A. Dunn": [0.04282843, 0.48461719], "Roger A. Wood": [0.06602954, 0.48600886],"Stephen Rabil":[0.08385126, 0.41970593]},
                                "Other Voters": {"Doris Louise Wallace", "Felicia C. Baxter", "Stuart Ashby Lee"}}),
                          Bloc("Other Voters",
                                1-0.5539792387543253,
                                ["Doris Louise Wallace", "Felicia C. Baxter", "Stuart Ashby Lee"],
                                {"White Voters": 0.368 , "Other Voters": 0.632},
-                               {"Other Voters":{"Doris Louise Wallace":[0.03244007 0.56871831], "Felicia C. Baxter": [0.03662972 0.35616532], "Stuart Ashby Lee":[0.020401   0.25984401]}},
-                               "White Voters":{"John A. Dunn", "Roger A. Wood","Stephen Rabil"}
+                               {"Other Voters":{"Doris Louise Wallace":[0.03244007, 0.56871831], "Felicia C. Baxter": [0.03662972, 0.35616532], "Stuart Ashby Lee":[0.020401, 0.25984401]},
+                               "White Voters":{"John A. Dunn", "Roger A. Wood","Stephen Rabil"}}
                               ))
 
 ## Hispanic voters vs non-hispanic voters
@@ -59,13 +59,13 @@ Council_Hispanic = SimParams("Smithfield Council Hispanic",
                                   0.0746712802768166,
                                   ["Doris Louise Wallace","Felicia C. Baxter", "John A. Dunn","Stephen Rabil","Stuart Ashby Lee"],
                                   {"Hispanic Voters": 0.837, "Other Voters": 0.163},
-                                  {"Hispanic Voters": {"Doris Louise Wallace":[0.02413195 0.98277294], "Felicia C. Baxter":[0.03867637 0.98475652], "John A. Dunn":[0.01931465 0.97941168], "Stephen Rabil": [0.01590197 0.95749385], "Stuart Ashby Lee": [0.0200018  0.96070304]},
+                                  {"Hispanic Voters": {"Doris Louise Wallace":[0.02413195, 0.98277294], "Felicia C. Baxter":[0.03867637, 0.98475652], "John A. Dunn":[0.01931465, 0.97941168], "Stephen Rabil": [0.01590197, 0.95749385], "Stuart Ashby Lee": [0.0200018, 0.96070304]},
                                   "Other Voters": {"Roger A. Wood"}}),
                              Bloc("Other Voters",
                                   1-0.0746712802768166,
                                   ["Roger A. Wood"], # no clear winner, so we just picked the least slope
                                   {"Other Voters": 0.2289, "Hispanic Voters":0.7711},
-                                  {"Other Voters": {"Roger A. Wood":[0.07790514 0.3188984]},
+                                  {"Other Voters": {"Roger A. Wood":[0.07790514, 0.3188984]},
                                   "Hispanic Voters":{"Doris Louise Wallace","Felicia C. Baxter", "John A. Dunn","Stephen Rabil","Stuart Ashby Lee"}}
                              ))
 
