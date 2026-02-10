@@ -126,6 +126,8 @@ BoE_BD = SimParams("Asheboro BoE Bachelors Degree",
                          num_seats=3,
                          num_ballots=1000)
 
+BoE_List = [BoE_Black, BoE_White, BoE_Hispanic, BoE_HS, BoE_SC, BoE_BD]
+
 # BoE_List = BoE_Black + BoE_White + BoE_Hispanic + BoE_HS + BoE_SC + BoE_BD 
 ### City Council
 ## Black voters vs Non-black voters
@@ -141,7 +143,7 @@ Council_Black = SimParams("Asheboro Council Black",
                          Bloc("Other Voters",
                               1-0.0864183348171975,
                               ["Charles Swiers", "Eddie Burks"],
-                              {"Black Voters": 0.492, "Other Voters": 0.598},
+                              {"Black Voters": 0.402, "Other Voters": 0.598},
                               {"Other Voters": {"Charles Swiers": [0.17706238, 0.25060158], "Eddie Burks": [0.21389197, 0.30652327]}, 
                                "Black Voters": {"Harry Okeke": [0.01029616, 0.08216653], "Jane Hughes Redding": [0.133542, 0.24670457], "Joey Trogdon": [0.17101543, 0.28521844]}}),
                          num_seats=3,
@@ -241,3 +243,4 @@ Council_BD = SimParams("Asheboro Council Bachelors Degree",
                                "Bachelors Degree Voters": {"Jane Hughes Redding": [0.09877894, 0.25446935], "Harry Okeke": [0.00201875, 0.08735622], "Charles Swiers": [0.12899007, 0.24713222], "Joey Trogdon": [0.14701774, 0.28892669]}}),
                          num_seats=3,
                          num_ballots=1000)
+Council_List = [Council_Black, Council_White, Council_Hispanic, Council_HS, Council_SC, Council_BD]

@@ -35,7 +35,7 @@ import definitions.asheboro_sims as ashe
 
 # TODO: Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = ashe.BoE_Black + ashe.BoE_White
+sim_list = ashe.BoE_List + ashe.Council_List
 
 
 
@@ -203,10 +203,9 @@ def runSim(sim, output_path, filename, num_sims):
                     for fset in ballot.ranking:
                         ranking += list(fset)[0]
                         ranking += ","
-                    ranking[:-1] # remove spare comma at end
+                    ranking = ranking[:-1] # remove spare comma at end
 
                     # Add ranking to dictionary if needed
-                    ranking = (ranking, ballot.voter_set)
                     if ranking not in ballot_data[j]:
                         ballot_data[j][ranking] = [0.0] * num_sims
                     
@@ -255,7 +254,7 @@ def runSim(sim, output_path, filename, num_sims):
 
     ## Write the ballots to output file
     # Create shared header and lables
-    labels = ["ranking", "voter_set"] + [f"iteration_{i}" for i in range(1, num_sims + 1)]
+    labels = ["ranking"] + [f"iteration_{i}" for i in range(1, num_sims + 1)]
 
     # Write PL results
     with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_PL.csv", "+a", encoding="utf-8") as file:
@@ -267,7 +266,7 @@ def runSim(sim, output_path, filename, num_sims):
         
         # Write a row for each ballot with the weights from each iteration
         for ballot in ballot_data[0].keys():
-            writer.writerow([ballot[0]] + list(ballot[1]) + ballot_data[0][ballot])
+            writer.writerow([ballot] + ballot_data[0][ballot])
 
     # Write BT results
     with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_BT.csv", "+a", encoding="utf-8") as file:
@@ -279,7 +278,7 @@ def runSim(sim, output_path, filename, num_sims):
         
         # Write a row for each ballot with the weights from each iteration
         for ballot in ballot_data[1].keys():
-            writer.writerow([ballot[0]] + list(ballot[1]) + ballot_data[1][ballot])
+            writer.writerow([ballot] + ballot_data[1][ballot])
 
     # Write cambridge results
     with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_Cam.csv", "+a", encoding="utf-8") as file:
@@ -291,7 +290,7 @@ def runSim(sim, output_path, filename, num_sims):
         
         # Write a row for each ballot with the weights from each iteration
         for ballot in ballot_data[2].keys():
-            writer.writerow(writer.writerow([ballot[0] + "," * (len(candidates) - len(ballot.split(",")))] + list(ballot[1]) + ballot_data[2][ballot]))
+            writer.writerow([ballot + "," * (len(candidates) - len(ballot.split(",")))] + ballot_data[2][ballot])
 
 if __name__ == "__main__":
     # Parse CLI arguments and pass them to main
