@@ -6,19 +6,19 @@ from structures.bloc import Bloc
 
 # Charlotte Mayor 2023
 # Candidates: Stephanie de Sarachaga-Bilbao, Vi Alexander Lyles
-char_mayor_all_indifferent = SimParams("Charlotte Mayor All Indifferent",
-                                       Bloc(name="Black Voters",
-                                             size=0.352,
-                                             candidates=["Vi Alexander Lyles"],
-                                             cohesion={"Black Voters": 0.979, "Other Voters": 0.021},
-                                             preference={"Black Voters": 2, "Other Voters": 2}),
-                                        Bloc(name="Other Voters",
-                                             size=0.648,
-                                             candidates=["Stephanie de Sarachaga-Bilbao"],
-                                             cohesion={"Black Voters": 0.652, "Other Voters": 0.348},
-                                             preference={"Black Voters": 2, "Other Voters": 2}),
-                                        num_seats=1,
-                                        num_ballots=1000)
+# char_mayor_all_indifferent = SimParams("Charlotte Mayor All Indifferent",
+#                                        Bloc(name="Black Voters",
+#                                              size=0.352,
+#                                              candidates=["Vi Alexander Lyles"],
+#                                              cohesion={"Black Voters": 0.979, "Other Voters": 0.021},
+#                                              preference={"Black Voters": 2, "Other Voters": 2}),
+#                                         Bloc(name="Other Voters",
+#                                              size=0.648,
+#                                              candidates=["Stephanie de Sarachaga-Bilbao"],
+#                                              cohesion={"Black Voters": 0.652, "Other Voters": 0.348},
+#                                              preference={"Black Voters": 2, "Other Voters": 2}),
+#                                         num_seats=1,
+#                                         num_ballots=1000)
 
 ### Mayor 2022
 ## Black voters vs Non-black voters
@@ -136,6 +136,8 @@ Mayor_BD = SimParams("Charlotte Mayor Bachelors Degree",
                                         num_seats=1,
                                         num_ballots=1000)
 
+Mayor_List = [Mayor_Black, Mayor_White, Mayor_Hispanic, Mayor_HS, Mayor_SC, Mayor_BD]
+
 ### Board of Education
 ## Black voters vs Non-black voters
 # Total Preference (Black) = 1.023
@@ -217,12 +219,12 @@ BoE_Hispanic = SimParams("Charlotte Board of Education Hispanic",
 # Total Preference (High School Diploma) = 1.284
 # Total Preference (Other) = 0.942
 BoE_HS = SimParams("Charlotte Board of Education High School Diploma",
-                                       Bloc("Hispanic Voters",
+                                       Bloc("High School Diploma Voters",
                                              0.17619197855664082,
                                              ["Annette Albright", "Clara Kennedy Witherspoon", "Juanrique Pallamente Hall", "Lenora Shipp", "Michael Johnson", 
                                                   "Monty Witherspoon", "Omar Harris", "Peggy A. Capehart", "Shamaiye Haynes", "Tigress Sydney Acute McDaniel"],
-                                             {"HS Diploma Voters": 0.935, "Other Voters": 0.065},
-                                             {"HS Diploma Voters": {"Annette Albright": [0.10832458, 0.14381066], "Clara Kennedy Witherspoon": [0.0641808, 0.08807037], "Juanrique Pallamente Hall": [0.0597993, 0.07921744], 
+                                             {"High School Diploma Voters": 0.935, "Other Voters": 0.065},
+                                             {"High School Diploma Voters": {"Annette Albright": [0.10832458, 0.14381066], "Clara Kennedy Witherspoon": [0.0641808, 0.08807037], "Juanrique Pallamente Hall": [0.0597993, 0.07921744], 
                                                                     "Lenora Shipp": [0.20236662, 0.26563822], "Michael Johnson": [0.05543787, 0.09195079], "Monty Witherspoon": [0.10302583, 0.16109317], 
                                                                     "Omar Harris": [0.15949882, 0.19973066], "Peggy A. Capehart": [0.02263642, 0.03895224], "Shamaiye Haynes": [0.24395966, 0.31946786], 
                                                                     "Tigress Sydney Acute McDaniel": [0.0546183, 0.07502047]},
@@ -230,9 +232,9 @@ BoE_HS = SimParams("Charlotte Board of Education High School Diploma",
                                         Bloc("Other Voters",
                                              1-0.17619197855664082,
                                              ["Bill Fountain", "Brian Kasher", "Claire Covington", "Liz Monterrey"],
-                                             {"HS Diploma Voters": 0.609, "Other Voters": 0.391},
+                                             {"High School Diploma Voters": 0.609, "Other Voters": 0.391},
                                              {"Other Voters": {"Bill Fountain": [0.08344722, 0.09672401], "Brian Kasher": [0.04346639, 0.04839166], "Claire Covington": [0.08237453, 0.09019571], "Liz Monterrey": [0.1393355, 0.15335571]},
-                                              "HS Diploma Voters": {"Annette Albright": [0.06721553, 0.07600306], "Clara Kennedy Witherspoon": [0.04073136, 0.04658573], "Juanrique Pallamente Hall": [0.01296231, 0.01779978], 
+                                              "High School Diploma Voters": {"Annette Albright": [0.06721553, 0.07600306], "Clara Kennedy Witherspoon": [0.04073136, 0.04658573], "Juanrique Pallamente Hall": [0.01296231, 0.01779978], 
                                                                     "Lenora Shipp": [0.12186529, 0.1375638], "Michael Johnson": [0.06291125, 0.07199411], "Monty Witherspoon": [0.11407531, 0.12841285], 
                                                                     "Omar Harris": [0.01006711, 0.02011595], "Peggy A. Capehart": [0.02125809, 0.02531302], "Shamaiye Haynes": [0.06139062, 0.07985358], 
                                                                     "Tigress Sydney Acute McDaniel": [0.01404047, 0.01911583]}}),
@@ -292,6 +294,8 @@ BoE_BD = SimParams("Charlotte Board of Education Bachelor's Degree",
                                         num_ballots=1000)
 
 
+BoE_List = [BoE_Black, BoE_White, BoE_Hispanic, BoE_HS, BoE_SC, BoE_BD]
+
 ### City Council
 ## Black voters vs Non-black voters
 # Total Preference (Black) = 1.017
@@ -339,7 +343,7 @@ Council_White = SimParams("Charlotte City Council White",
 # Total Preference (Hispanic) = 1.397
 # Total Preference (Other) = 0.976
 Council_Hispanic = SimParams("Charlotte City Council Hispanic",
-                                       Bloc("Black Voters",
+                                       Bloc("Hispanic Voters",
                                              0.05965326942005653,
                                              ["Dimple Ajmera", "James (Smuggie) Mitchell", "LaWana Slack-Mayfield", "Victoria Watlington"],
                                              {"Hispanic Voters": 0.987, "Other Voters": 0.013},
@@ -358,10 +362,64 @@ Council_Hispanic = SimParams("Charlotte City Council Hispanic",
 
 
 ## High School Diploma vs all other edu
-Council_HS = SimParams()
+# Total Preference (HS Diploma) = 1.121
+# Total Preference (Other) = 0.976
+Council_HS = SimParams("Charlotte City Council High School Diploma",
+                                       Bloc("High School Diploma Voters",
+                                             0.17879699437785956,
+                                             ["Dimple Ajmera", "James (Smuggie) Mitchell", "LaWana Slack-Mayfield", "Victoria Watlington"],
+                                             {"High School Diploma Voters": 0.996, "Other Voters": 0.004},
+                                             {"High School Diploma Voters": {"Dimple Ajmera": [0.24224351, 0.27134498], "James (Smuggie) Mitchell": [0.27794137, 0.30105561], 
+                                                               "LaWana Slack-Mayfield": [0.29878123, 0.33132427], "Victoria Watlington": [0.24213032, 0.27018372]},
+                                              "Other Voters": {"Steven J. DiFiore II": [0.00014888, 0.01567911]}}),
+                                        Bloc("Other Voters",
+                                             1-0.17879699437785956,
+                                             ["Steven J. DiFiore II"],
+                                             {"High School Diploma Voters": 0.893, "Other Voters": 0.107},
+                                             {"Other Voters": {"Steven J. DiFiore II": [0.09655253, 0.11099805]},
+                                              "High School Diploma Voters": {"Dimple Ajmera": [0.22547972, 0.23281153], "James (Smuggie) Mitchell": [0.20968815, 0.21541935], 
+                                                               "LaWana Slack-Mayfield": [0.19575497, 0.20379251], "Victoria Watlington": [0.22680255, 0.2338413]}}),
+                                        num_seats=4,
+                                        num_ballots=1000)
 
 ## Some College vs all other edu
-Council_SC = SimParams()
+# Total Preference (Some College) = 1.128
+# Total Preference (Other) = 0.97
+Council_SC = SimParams("Charlotte City Council Some College",
+                                       Bloc("Some College Voters",
+                                             0.20769126471357985,
+                                             ["Dimple Ajmera", "James (Smuggie) Mitchell", "LaWana Slack-Mayfield", "Victoria Watlington"],
+                                             {"Some College Voters": 0.994, "Other Voters": 0.006},
+                                             {"Some College Voters": {"Dimple Ajmera": [0.24096421, 0.27697953], "James (Smuggie) Mitchell": [0.26621595, 0.30100543], 
+                                                               "LaWana Slack-Mayfield": [0.29571859, 0.33857839], "Victoria Watlington": [0.2453566, 0.27854024]},
+                                              "Other Voters": {"Steven J. DiFiore II": [0.00015718, 0.02417297]}}),
+                                        Bloc("Other Voters",
+                                             1-0.20769126471357985,
+                                             ["Steven J. DiFiore II"],
+                                             {"Some College Voters": 0.892, "Other Voters": 0.108},
+                                             {"Other Voters": {"Steven J. DiFiore II": [0.09587876, 0.11291938]},
+                                              "Some College Voters": {"Dimple Ajmera": [0.22298302, 0.23272163], "James (Smuggie) Mitchell": [0.20752842, 0.21695284], 
+                                                               "LaWana Slack-Mayfield": [0.1908489, 0.20244508], "Victoria Watlington": [0.22382127, 0.23273083]}}),
+                                        num_seats=4,
+                                        num_ballots=1000)
 
 ## 4 year degree vs all other edu
-Council_BD = SimParams()
+# Total Preference (Bachelors Degree) = 1
+# Total Preference (Other) = 0.999
+Council_BD = SimParams("Charlotte City Council Bachelors Degree",
+                                       Bloc("Bachelors Degree Voters",
+                                             0.3073872970527119,
+                                             ["Steven J. DiFiore II"],
+                                             {"Bachelors Degree Voters": 0.224, "Other Voters": 0.776},
+                                             {"Bachelors Degree Voters": {"Steven J. DiFiore II": [0.19546206, 0.25318878]},
+                                              "Other Voters": {"Dimple Ajmera": [0.20941392, 0.22992577], "James (Smuggie) Mitchell": [0.17388557, 0.18903402], "LaWana Slack-Mayfield": [0.14367017, 0.1644473 ], "Victoria Watlington": [0.2119921, 0.23070861]}}),
+                                        Bloc("Other Voters",
+                                             1-0.3073872970527119,
+                                             ["Dimple Ajmera", "James (Smuggie) Mitchell", "LaWana Slack-Mayfield", "Victoria Watlington"],
+                                             {"Bachelors Degree Voters": 0.021, "Other Voters": 0.979},
+                                             {"Other Voters": {"Dimple Ajmera": [0.23577729, 0.2452458], "James (Smuggie) Mitchell": [0.24293136, 0.25009304], "LaWana Slack-Mayfield": [0.24535028, 0.25525173], "Victoria Watlington": [0.23651802, 0.24567174]},
+                                              "Bachelors Degree Voters": {"Steven J. DiFiore II": [0.00670765, 0.0354281]}}),
+                                        num_seats=4,
+                                        num_ballots=1000)
+
+Council_List = [Council_Black, Council_White, Council_Hispanic, Council_HS, Council_SC, Council_BD]
