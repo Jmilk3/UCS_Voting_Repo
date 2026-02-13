@@ -26,16 +26,16 @@ from random import uniform
 # TODO: Update this to actually import the definitions
 import definitions.asheboro_sims as ashe
 #import definitions.smithfield_sims as smith
-#import definitions.charlotte_sims as char
+import definitions.charlotte_sims as char
 
 # TODO: Create a list for each of the cities
-# ashe_list
+ashe_list = ashe.BoE_List + ashe.Council_List
 # smith_list
-# char_list
+char_list = char.BoE_List + char.Council_List + char.Mayor_List
 
 # TODO: Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = ashe.BoE_List + ashe.Council_List
+sim_list = ashe_list + char_list
 
 
 
