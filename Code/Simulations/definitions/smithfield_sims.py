@@ -1,8 +1,8 @@
 """
 A file which contains simulation definitions based on smithfield data
 """
-from structures.sim_params import SimParams
-from structures.bloc import Bloc
+from definitions.structures.sim_params import SimParams
+from definitions.structures.bloc import Bloc
 
 ### Town Council 
 ## Black voters vs Non-black voters

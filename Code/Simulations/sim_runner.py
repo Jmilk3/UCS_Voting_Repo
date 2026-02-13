@@ -58,10 +58,10 @@ def main(args):
     match args.city.lower():
         case "asheboro":
             # run contents of ashe_list
-            # print(f"Running {len(ashe_list)} sims:")
-            # for sim in ashe_list:
-            #     runSim(sim, output_path, args.filename, args.number)
-            #     print('    ' + sim.sim_name + " Done!")
+            print(f"Running {len(ashe_list)} sims:")
+            for sim in ashe_list:
+                runSim(sim, output_path, args.filename, args.number)
+                print('    ' + sim.sim_name + " Done!")
             return
         case "smithfield":
             # run contents of smith_list
@@ -72,10 +72,10 @@ def main(args):
             return
         case "charlotte":
             # run contents of char_list
-            # print(f"Running {len(char_list)} sims:")
-            # for sim in char_list:
-            #    runSim(sim, output_path, args.filename, args.number)
-            #    print('    ' + sim.sim_name + " Done!")
+            print(f"Running {len(char_list)} sims:")
+            for sim in char_list:
+               runSim(sim, output_path, args.filename, args.number)
+               print('    ' + sim.sim_name + " Done!")
             return
         case _:
             pass
