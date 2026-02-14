@@ -73,11 +73,6 @@ Council_Hispanic = SimParams("Smithfield Council Hispanic",
 ### Mayor
 # HS Degree Sum = 0.444 + 0.548 = 0.992
 # Non HS Degree = 0.609 + 0.399 = 1.008
-
-
-
-
-
 ## High School Diploma vs all other edu
 Mayor_HS = SimParams("Smithfield Mayor HS Degree",
                     Bloc("HS Degree",
@@ -96,31 +91,43 @@ Mayor_HS = SimParams("Smithfield Mayor HS Degree",
 ## Some College vs all other edu
 
 # Some College Degree = 0.496 + 0.493 = 0.989
-#
+# Some College Degree (non) = 0.573 + 0.433 = 1.006
 
-
-
-
-
-Mayor_SC = SimParams("Smithfield Mayor HS Degree",
+Mayor_SC = SimParams("Smithfield Mayor Some College Degree",
                      Bloc("Some College",
                      0.23136955756366623,
                      ["Marlon Lee": 0.49848],
                      {"Some College Voters": {"Marlon Lee":[0.02026 0.97089462]}},
-                     "Other Voters":{"Andy Moore"}),
+                     {"Other Voters":{"Andy Moore"}}),
                      Bloc("Other Voters",
                      1-0.23136955756366623,
-                     {""}
-                     
-                     
-                     )
-)
+                     ["Andy Moore"],
+                     {"Other Voters": 0.56958},
+                     {"Other Voters": {"Andy Moore":[0.089, 0.821]}},
+                     {"Some College Voters": {"Marlon Lee"}}
+                     ))
 
 ## 4 year degree vs all other edu
-Mayor_BD = SimParams()
+
+# (0.52900 + 0.46300)
+# 0.44600 + 0.55500
+Mayor_BD = SimParams("Smithfield Mayor Bachelor’s Degree",
+                     Bloc("Bachelor’s Degree",
+                     0.16577,
+                     ["Andy Moore":0.53327],
+                     {"Bachelor's Degree":{"Andy Moore": [0.040278, 0.97413]}},
+                     {"Other Voters":{"Marlon Lee"}}),
+                     Bloc("Other Voters",
+                     1-0.16577,
+                     ["Marlon Lee"],
+                     {"Other Voters": 0.44556},
+                     {"Other Voters":{"Marlon Lee":[0.083341, 0.84795]}},
+                     {"Bachelor’s Degree Voters":{"Andy Moore"}}
+                     ))
 
 ## Black voters vs Non-black voters
-Mayor_Black = SimParams()
+Mayor_Black = SimParams("Smithfield Mayor Black",
+                         )
 
 ## White voters vs non-white voters
 Mayor_White = SimParams()
