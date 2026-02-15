@@ -396,7 +396,7 @@ Model: goodman_er_bayes
         0.198
         95% equal-tailed Bayesian credible interval for district-level voting preference of
         Hispanic for Roger A. Wood is
-        [0.01853528 0.97368924]
+        C
         95% equal-tailed Bayesian credible interval for district-level voting preference of
         non-Hispanic for Roger A. Wood is
         [0.07790514 0.3188984 ]

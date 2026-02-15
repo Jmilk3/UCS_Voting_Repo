@@ -23,19 +23,19 @@ import tabulate
 from random import uniform
 
 # For now, sim definitions can go here
-# TODO: Update this to actually import the definitions
+# Update this to actually import the definitions
 import definitions.asheboro_sims as ashe
-#import definitions.smithfield_sims as smith
+import definitions.smithfield_sims as smith
 import definitions.charlotte_sims as char
 
-# TODO: Create a list for each of the cities
+# Create a list for each of the cities
 ashe_list = ashe.BoE_List + ashe.Council_List
-# smith_list
+smith_list = smith.Mayor_List + smith.Council_List
 char_list = char.BoE_List + char.Council_List + char.Mayor_List
 
-# TODO: Change the sim list to include all of the sims from the definition files
+# Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = ashe_list + char_list
+sim_list = ashe_list + smith_list + char_list
 
 
 
@@ -65,10 +65,10 @@ def main(args):
             return
         case "smithfield":
             # run contents of smith_list
-            # print(f"Running {len(smith_list)} sims:")
-            # for sim in smith_list:
-            #     runSim(sim, output_path, args.filename, args.number)
-            #     print('    ' + sim.sim_name + " Done!")
+            print(f"Running {len(smith_list)} sims:")
+            for sim in smith_list:
+                runSim(sim, output_path, args.filename, args.number)
+                print('    ' + sim.sim_name + " Done!")
             return
         case "charlotte":
             # run contents of char_list
