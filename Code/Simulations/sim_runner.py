@@ -54,7 +54,6 @@ def main(args):
         return
     
     # Handle city input
-    # TODO: Update switch to actually run sims
     match args.city.lower():
         case "asheboro":
             # run contents of ashe_list
