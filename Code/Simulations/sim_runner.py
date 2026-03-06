@@ -43,7 +43,7 @@ def main(args):
     """
     Main sim running function. Handles flag parsing and main interaction loop.
     """
-    output_path = Path(__file__ + f"/../../../Results").resolve() # Path to Results folder
+    output_path = Path(__file__ + f"/../../../Simulation_Results").resolve() # Path to Results folder
 
     # Handle run all sims flag
     if (args.all):
