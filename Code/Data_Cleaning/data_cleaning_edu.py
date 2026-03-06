@@ -1,3 +1,4 @@
+# This file contains the functions used to clean and split our education data into subfiles
 from pandas import read_csv
 
 # Open 2022 data

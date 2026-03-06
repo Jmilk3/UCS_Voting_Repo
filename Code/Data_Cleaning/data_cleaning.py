@@ -1,3 +1,4 @@
+# This file has the functions used to clean our election data and to seperate the election into their own files
 from pandas import read_csv
 from pathlib import Path
 
