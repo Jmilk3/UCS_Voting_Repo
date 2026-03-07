@@ -1,27 +1,29 @@
 # UCS_Voting_Repo
 A repository that stores the programs used to examine and analyze how election results might change with different methods of Proportional Representation. This is part of the UCS voting project, meant to help inform people about Proportional Representation, examining different methods and how they might influence the outcome of elections.
 
-## Setup Notes (10/19/25)
-It is best practice to not include the python virtual environment within the repo, so here are the setup instructions instead.
-1. Create a virtual environment inside of the repo's top level folder using python 3.13 (I'm using 3.13.7, but any 3.13 version should work)
-    * You can do this following the guide [here](docs.python.org/3/library/venv.html)
-    * You can also use the package manager uv, which can be downloaded [here](https://docs.astral.sh/uv/getting-started/installation/)
-2. Use the requirements.txt file in the repo to download all of the necessary dependencies
-3. You should now be able to run the code. If you need to install a new library, be sure to update the requirements.txt file as well.
-    * Don't forget to activate the environment if you are running anything from the command line.
-    * If you are using VSCode, you may need to update which python interpreter it is using for the dependency detection to work correctly.
+See our report on our findings here: LINK TO REPORT
 
-## Notes on running tests
-* To run tests, run test_runner.py
-* To define tests, create a new Test object in the test runner file and add it to the test list
-    * A Test object has a test name and the two blocs for that test. 
-* Test results are output to three different files, one for each ballot generator
-    * The columns are Candidate, Plurality Result, STV Result, Difference
-        * Candidate has the name of the candidate
-        * Plurality Result and STV Result are True if the candidate won and False otherwise
-        * Difference is True if the Plurality Result and STV Result are different.
-        * Each iteration of the test is seperated from the next by an empty line
+## Navigating the Repository
+### Data Folders
+* The 'Raw Data' folder contains the complete, original data that we used for this project.
+* The 'Clean Data' folder contains the modified, cleaned, and split data which we used when actually running ER.
 
+### Result Folders
+* The ER_Results folder has the output graphs and text results from running ER, split by city.
+* The Simulation_Results folder has the election outcomes and ballot distributions from our various simulations
 
-## Additional Notes
-* The placeholder.txt files are there because we can't add empty folders to a repo. We should remove them once we add any file to a folder.
+### Code Folder
+* The code folder has all of the actual code used during this project, split by what the code was used for.
+
+## Running the Code
+### Setting up the Python environment
+We used Anaconda to install and manage packages. The following instructions explain how to setup the environment so that you can run our code locally.
+1. Install the Anaconda distribution from https://www.anaconda.com/. You will need to make an account or sign in with google in order to download it.
+    * You can use either miniconda or the full distribution. The full distribution will let you create environments more quickly but will take longer to install and uses more memory.
+2. Open the Anaconda terminal, or activate Anaconda in your default terminal
+3. Navigate to the UCS Voting repo folder, where the environment.yaml file is stored.
+4. Run the command "conda env create --name UCS_Voting --file environment.yaml" in your terminal
+5. Activate the environment with the command "conda activate UCS_Voting", then you can run our python scripts from the command line.
+
+### A note on filepaths
+In the process of making the repository easier to navigate, we moved a lot of our csv files around. Any csv that is named in a script is still present in the repository, but the file path may have changed. Please check the file paths of any existing file prior to using the code. It is also worth noting that many functions will output all files in the same place. These output files will then need to be sorted manually. 

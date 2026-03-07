@@ -1,0 +1,758 @@
+Demographic Size Ratio (Black): 0.08338515110060937
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.317     | 7          | 2567.19 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.509     | 15         | 1629.61 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.422     | 7          | 1117.31 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.322     | 15         | 735.59 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Gidget Kidd summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Gidget Kidd is
+        0.132
+        The posterior mean for the district-level voting preference of
+        non-Black for Gidget Kidd is
+        0.263
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Gidget Kidd is
+        [0.00435943 0.51336022]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Gidget Kidd is
+        [0.2106026  0.29764881]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.378     | 7          | 2855.89 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.364     | 7          | 1810.96 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.397     | 7          | 1225.04 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.338     | 7          | 801.58 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Gwen Williams summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Gwen Williams is
+        0.681
+        The posterior mean for the district-level voting preference of
+        non-Black for Gwen Williams is
+        0.084
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Gwen Williams is
+        [0.22874522 0.97154735]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Gwen Williams is
+        [0.03203704 0.13910114]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.444     | 3          | 3009.69 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.391     | 31         | 1775.44 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.340     | 7          | 1273.83 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.462     | 7          | 839.71 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Melissa Calloway summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Melissa Calloway is
+        0.118
+        The posterior mean for the district-level voting preference of
+        non-Black for Melissa Calloway is
+        0.274
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Melissa Calloway is
+        [0.00478881 0.38278192]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Melissa Calloway is
+        [0.24321702 0.29700696]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.534     | 7          | 1904.25 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.331     | 7          | 3353.05 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.408     | 3          | 1341.19 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.436     | 7          | 873.23 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Ryan Patton summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Ryan Patton is
+        0.142
+        The posterior mean for the district-level voting preference of
+        non-Black for Ryan Patton is
+        0.270
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Ryan Patton is
+        [0.00374693 0.57359206]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Ryan Patton is
+        [0.21607189 0.31094888]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.308     | 7          | 3271.13 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.482     | 7          | 1312.64 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.322     | 15         | 1786.25 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.313     | 3          | 839.67 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Todd Dulaney summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Todd Dulaney is
+        0.474
+        The posterior mean for the district-level voting preference of
+        non-Black for Todd Dulaney is
+        0.061
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Todd Dulaney is
+        [0.16165885 0.77868366]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Todd Dulaney is
+        [0.02419918 0.09730923]
+        
+Demographic Size Ratio (White): 0.7698669319736351
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.400     | 7          | 2432.89 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.355     | 3          | 1595.12 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.299     | 15         | 1177.30 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.380     | 7          | 767.59 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Gidget Kidd summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Gidget Kidd is
+        0.291
+        The posterior mean for the district-level voting preference of
+        non-White for Gidget Kidd is
+        0.124
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Gidget Kidd is
+        [0.22351507 0.34069674]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Gidget Kidd is
+        [0.00746813 0.32177862]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.359     | 3          | 2808.46 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.267     | 3          | 1681.36 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.266     | 7          | 1164.39 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.254     | 3          | 788.76 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Gwen Williams summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Gwen Williams is
+        0.059
+        The posterior mean for the district-level voting preference of
+        non-White for Gwen Williams is
+        0.403
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Gwen Williams is
+        [0.00355029 0.15352465]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Gwen Williams is
+        [0.11136165 0.62420179]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.367     | 7          | 2397.44 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.458     | 3          | 1517.88 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.218     | 7          | 1457.70 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.281     | 3          | 854.26 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Melissa Calloway summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Melissa Calloway is
+        0.282
+        The posterior mean for the district-level voting preference of
+        non-White for Melissa Calloway is
+        0.189
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Melissa Calloway is
+        [0.2187334  0.33439373]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Melissa Calloway is
+        [0.04096903 0.37900508]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.215     | 7          | 2744.87 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.163     | 15         | 1725.31 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.318     | 7          | 1189.38 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.257     | 3          | 816.05 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Ryan Patton summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Ryan Patton is
+        0.313
+        The posterior mean for the district-level voting preference of
+        non-White for Ryan Patton is
+        0.080
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Ryan Patton is
+        [0.24842178 0.35483339]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Ryan Patton is
+        [0.0032809  0.27158158]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.309     | 15         | 2819.48 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.209     | 7          | 1724.31 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.195     | 3          | 1234.83 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.157     | 7          | 761.99 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Todd Dulaney summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Todd Dulaney is
+        0.046
+        The posterior mean for the district-level voting preference of
+        non-White for Todd Dulaney is
+        0.263
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Todd Dulaney is
+        [0.00502122 0.10340298]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Todd Dulaney is
+        [0.0872557  0.40582457]
+        
+Demographic Size Ratio (Hispanic): 0.06721800771048377
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.367     | 7          | 1843.04 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.343     | 15         | 3120.27 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.330     | 15         | 1193.34 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.457     | 1          | 769.57 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Gidget Kidd summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Gidget Kidd is
+        0.332
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Gidget Kidd is
+        0.246
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Gidget Kidd is
+        [0.01139289 0.91053331]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Gidget Kidd is
+        [0.18838425 0.29254635]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.278     | 7          | 2535.78 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.461     | 7          | 1613.91 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.396     | 15         | 1087.48 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.379     | 7          | 741.51 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Gwen Williams summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Gwen Williams is
+        0.583
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Gwen Williams is
+        0.104
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Gwen Williams is
+        [0.04626673 0.98212229]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Gwen Williams is
+        [0.03998576 0.17439706]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.289     | 7          | 2387.34 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.413     | 3          | 1529.57 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.502     | 7          | 1011.89 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.289     | 11         | 661.58 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Melissa Calloway summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Melissa Calloway is
+        0.344
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Melissa Calloway is
+        0.255
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Melissa Calloway is
+        [0.0143132  0.89089179]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Melissa Calloway is
+        [0.20456451 0.29545573]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.456     | 7          | 1527.98 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.508     | 7          | 2655.43 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.385     | 7          | 1018.93 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.461     | 7          | 671.95 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Ryan Patton summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Ryan Patton is
+        0.290
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Ryan Patton is
+        0.255
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Ryan Patton is
+        [0.00780188 0.88187521]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Ryan Patton is
+        [0.18103949 0.30824469]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.243     | 7          | 2267.85 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.296     | 7          | 1401.60 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.274     | 7          | 1015.27 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.275     | 7          | 684.24 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_BoE: Todd Dulaney summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Todd Dulaney is
+        0.559
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Todd Dulaney is
+        0.062
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Todd Dulaney is
+        [0.0605872  0.96751213]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Todd Dulaney is
+        [0.01600647 0.11221274]
+        
+Demographic Size Ratio (Black): 0.0864183348171975
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.334     | 7          | 2035.52 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.496     | 15         | 1178.83 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.574     | 7          | 859.16 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.231     | 7          | 603.31 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Charles Swiers summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Charles Swiers is
+        0.201
+        The posterior mean for the district-level voting preference of
+        non-Black for Charles Swiers is
+        0.220
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Charles Swiers is
+        [0.01213238 0.53042225]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Charles Swiers is
+        [0.17706238 0.25060158]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.396     | 15         | 2358.75 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.443     | 5          | 1425.41 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.296     | 1          | 946.23 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.254     | 7          | 640.97 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Eddie Burks summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Eddie Burks is
+        0.171
+        The posterior mean for the district-level voting preference of
+        non-Black for Eddie Burks is
+        0.269
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Eddie Burks is
+        [0.0046174  0.61357316]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Eddie Burks is
+        [0.21389197 0.30652327]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.329     | 31         | 2464.85 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.287     | 3          | 1506.97 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.363     | 7          | 1047.21 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.250     | 15         | 729.56 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Harry Okeke summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Harry Okeke is
+        0.346
+        The posterior mean for the district-level voting preference of
+        non-Black for Harry Okeke is
+        0.045
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Harry Okeke is
+        [0.05577107 0.64408479]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Harry Okeke is
+        [0.01029616 0.08216653]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.552     | 11         | 2580.41 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.336     | 3          | 1675.34 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.399     | 7          | 1166.18 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.293     | 7          | 803.18 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Jane Hughes Redding summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Jane Hughes Redding is
+        0.357
+        The posterior mean for the district-level voting preference of
+        non-Black for Jane Hughes Redding is
+        0.195
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Jane Hughes Redding is
+        [0.03521222 0.82337719]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Jane Hughes Redding is
+        [0.133542   0.24670457]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.309     | 3          | 1726.20 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.405     | 7          | 2760.34 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.287     | 7          | 1234.85 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.377     | 7          | 825.02 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Joey Trogdon summary (Black)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Black for Joey Trogdon is
+        0.302
+        The posterior mean for the district-level voting preference of
+        non-Black for Joey Trogdon is
+        0.234
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Black for Joey Trogdon is
+        [0.01809975 0.78902473]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Black for Joey Trogdon is
+        [0.17101543 0.28521844]
+                
+Demographic Size Ratio (White): 0.7645251155978058
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.317     | 31         | 1018.53 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.214     | 7          | 1527.63 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.177     | 15         | 740.68 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.208     | 15         | 512.52 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Charles Swiers summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Charles Swiers is
+        0.231
+        The posterior mean for the district-level voting preference of
+        non-White for Charles Swiers is
+        0.180
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Charles Swiers is
+        [0.16745076 0.28561935]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Charles Swiers is
+        [0.02767887 0.3736132 ]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.177     | 15         | 1376.00 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.310     | 7          | 2290.67 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.381     | 7          | 1036.71 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.265     | 15         | 721.47 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Eddie Burks summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Eddie Burks is
+        0.280
+        The posterior mean for the district-level voting preference of
+        non-White for Eddie Burks is
+        0.197
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Eddie Burks is
+        [0.16423757 0.35141166]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Eddie Burks is
+        [0.01718188 0.51618317]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.180     | 7          | 2354.61 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.138     | 15         | 978.77 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.263     | 7          | 1362.73 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.232     | 3          | 739.09 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Harry Okeke summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Harry Okeke is
+        0.037
+        The posterior mean for the district-level voting preference of
+        non-White for Harry Okeke is
+        0.189
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Harry Okeke is
+        [0.00245648 0.09298636]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Harry Okeke is
+        [0.03597439 0.31988792]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.241     | 15         | 2220.92 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.387     | 7          | 1366.51 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.202     | 15         | 942.47 draws/s  | 0:00:02 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.144     | 3          | 605.63 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Jane Hughes Redding summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Jane Hughes Redding is
+        0.195
+        The posterior mean for the district-level voting preference of
+        non-White for Jane Hughes Redding is
+        0.261
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Jane Hughes Redding is
+        [0.08540226 0.28570741]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Jane Hughes Redding is
+        [0.02533838 0.59022345]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.291     | 15         | 2217.75 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.207     | 15         | 1027.05 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.300     | 15         | 1367.95 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.239     | 15         | 700.12 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Joey Trogdon summary (White)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        White for Joey Trogdon is
+        0.240
+        The posterior mean for the district-level voting preference of
+        non-White for Joey Trogdon is
+        0.242
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        White for Joey Trogdon is
+        [0.12494525 0.32068388]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-White for Joey Trogdon is
+        [0.02241388 0.57458407]
+        
+Demographic Size Ratio (Hispanic): 0.06869812458715069
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.316     | 3          | 2521.33 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.284     | 11         | 1437.98 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.302     | 3          | 1027.96 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.349     | 3          | 650.66 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Charles Swiers summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Charles Swiers is
+        0.298
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Charles Swiers is
+        0.212
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Charles Swiers is
+        [0.01114578 0.84662559]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Charles Swiers is
+        [0.16141744 0.24630181]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.332     | 7          | 1486.87 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.558     | 15         | 2291.79 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.317     | 3          | 1009.87 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.475     | 7          | 652.54 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Eddie Burks summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Eddie Burks is
+        0.415
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Eddie Burks is
+        0.248
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Eddie Burks is
+        [0.02107622 0.94965655]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Eddie Burks is
+        [0.19212537 0.29727978]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.220     | 7          | 2460.80 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.334     | 7          | 1427.54 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.303     | 7          | 1090.39 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 1           | 0.250     | 7          | 735.74 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Harry Okeke summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Harry Okeke is
+        0.455
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Harry Okeke is
+        0.043
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Harry Okeke is
+        [0.03257464 0.92046228]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Harry Okeke is
+        [0.00489417 0.08709355]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.340     | 15         | 2688.39 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.320     | 7          | 1534.74 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.403     | 7          | 1078.45 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.342     | 3          | 745.88 draws/s  | 0:00:02 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Jane Hughes Redding summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Jane Hughes Redding is
+        0.427
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Jane Hughes Redding is
+        0.194
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Jane Hughes Redding is
+        [0.01843058 0.94682347]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Jane Hughes Redding is
+        [0.13798984 0.24636218]
+        
++---------------------------------------------------------------------------------------------------------------------+
+| Progress                     | Draws | Divergences | Step size | Grad evals | Sampling Speed  | Elapsed | Remaining |
+|------------------------------+-------+-------------+-----------+------------+-----------------+---------+-----------|
+| ---------------------------- | 2000  | 0           | 0.209     | 15         | 2560.48 draws/s | 0:00:00 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.348     | 7          | 1432.57 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.377     | 15         | 1012.62 draws/s | 0:00:01 | 0:00:00   |
+| ---------------------------- | 2000  | 0           | 0.447     | 7          | 651.84 draws/s  | 0:00:03 | 0:00:00   |
++---------------------------------------------------------------------------------------------------------------------+
+Asheboro_Council: Joey Trogdon summary (Hispanic)
+Model: goodman_er_bayes
+        Computed from the raw b_i samples by multiplying by population and then getting
+        the proportion of the total pop (total pop=summed across all districts):
+        The posterior mean for the district-level voting preference of
+        Hispanic for Joey Trogdon is
+        0.397
+        The posterior mean for the district-level voting preference of
+        non-Hispanic for Joey Trogdon is
+        0.229
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        Hispanic for Joey Trogdon is
+        [0.02084265 0.94249973]
+        95% equal-tailed Bayesian credible interval for district-level voting preference of
+        non-Hispanic for Joey Trogdon is
+        [0.17401018 0.27722708]
+        
+     
+

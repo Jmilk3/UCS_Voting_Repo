@@ -90,7 +90,6 @@ def env_reg(election_file, registration_file, condition_col = "race_code", elect
         close()
 
 if __name__ == "__main__":
-    """
     # Asheboro Board of EDU
     env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Asheboro_BoE", group_name="HS Degree")
@@ -115,8 +114,7 @@ if __name__ == "__main__":
             "scol_nd", election_name="Smithfield_Council", group_name="Some College")
     env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Smithfield_Council", group_name="Bachelor's Degree")
-    """
-    """
+
     # for the town of smithfield mayor
     env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Smithfield_Mayor", group_name="HS Degree")
@@ -124,7 +122,7 @@ if __name__ == "__main__":
             "scol_nd", election_name="Smithfield_Mayor", group_name="Some College")
     env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Smithfield_Mayor", group_name="Bachelor's Degree")
-    """
+
     # for the Charlotte board of education
     env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Charlotte_BoE", group_name="HS Degree")
