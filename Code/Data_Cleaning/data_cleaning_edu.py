@@ -1,8 +1,11 @@
 # This file contains the functions used to clean and split our education data into subfiles
 from pandas import read_csv
+from pathlib import Path
 
 # Open 2022 data
-with open("EDU_reg_data_2022.csv", "r", encoding="utf-8-sig") as file:
+with open(Path(__file__ + 
+               "/../../../Clean Data/Merged Education and Income Shapefiles/EDU_reg_data_2022.csv").resolve(),
+                 "r", encoding="utf-8-sig") as file:
     df = read_csv(file)
 
 # Remove unwanted income data columns
@@ -21,7 +24,7 @@ with open("charlotte_edu_reg_2022.csv", "w", encoding="utf-8-sig") as file:
     out_df.to_csv(file)
 
 # Open 2023 data
-with open("EDU_reg_data_2023.csv", "r", encoding="utf-8-sig") as file:
+with open(Path(__file__ + "/../../../Clean Data/Merged Education and Income Shapefiles/EDU_reg_data_2023.csv").resolve(), "r", encoding="utf-8-sig") as file:
     df = read_csv(file)
 
 # Remove unwanted income data columns
