@@ -94,72 +94,100 @@ def env_reg(election_file, registration_file, condition_code, condition_col = "r
 
 if __name__ == "__main__":
     # Asheboro Board of EDU
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "B", election_name="Asheboro_BoE", group_name="Black")
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "A", election_name="Asheboro_BoE", group_name="Asian")
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "W", election_name="Asheboro_BoE", group_name="White")
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "HL", condition_col="ethnic_code", election_name="Asheboro_BoE", group_name="Hispanic")
 
 
     # Asheboro City Council
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "B", election_name="Asheboro_Council", group_name="Black")
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "A", election_name="Asheboro_Council", group_name="Asian")
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "W", election_name="Asheboro_Council", group_name="White")
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/Asheboro_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/Asheboro_Registration_Data.csv").resolve(),
             "HL", condition_col="ethnic_code", election_name="Asheboro_Council", group_name="Hispanic")
 
     # for the smithfield town council at large
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
             "B", election_name="Smithfield_Council", group_name="Black")
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
             "A", election_name="Smithfield_Council", group_name="Asian")
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
             "W", election_name="Smithfield_Council", group_name="White")
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
              "HL", condition_col="ethnic_code", election_name="Smithfield_Council", group_name="Hispanic")
 
     # for the town of smithfield mayor
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
             "B", election_name="Smithfield_Mayor", group_name="Black")
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
             "A", election_name="Smithfield_Mayor", group_name="Asian")
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
             "W", election_name="Smithfield_Mayor", group_name="White")
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/Smithfield_Registration_Data.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Smithfield_Registration_Data.csv").resolve(),
            "HL", condition_col="ethnic_code", election_name="Smithfield_Mayor", group_name="Hispanic")
     
     # for the Charlotte board of education
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "B", election_name="Charlotte_BoE", group_name="Black")
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "A", election_name="Charlotte_BoE", group_name="Asian")
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "W", election_name="Charlotte_BoE", group_name="White")
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "HL", condition_col="ethnic_code", election_name="Charlotte_BoE", group_name="Hispanic")
 
     # for the Charlotte city council at large
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "B", election_name="Charlotte_Council", group_name="Black")
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "A", election_name="Charlotte_Council", group_name="Asian")
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "W", election_name="Charlotte_Council", group_name="White")
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2023.csv").resolve(),
             "HL", condition_col="ethnic_code", election_name="Charlotte_Council", group_name="Hispanic")
 
     # for the Charlotte city council at large
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2022.csv").resolve(),
             "B", election_name="Charlotte_Mayor", group_name="Black")
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2022.csv").resolve(),
             "A", election_name="Charlotte_Mayor", group_name="Asian")
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2022.csv").resolve(),
             "W", election_name="Charlotte_Mayor", group_name="White")
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/Charlotte_Registration_Data_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/Charlotte_Registration_Data_2022.csv").resolve(),
             "HL", condition_col="ethnic_code", election_name="Charlotte_Mayor", group_name="Hispanic")

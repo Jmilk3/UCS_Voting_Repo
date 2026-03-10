@@ -91,59 +91,80 @@ def env_reg(election_file, registration_file, condition_col = "race_code", elect
 
 if __name__ == "__main__":
     # Asheboro Board of EDU
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(),
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/asheboro_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Asheboro_BoE", group_name="HS Degree")
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(),
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/asheboro_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Asheboro_BoE", group_name="Some College")
-    env_reg(Path("Asheboro ER/asheboro_board_of_edu.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_board_of_edu.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/asheboro_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Asheboro_BoE", group_name="Bachelor's Degree")
 
 
     # Asheboro City Council
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/asheboro_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Asheboro_Council", group_name="HS Degree")
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/asheboro_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Asheboro_Council", group_name="Some College")
-    env_reg(Path("Asheboro ER/asheboro_city_council.csv").resolve(), Path("Asheboro ER/asheboro_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Asheboro/asheboro_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Asheboro/asheboro_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Asheboro_Council", group_name="Bachelor's Degree")
 
     # for the smithfield town council at large
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/smithfield_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Smithfield_Council", group_name="HS Degree")
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/smithfield_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Smithfield_Council", group_name="Some College")
-    env_reg(Path("Smithfield ER/smithfield_town_council.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_town_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/smithfield_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Smithfield_Council", group_name="Bachelor's Degree")
 
     # for the town of smithfield mayor
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/smithfield_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Smithfield_Mayor", group_name="HS Degree")
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/smithfield_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Smithfield_Mayor", group_name="Some College")
-    env_reg(Path("Smithfield ER/smithfield_mayor.csv").resolve(), Path("Smithfield ER/smithfield_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Smithfield/smithfield_mayor.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Smithfield/smithfield_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Smithfield_Mayor", group_name="Bachelor's Degree")
 
     # for the Charlotte board of education
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Charlotte_BoE", group_name="HS Degree")
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Charlotte_BoE", group_name="Some College")
-    env_reg(Path("Charlotte ER/charlotte_board_of_education.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_board_of_education.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Charlotte_BoE", group_name="Bachelor's Degree")
 
     # for the Charlotte city council at large
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2023.csv").resolve(),
             "hs_grad", election_name="Charlotte_Council", group_name="HS Degree")
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2023.csv").resolve(),
             "scol_nd", election_name="Charlotte_Council", group_name="Some College")
-    env_reg(Path("Charlotte ER/charlotte_city_council.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2023.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_city_council.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2023.csv").resolve(),
             "bach_deg", election_name="Charlotte_Council", group_name="Bachelor's Degree")
 
     # for the Charlotte city council at large
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2022.csv").resolve(),
             "hs_grad", election_name="Charlotte_Mayor", group_name="HS Degree")
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2022.csv").resolve(),
             "scol_nd", election_name="Charlotte_Mayor", group_name="Some College")
-    env_reg(Path("Charlotte ER/charlotte_mayor_2022.csv").resolve(), Path("Charlotte ER/charlotte_edu_reg_2022.csv").resolve(),
+    env_reg(Path(__file__ + "/../../../Clean Data/Election Data/Charlotte/charlotte_mayor_2022.csv").resolve(), 
+            Path(__file__ + "/../../../Clean Data/Registration Data/Charlotte/charlotte_edu_reg_2022.csv").resolve(),
             "bach_deg", election_name="Charlotte_Mayor", group_name="Bachelor's Degree")
     

@@ -25,6 +25,7 @@ logical-unification==0.4.7
 markdown-it-py==4.0.0
 markupsafe==3.0.3
 matplotlib==3.10.7
+maup==0.7 
 mdurl==0.1.2
 minikanren==1.0.5
 ml-dtypes==0.5.3
