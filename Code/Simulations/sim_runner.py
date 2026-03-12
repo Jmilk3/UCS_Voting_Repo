@@ -1,11 +1,9 @@
 # Primary simulation runner file with CLI interface
 # Classes that store simulation data in a consistent format
 from definitions.structures.bloc import Bloc 
-from definitions.structures.sim_params import SimParams
 
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
-from votekit.pref_profile.pref_profile import RankProfile, ProfileError
 from votekit.ballot_generator import BlocSlateConfig
 from votekit.pref_interval import PreferenceInterval
 # import csv for ballot writer function
