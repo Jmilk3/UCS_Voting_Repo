@@ -23,8 +23,6 @@ import tabulate
 # Random for selecting within confidence interval
 from random import uniform
 
-# Get numpy arrays to save on memory
-from numpy import empty
 
 # For now, sim definitions can go here
 # Update this to actually import the definitions
@@ -33,15 +31,13 @@ import definitions.smithfield_sims as smith
 import definitions.charlotte_sims as char
 
 # Create a list for each of the cities
-ashe_list = ashe.BoE_List[3:] + ashe.Council_List
-# smith_list = smith.Mayor_List + smith.Council_List
-smith_list = smith.Mayor_List[1:] + smith.Council_List
-# char_list = char.BoE_List + char.Council_List + char.Mayor_List
-char_list = char.Council_List + char.Mayor_List
+ashe_list = ashe.BoE_List + ashe.Council_List
+smith_list = smith.Mayor_List + smith.Council_List
+char_list = char.BoE_List # This entire file exists solely for this bastard LAMO
 
 # Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
-sim_list = ashe_list + smith_list + char_list
+sim_list = char_list
 
 
 
@@ -141,7 +137,7 @@ def runSim(sim, output_path, filename, num_sims, subfolder = ""):
     config_inputs = Bloc.outputVars([sim.bloc1, sim.bloc2], sim.num_ballots)
 
     # Confirm that necessary output directories exist
-    if (subfolder):
+    if (not subfolder):
         electionPath = output_path / f"Elections"
         ballotPath = output_path / f"Ballots"
     else:
@@ -169,14 +165,16 @@ def runSim(sim, output_path, filename, num_sims, subfolder = ""):
             candidates += config_inputs[1][key]
         candidates.sort()
         
-        # Store the ballots which appear in each iteration in the order PL, BT, Cam
-        ballot_data = [{}, {}, {}]
+        
 
         # Print a status update to terminal
         print(f"    Now Running {sim.sim_name}")
 
         # Generate ballots and run elections on them num_sims times, outputting results as we go
         for i in range(0, num_sims):
+            # Store the ballots which appear in each iteration in the order PL, BT, Cam
+            ballot_data = [{}, {}, {}]
+
             # Create a preference mapping by sampling from ranges in config_inputs
             prefs = config_inputs[3]
             sampled_pref_mapping = {prefs[0]: {}, prefs[2]: {}}
@@ -230,11 +228,7 @@ def runSim(sim, output_path, filename, num_sims, subfolder = ""):
                     ranking = ranking[:-1] # remove spare comma at end
 
                     # Add ranking to dictionary if needed
-                    if ranking not in ballot_data[j]:
-                        ballot_data[j][ranking] = empty(num_sims)
-                    
-                    # Set ballot weight in column corresponding to current iteration
-                    ballot_data[j][ranking][i] = ballot.weight
+                    ballot_data[j][ranking] = [ballot.weight]
 
                     # Create a new ballot for plurality and store it
                     plurBallots[j].append(RankBallot(ranking=[plurCandidates], weight=ballot.weight))
@@ -282,45 +276,45 @@ def runSim(sim, output_path, filename, num_sims, subfolder = ""):
             print(f"      {i+1}/{num_sims} iterations completed!")
 
 
-    ## Write the ballots to output file
-    # Create shared header and lables
-    labels = ["ranking"] + [f"iteration_{i}" for i in range(1, num_sims + 1)]
+            ## Write the ballots to output file
+            # Create shared header and lables
+            labels = ["iteration", "ranking", "weight"]
 
-    # Write PL results
-    with open(ballotPath /  f"{filename}_{sim.sim_name}_ballots_PL.csv", "+a", encoding="utf-8", newline="") as file:
-        writer = csv.writer(file)
+            # Write PL results
+            with open(ballotPath /  f"{filename}_{sim.sim_name}_ballots_PL.csv", "+a", encoding="utf-8", newline="") as file:
+                writer = csv.writer(file)
 
-        # Add header and lables if file is currently empty
-        if file.tell() == 0:
-            writer.writerows([labels])
-        
-        # Write a row for each ballot with the weights from each iteration
-        for ballot in ballot_data[0].keys():
-            writer.writerow([ballot] + list(ballot_data[0][ballot]))
+                # Add header and lables if file is currently empty
+                if file.tell() == 0:
+                    writer.writerows([labels])
+                
+                # Write a row for each ballot with the weights from each iteration
+                for ballot in ballot_data[0].keys():
+                    writer.writerow([i] + [ballot] + ballot_data[0][ballot])
 
-    # Write BT results
-    with open(ballotPath / f"{filename}_{sim.sim_name}_ballots_BT.csv", "+a", encoding="utf-8", newline="") as file:
-        writer = csv.writer(file)
+            # Write BT results
+            with open(ballotPath / f"{filename}_{sim.sim_name}_ballots_BT.csv", "+a", encoding="utf-8", newline="") as file:
+                writer = csv.writer(file)
 
-        # Add header and lables if file is currently empty
-        if file.tell() == 0:
-            writer.writerows([labels])
-        
-        # Write a row for each ballot with the weights from each iteration
-        for ballot in ballot_data[1].keys():
-            writer.writerow([ballot] + list(ballot_data[1][ballot]))
+                # Add header and lables if file is currently empty
+                if file.tell() == 0:
+                    writer.writerows([labels])
+                
+                # Write a row for each ballot with the weights from each iteration
+                for ballot in ballot_data[1].keys():
+                    writer.writerow([i] + [ballot] +  ballot_data[1][ballot])
 
-    # Write cambridge results
-    with open(ballotPath / f"{filename}_{sim.sim_name}_ballots_Cam.csv", "+a", encoding="utf-8", newline="") as file:
-        writer = csv.writer(file)
+            # Write cambridge results
+            with open(ballotPath / f"{filename}_{sim.sim_name}_ballots_Cam.csv", "+a", encoding="utf-8", newline="") as file:
+                writer = csv.writer(file)
 
-        # Add header and lables if file is currently empty
-        if file.tell() == 0:
-            writer.writerows([labels])
-        
-        # Write a row for each ballot with the weights from each iteration
-        for ballot in ballot_data[2].keys():
-            writer.writerow([ballot + "," * (len(candidates) - len(ballot.split(",")))] + list(ballot_data[2][ballot]))
+                # Add header and lables if file is currently empty
+                if file.tell() == 0:
+                    writer.writerows([labels])
+                
+                # Write a row for each ballot with the weights from each iteration
+                for ballot in ballot_data[2].keys():
+                    writer.writerow([i] + [ballot + "," * (len(candidates) - len(ballot.split(",")))] + ballot_data[2][ballot])
 
 if __name__ == "__main__":
     # Parse CLI arguments and pass them to main
