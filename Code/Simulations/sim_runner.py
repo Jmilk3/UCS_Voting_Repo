@@ -1,13 +1,14 @@
 # Primary simulation runner file with CLI interface
 # Classes that store simulation data in a consistent format
 from definitions.structures.bloc import Bloc 
-from definitions.structures.sim_params import SimParams
 
 # VoteKit data classes and elections
 from votekit.elections import Plurality, STV
-from votekit.pref_profile.pref_profile import RankProfile, ProfileError
 from votekit.ballot_generator import BlocSlateConfig
 from votekit.pref_interval import PreferenceInterval
+from votekit.ballot import RankBallot
+from votekit.pref_profile import RankProfile
+
 # import csv for ballot writer function
 import csv
 
@@ -22,6 +23,9 @@ import tabulate
 # Random for selecting within confidence interval
 from random import uniform
 
+# Get numpy arrays to save on memory
+from numpy import empty
+
 # For now, sim definitions can go here
 # Update this to actually import the definitions
 import definitions.asheboro_sims as ashe
@@ -29,9 +33,11 @@ import definitions.smithfield_sims as smith
 import definitions.charlotte_sims as char
 
 # Create a list for each of the cities
-ashe_list = ashe.BoE_List + ashe.Council_List
-smith_list = smith.Mayor_List + smith.Council_List
-char_list = char.BoE_List + char.Council_List + char.Mayor_List
+ashe_list = ashe.BoE_List[3:] + ashe.Council_List
+# smith_list = smith.Mayor_List + smith.Council_List
+smith_list = smith.Mayor_List[1:] + smith.Council_List
+# char_list = char.BoE_List + char.Council_List + char.Mayor_List
+char_list = char.Council_List + char.Mayor_List
 
 # Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
@@ -43,7 +49,7 @@ def main(args):
     """
     Main sim running function. Handles flag parsing and main interaction loop.
     """
-    output_path = Path(__file__ + f"/../../../Results").resolve() # Path to Results folder
+    output_path = Path(__file__ + f"/../../../New_Simulation_Results").resolve() # Path to Results folder
 
     # Handle run all sims flag
     if (args.all):
@@ -59,21 +65,21 @@ def main(args):
             # run contents of ashe_list
             print(f"Running {len(ashe_list)} sims:")
             for sim in ashe_list:
-                runSim(sim, output_path, args.filename, args.number)
+                runSim(sim, output_path, args.filename, args.number, "Asheboro Sims")
                 print('    ' + sim.sim_name + " Done!")
             return
         case "smithfield":
             # run contents of smith_list
             print(f"Running {len(smith_list)} sims:")
             for sim in smith_list:
-                runSim(sim, output_path, args.filename, args.number)
+                runSim(sim, output_path, args.filename, args.number, "Smithfield Sims")
                 print('    ' + sim.sim_name + " Done!")
             return
         case "charlotte":
             # run contents of char_list
             print(f"Running {len(char_list)} sims:")
             for sim in char_list:
-               runSim(sim, output_path, args.filename, args.number)
+               runSim(sim, output_path, args.filename, args.number, "Charlotte Sims")
                print('    ' + sim.sim_name + " Done!")
             return
         case _:
@@ -129,15 +135,26 @@ def main(args):
     
     
 
-def runSim(sim, output_path, filename, num_sims):
+def runSim(sim, output_path, filename, num_sims, subfolder = ""):
     """Helper function that runs a given sim n times and prints the results to the output file"""
     # Turn the blocs into generator inputs
     config_inputs = Bloc.outputVars([sim.bloc1, sim.bloc2], sim.num_ballots)
 
+    # Confirm that necessary output directories exist
+    if (subfolder):
+        electionPath = output_path / f"Elections"
+        ballotPath = output_path / f"Ballots"
+    else:
+        electionPath = output_path / f"Elections" / subfolder
+        ballotPath = output_path / f"Ballots" / subfolder
+    
+    electionPath.mkdir(parents=True, exist_ok=True)
+    ballotPath.mkdir(parents=True, exist_ok=True)
+
     # Open the output files for these sims before starting the loop
-    with open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
-          open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
-          open(output_path / f"Elections" / f"{filename}_{sim.sim_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
+    with open(electionPath / f"{filename}_{sim.sim_name}_PL.csv", "+a", encoding="utf-8-sig") as pl_file,\
+          open(electionPath / f"{filename}_{sim.sim_name}_BT.csv", "+a", encoding="utf-8-sig") as bt_file, \
+          open(electionPath / f"{filename}_{sim.sim_name}_Cam.csv", "+a", encoding="utf-8-sig") as cam_file:
         # Create an array of file objects to make iteration easier
         files = [pl_file, bt_file, cam_file]
 
@@ -193,28 +210,42 @@ def runSim(sim, output_path, filename, num_sims):
             # Generate ballots in order PL, BT, Cam
             ballots = generateAll(generator_config)
 
+            # Prepare to store the plurality ballots for each generator
+            plurBallots = [[], [], []]
+
             # Add the ballots to their respective dictionaries
             for j in range(3):
                 # iterate through the tuple of ballots
                 for ballot in ballots[j].ballots:
                     # Get the ranking from the ballot
                     ranking = ""
+                    count = 0 # Keep track of how many candidates have been added to plur ballot
+                    plurCandidates = [] # Keep track of which candidates are in plur ballot
                     for fset in ballot.ranking:
+                        if count < sim.num_seats:
+                            plurCandidates.append(list(fset)[0])
                         ranking += list(fset)[0]
                         ranking += ","
+                        count += 1
                     ranking = ranking[:-1] # remove spare comma at end
 
                     # Add ranking to dictionary if needed
                     if ranking not in ballot_data[j]:
-                        ballot_data[j][ranking] = [0.0] * num_sims
+                        ballot_data[j][ranking] = empty(num_sims)
                     
                     # Set ballot weight in column corresponding to current iteration
                     ballot_data[j][ranking][i] = ballot.weight
+
+                    # Create a new ballot for plurality and store it
+                    plurBallots[j].append(RankBallot(ranking=[plurCandidates], weight=ballot.weight))
+            
+            # Create plurality rankprofiles
+            plurRankings = [RankProfile(ballots=plurBallots[0]), RankProfile(ballots=plurBallots[1]), RankProfile(ballots=plurBallots[2])]
             
             # Run the elections using the 3 ballot sets
-            plurality_results = [Plurality(ballots[0], sim.num_seats, "borda"),
-                                  Plurality(ballots[1], sim.num_seats, "borda"),
-                                  Plurality(ballots[2], sim.num_seats, "borda")]
+            plurality_results = [Plurality(plurRankings[0], sim.num_seats, "borda", fpv_tie_convention="high"),
+                                  Plurality(plurRankings[1], sim.num_seats, "borda", fpv_tie_convention="high"),
+                                  Plurality(plurRankings[2], sim.num_seats, "borda", fpv_tie_convention="high")]
             stv_results = [STV(ballots[0], sim.num_seats, tiebreak="borda"),
                             STV(ballots[1], sim.num_seats, tiebreak="borda"),
                             STV(ballots[2], sim.num_seats, tiebreak="borda")]
@@ -256,7 +287,7 @@ def runSim(sim, output_path, filename, num_sims):
     labels = ["ranking"] + [f"iteration_{i}" for i in range(1, num_sims + 1)]
 
     # Write PL results
-    with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_PL.csv", "+a", encoding="utf-8") as file:
+    with open(ballotPath /  f"{filename}_{sim.sim_name}_ballots_PL.csv", "+a", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
 
         # Add header and lables if file is currently empty
@@ -265,10 +296,10 @@ def runSim(sim, output_path, filename, num_sims):
         
         # Write a row for each ballot with the weights from each iteration
         for ballot in ballot_data[0].keys():
-            writer.writerow([ballot] + ballot_data[0][ballot])
+            writer.writerow([ballot] + list(ballot_data[0][ballot]))
 
     # Write BT results
-    with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_BT.csv", "+a", encoding="utf-8") as file:
+    with open(ballotPath / f"{filename}_{sim.sim_name}_ballots_BT.csv", "+a", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
 
         # Add header and lables if file is currently empty
@@ -277,10 +308,10 @@ def runSim(sim, output_path, filename, num_sims):
         
         # Write a row for each ballot with the weights from each iteration
         for ballot in ballot_data[1].keys():
-            writer.writerow([ballot] + ballot_data[1][ballot])
+            writer.writerow([ballot] + list(ballot_data[1][ballot]))
 
     # Write cambridge results
-    with open(output_path / f"Ballots" / f"{filename}_{sim.sim_name}_ballots_Cam.csv", "+a", encoding="utf-8") as file:
+    with open(ballotPath / f"{filename}_{sim.sim_name}_ballots_Cam.csv", "+a", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
 
         # Add header and lables if file is currently empty
@@ -289,7 +320,7 @@ def runSim(sim, output_path, filename, num_sims):
         
         # Write a row for each ballot with the weights from each iteration
         for ballot in ballot_data[2].keys():
-            writer.writerow([ballot + "," * (len(candidates) - len(ballot.split(",")))] + ballot_data[2][ballot])
+            writer.writerow([ballot + "," * (len(candidates) - len(ballot.split(",")))] + list(ballot_data[2][ballot]))
 
 if __name__ == "__main__":
     # Parse CLI arguments and pass them to main

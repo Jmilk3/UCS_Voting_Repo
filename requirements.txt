@@ -12,6 +12,7 @@ cycler==0.12.1
 etuples==0.3.10
 filelock==3.20.0
 fonttools==4.60.1
+geopandas==1.1.1
 graphviz==0.21
 h5netcdf==1.7.3
 h5py==3.15.1
@@ -25,6 +26,7 @@ logical-unification==0.4.7
 markdown-it-py==4.0.0
 markupsafe==3.0.3
 matplotlib==3.10.7
+maup==0.7 
 mdurl==0.1.2
 minikanren==1.0.5
 ml-dtypes==0.5.3
