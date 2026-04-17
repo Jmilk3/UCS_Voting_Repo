@@ -33,7 +33,7 @@ import definitions.charlotte_sims as char
 # Create a list for each of the cities
 ashe_list = ashe.BoE_List + ashe.Council_List
 smith_list = smith.Mayor_List + smith.Council_List
-char_list = char.BoE_List # This entire file exists solely for this bastard LAMO
+char_list = char.BoE_List # This entire file exists solely for this bastard LMAO
 
 # Change the sim list to include all of the sims from the definition files
 # This is the list of sims that the sim runner can see. Be sure to add any new sims here
