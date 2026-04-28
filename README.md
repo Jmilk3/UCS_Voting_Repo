@@ -31,5 +31,14 @@ We used Anaconda to install and manage packages. The following instructions expl
 2. Open the Anaconda terminal, or activate Anaconda in your default terminal
 3. Navigate to the UCS Voting repo folder, where the environment.yaml file is stored.
 4. Run the command "conda env create --name UCS_Voting --file environment.yaml" in your terminal
-5. Activate the environment with the command "conda activate UCS_Voting", then you can run our python scripts from the command line.
+5. Activate the environment with the command "conda activate UCS_Voting", then you can run our python scripts from the command line
+
+## A Note on calculating simulation parameters
+In order to calculate simulation parameters from ER results, we used the following method:
+* The bloc names are defined as the demographic being studied and other voters
+* The bloc size is the fraction of the population belonging to each demographic
+* The candidates are assigned to whichever bloc had a larger percentage of votes for them. If all of the candidates have more support from a given bloc, the candidate with the lowest percentage is assigned to the other bloc
+* For each candidate, the preference values are given as a pair of values defining the lower and upper bounds of the confidence interval from the ER results for the bloc's support of that candidate. In each iteration, we sample a value from this range for each candidate, then normalize the values to get the set of preferences for that iteration.
+* The number of seats is set to the number of seats up for election in the actual contest.
+* The number of ballots is set to 1000, as this provides a good mix of runtime and accuracy. 
 
